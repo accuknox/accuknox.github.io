@@ -4090,10 +4090,10 @@
                 
                   <h1>Defining runtime security</h1>
                 
-                <p>Runtime security is the protection of workloads against active threats and malicious behavior. This is typically the workloads have been initialized and are running. </p>
-<p>Accuknox provides runtime Kubernetes Security.</p>
-<p>In the case of a Kubernetes pods, runtime is the state that when the pod has come to a running state - this happens after image scanning of the containers, after the patching has been done, after admission controller has done the authentication and authorization.</p>
-<p>When the pod has actually begun to run and interact with its host operating system requesting for resources and communicating via the network is when it can be defined as it currently running. And any security solution that monitors and continously protects the workloads in a run-time state is called a runtime security solution. 
+                <p>Runtime security is the protection of workloads against active threats and malicious behavior once the workloads have been initialized and are running. </p>
+<p>Accuknox provides framework and tools for Runtime Security for Kubernetes, Containerised and VM/Bare-Metal based workloads.</p>
+<p>In the case of a Kubernetes pods, runtime is the state that when the pod has come to a running state - this happens after image scanning of the containers, after the patching has been done, after admission controller has allowed for the deployment of the pods.</p>
+<p>When the pod has actually begun to run and interact with its host operating system requesting for resources and communicating via the network is when it can be defined as it currently running. And any security solution that monitors and continously protects the workloads in a runtime state is called a runtime security solution. 
 To understand what is runtime security and what we do, lets look at the following illustration:</p>
 <p><img src="/assets/images/k8-policy-overview.png" /></p>
 <p>When a workload is running, it communicates through its library (java, golang, python..) to the kernel. These calls get converted to <a href="https://man7.org/linux/man-pages/man2/syscalls.2.html">syscalls</a>. These syscall events when filtered in the order of relevance can be categorized broadly into the following (not an existive) type of features:</p>
