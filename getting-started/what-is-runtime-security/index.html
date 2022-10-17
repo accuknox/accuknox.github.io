@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#network-security-using-ebpf-cilium" class="md-skip">
+        <a href="#application-security-using-kubearmor" class="md-skip">
           Skip to content
         </a>
       
@@ -453,15 +453,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#network-security-using-ebpf-cilium" class="md-nav__link">
-    Network Security using eBPF / Cilium
+  <a href="#application-security-using-kubearmor" class="md-nav__link">
+    Application security using KubeArmor
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#application-security-using-linux-security-modules-lsm-kubearmor-httpsgithubcomkubearmor" class="md-nav__link">
-    Application security using Linux Security Modules (LSM) / [KubeArmor] (https://github.com/kubearmor)
+  <a href="#network-security-using-cilium" class="md-nav__link">
+    Network Security using Cilium
   </a>
   
 </li>
@@ -4058,15 +4058,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#network-security-using-ebpf-cilium" class="md-nav__link">
-    Network Security using eBPF / Cilium
+  <a href="#application-security-using-kubearmor" class="md-nav__link">
+    Application security using KubeArmor
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#application-security-using-linux-security-modules-lsm-kubearmor-httpsgithubcomkubearmor" class="md-nav__link">
-    Application security using Linux Security Modules (LSM) / [KubeArmor] (https://github.com/kubearmor)
+  <a href="#network-security-using-cilium" class="md-nav__link">
+    Network Security using Cilium
   </a>
   
 </li>
@@ -4103,23 +4103,23 @@ To understand what is runtime security and what we do, lets look at the followin
 <li>Request for specific <a href="https://man7.org/linux/man-pages/man7/capabilities.7.html">capabilities</a></li>
 </ul>
 <p>A runtime security solution is able to provide full visibility into all of these application interactions with the host kernel and provide the ability to filter or restrict specific actions at runtime.</p>
-<p>With Accuknox you can automatically disover the application interaction and network interaction (as described below) in the form of policy as code subsequently these policies can be audited or enforced at runtime giving you the ability to restrict specific behaviors of the application.</p>
+<p>With Accuknox you can automatically discover the application interaction and network interaction in the form of policy as code subsequently these policies can be audited or enforced at runtime giving you the ability to restrict specific behaviors of the application.</p>
 <p>For example you could have a policy that says</p>
 <ul>
-<li>Pod A cannot access /etc/bin folder</li>
+<li>Pod A cannot access <code>/etc/bin</code> folder</li>
 <li>Pod B cannot initiate ptrace i.e. trace the execution of other processes</li>
-<li>Pod C cannot communicate to a remote TCP server running on Port 5000..</li>
+<li>Pod C cannot communicate to a remote TCP server running on port 5000.</li>
 </ul>
 <p>This list can be as exhaustive as you like, and these policies are enforced within the kernel using kernel primitives and technologies as listed below:</p>
-<h3 id="network-security-using-ebpf-cilium">Network Security using eBPF / <a href="https://github.com/kubearmor/cilium">Cilium</a><a class="headerlink" href="#network-security-using-ebpf-cilium" title="Permanent link">&para;</a></h3>
+<h3 id="application-security-using-kubearmor">Application security using <a href="https://github.com/kubearmor">KubeArmor</a><a class="headerlink" href="#application-security-using-kubearmor" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The Linux Security Module (LSM) framework provides a mechanism for various security checks to be hooked by new kernel extensions. It denies access to essential kernel objects, such as files, inodes, task structures, credentials, and inter-process communication objects.</li>
+<li>AccuKnox supports AppArmor, SELinux and BPF-LSM as of today for its enforcement engine at runtime.</li>
+</ul>
+<h3 id="network-security-using-cilium">Network Security using <a href="https://github.com/kubearmor/cilium">Cilium</a><a class="headerlink" href="#network-security-using-cilium" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Network runtime protection in the form of L3, L4 and L7 rules using identity (x509 certificates or K8s labels) for your K8s workloads. In K8s policies this is implemented as a CNI using Cilium.</li>
 <li>For Virtual Machine workloads, labels are used to provide host level network policies for L3, L4 and L7.</li>
-</ul>
-<h3 id="application-security-using-linux-security-modules-lsm-kubearmor-httpsgithubcomkubearmor">Application security using Linux Security Modules (LSM) / [KubeArmor] (<a href="https://github.com/kubearmor">https://github.com/kubearmor</a>)<a class="headerlink" href="#application-security-using-linux-security-modules-lsm-kubearmor-httpsgithubcomkubearmor" title="Permanent link">&para;</a></h3>
-<ul>
-<li>The Linux Security Module (LSM) framework provides a mechanism for various security checks to be hooked by new kernel extensions. It denies access to essential kernel objects, such as files, inodes, task structures, credentials, and inter-process communication objects.</li>
-<li>AccuKnox supports AppArmor and SELinux as of today for its enforcement engine at runtime.</li>
 </ul>
                 
               
