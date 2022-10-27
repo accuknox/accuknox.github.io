@@ -1176,6 +1176,47 @@
     Step 1: Install Kubearmor on VM
   </a>
   
+    <nav class="md-nav" aria-label="Step 1: Install Kubearmor on VM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-pre-requisites" class="md-nav__link">
+    Install pre-requisites:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-bpftool-install-any-of-the-packages-for-system-environment" class="md-nav__link">
+    For bpftool install any of the packages for system environment:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-install-kubearmor" class="md-nav__link">
+    To install KubeArmor:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-above-error-occurs-run" class="md-nav__link">
+    If above error occurs, Run:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-and-check-the-status-of-kubearmor" class="md-nav__link">
+    Start and Check the status of Kubearmor:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -4089,6 +4130,47 @@
     Step 1: Install Kubearmor on VM
   </a>
   
+    <nav class="md-nav" aria-label="Step 1: Install Kubearmor on VM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-pre-requisites" class="md-nav__link">
+    Install pre-requisites:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-bpftool-install-any-of-the-packages-for-system-environment" class="md-nav__link">
+    For bpftool install any of the packages for system environment:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-install-kubearmor" class="md-nav__link">
+    To install KubeArmor:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-above-error-occurs-run" class="md-nav__link">
+    If above error occurs, Run:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-and-check-the-status-of-kubearmor" class="md-nav__link">
+    Start and Check the status of Kubearmor:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -4124,20 +4206,37 @@
                 
                   <h1>Ubuntu 20.04</h1>
                 
-                <h2 id="overview"><strong>Overview</strong><a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+                <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>This user journey guides you to install and verify the compatibility of Kuberarmor on Ubuntu 20.04 with 5.13 Kernel Version by applying policies on VM workloads.</p>
-<h2 id="step-1-install-kubearmor-on-vm"><strong>Step 1: Install Kubearmor on VM</strong><a class="headerlink" href="#step-1-install-kubearmor-on-vm" title="Permanent link">&para;</a></h2>
-<p><strong>Install pre-requisites:</strong></p>
-<div class="highlight"><pre><span></span><code>apt install bpfcc-tools linux-headers-<span class="k">$(</span>uname -r<span class="k">)</span>
+<h2 id="step-1-install-kubearmor-on-vm">Step 1: Install Kubearmor on VM<a class="headerlink" href="#step-1-install-kubearmor-on-vm" title="Permanent link">&para;</a></h2>
+<h4 id="install-pre-requisites">Install pre-requisites:<a class="headerlink" href="#install-pre-requisites" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>sudo apt update <span class="o">&amp;&amp;</span> sudo apt upgrade
+sudo apt install make llvm clang libelf-dev linux-headers-generic
+sudo apt install bpfcc-tools linux-headers-<span class="k">$(</span>uname -r<span class="k">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>wget https://github.com/kubearmor/KubeArmor/releases/download/v0.2.1/kubearmor_0.2.1_linux-amd64.deb <span class="o">&amp;&amp;</span> dpkg -i kubearmor_0.2.1_linux-amd64.deb
+<h4 id="for-bpftool-install-any-of-the-packages-for-system-environment">For bpftool install any of the packages for system environment:<a class="headerlink" href="#for-bpftool-install-any-of-the-packages-for-system-environment" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code> sudo apt install linux-intel-iotg-5.15-tools-common
+ sudo apt install linux-oem-5.6-tools-common
+ sudo apt install linux-tools-common
+ sudo apt install linux-iot-tools-common
+ sudo apt install linux-tools-gcp
+ sudo apt install linux-cloud-tools-gcp
 </code></pre></div>
+<h4 id="to-install-kubearmor">To install KubeArmor:<a class="headerlink" href="#to-install-kubearmor" title="Permanent link">&para;</a></h4>
+<p>Note: Copy this whole below command and run it in your terminal.
+<div class="highlight"><pre><span></span><code>curl -s https://api.github.com/repos/kubearmor/KubeArmor/releases/latest <span class="se">\</span>
+<span class="p">|</span> grep <span class="s2">&quot;browser_download_url.*deb&quot;</span> <span class="se">\</span>
+<span class="p">|</span> cut -d : -f <span class="m">2</span>,3 <span class="se">\</span>
+<span class="p">|</span> tr -d <span class="se">\&quot;</span> <span class="se">\</span>
+<span class="p">|</span> wget -qi -
+sudo dpkg -i kubearmor_*_linux-amd64.deb
+</code></pre></div></p>
 <p><img alt="Alt" src="../../ubuntu20.04/images/4.png" /></p>
-<p><strong>If above error occurs, Run:</strong></p>
-<div class="highlight"><pre><span></span><code>apt --fix-broken install
+<h4 id="if-above-error-occurs-run">If above error occurs, Run:<a class="headerlink" href="#if-above-error-occurs-run" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>sudo apt --fix-broken install
 </code></pre></div>
 <p><img alt="Alt" src="../../ubuntu20.04/images/5.png" /></p>
-<p><strong>Start and Check the status of Kubearmor:</strong></p>
+<h4 id="start-and-check-the-status-of-kubearmor">Start and Check the status of Kubearmor:<a class="headerlink" href="#start-and-check-the-status-of-kubearmor" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>sudo systemctl start kubearmor
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>sudo systemctl <span class="nb">enable</span> kubearmor
@@ -4145,7 +4244,7 @@
 <div class="highlight"><pre><span></span><code>sudo systemctl status kubearmor
 </code></pre></div>
 <p><img alt="Alt" src="../../ubuntu20.04/images/6.png" /></p>
-<h2 id="step-2-apply-and-verify-kubearmor-system-policy"><strong>Step 2: Apply and Verify Kubearmor system policy</strong><a class="headerlink" href="#step-2-apply-and-verify-kubearmor-system-policy" title="Permanent link">&para;</a></h2>
+<h2 id="step-2-apply-and-verify-kubearmor-system-policy">Step 2: Apply and Verify Kubearmor system policy<a class="headerlink" href="#step-2-apply-and-verify-kubearmor-system-policy" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>cat khp-example-vmname.yaml
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span><span class="w"></span>
@@ -4163,9 +4262,9 @@
 <p><div class="highlight"><pre><span></span><code>karmor vm --kvms policy add khp-example-vmname.yaml
 </code></pre></div>
 <strong>Output:</strong></p>
-<p>success</p>
+<p><code>success</code></p>
 <p><strong>Note:</strong> With the above mentioned policy enforced in the VM, if a user tries to access /proc/cpuinfo file, user will see permission denied error and karmor log will show the alert log for blocking the file access.</p>
-<h2 id="step-3-violating-the-policy"><strong>Step 3: Violating the policy</strong><a class="headerlink" href="#step-3-violating-the-policy" title="Permanent link">&para;</a></h2>
+<h2 id="step-3-violating-the-policy">Step 3: Violating the policy<a class="headerlink" href="#step-3-violating-the-policy" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>cat /proc/cpuinfo
 </code></pre></div>
 <p><img alt="Alt" src="../../ubuntu20.04/images/16.png" /></p>
