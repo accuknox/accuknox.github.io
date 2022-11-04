@@ -13,14 +13,14 @@
         <meta name="author" content="Asif Ali">
       
       
-        <link rel="canonical" href="https://accuknox.com/getting-started/installing-agents/">
+        <link rel="canonical" href="https://accuknox.com/getting-started/accuknox-agents/">
       
       <link rel="icon" href="../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-7.3.6">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-7.3.6">
     
     
       
-        <title>Agent Installation - AccuKnox</title>
+        <title>AccuKnox Agents - AccuKnox</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installing-agents" class="md-skip">
+        <a href="#accuknox-agents-description" class="md-skip">
           Skip to content
         </a>
       
@@ -119,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Agent Installation
+              AccuKnox Agents
             
           </span>
         </div>
@@ -554,16 +554,14 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Agent Installation
+          AccuKnox Agents
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Agent Installation
+        AccuKnox Agents
       </a>
       
         
@@ -573,8 +571,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -583,29 +579,84 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#shared-informer-agent" class="md-nav__link">
-    Shared Informer Agent
+  <a href="#accuknox-agents-description" class="md-nav__link">
+    AccuKnox Agents Description
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cilium" class="md-nav__link">
-    Cilium
+  <a href="#supported-platforms" class="md-nav__link">
+    Supported platforms
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#kubearmor" class="md-nav__link">
-    KubeArmor
+  <a href="#pre-requisites" class="md-nav__link">
+    Pre-requisites
+  </a>
+  
+    <nav class="md-nav" aria-label="Pre-requisites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#minimum-resource-required" class="md-nav__link">
+    Minimum Resource required
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agents-installations" class="md-nav__link">
+    Agents Installations
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#feeder-service" class="md-nav__link">
-    Feeder Service
+  <a href="#1-cilium" class="md-nav__link">
+    1. Cilium
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-kubearmor" class="md-nav__link">
+    2. KubeArmor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-feeder-service" class="md-nav__link">
+    3. Feeder Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-shared-informer-agent" class="md-nav__link">
+    4. Shared Informer Agent
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-policy-enforcement-agent" class="md-nav__link">
+    5. Policy Enforcement Agent
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-discovery-engine-agent" class="md-nav__link">
+    6. Discovery Engine Agent
   </a>
   
 </li>
@@ -4068,8 +4119,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -4078,29 +4127,84 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#shared-informer-agent" class="md-nav__link">
-    Shared Informer Agent
+  <a href="#accuknox-agents-description" class="md-nav__link">
+    AccuKnox Agents Description
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cilium" class="md-nav__link">
-    Cilium
+  <a href="#supported-platforms" class="md-nav__link">
+    Supported platforms
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#kubearmor" class="md-nav__link">
-    KubeArmor
+  <a href="#pre-requisites" class="md-nav__link">
+    Pre-requisites
+  </a>
+  
+    <nav class="md-nav" aria-label="Pre-requisites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#minimum-resource-required" class="md-nav__link">
+    Minimum Resource required
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agents-installations" class="md-nav__link">
+    Agents Installations
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#feeder-service" class="md-nav__link">
-    Feeder Service
+  <a href="#1-cilium" class="md-nav__link">
+    1. Cilium
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-kubearmor" class="md-nav__link">
+    2. KubeArmor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-feeder-service" class="md-nav__link">
+    3. Feeder Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-shared-informer-agent" class="md-nav__link">
+    4. Shared Informer Agent
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-policy-enforcement-agent" class="md-nav__link">
+    5. Policy Enforcement Agent
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-discovery-engine-agent" class="md-nav__link">
+    6. Discovery Engine Agent
   </a>
   
 </li>
@@ -4117,121 +4221,240 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/accuknox/accuknox-help/edit/main/docs_sample/getting-started/installing-agents.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/accuknox/accuknox-help/edit/main/docs_sample/getting-started/accuknox-agents.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
                   </a>
                 
                 
-                <h1 id="installing-agents">Installing Agents<a class="headerlink" href="#installing-agents" title="Permanent link">&para;</a></h1>
-<p>The following agents to get started:</p>
-<h2 id="shared-informer-agent">Shared Informer Agent<a class="headerlink" href="#shared-informer-agent" title="Permanent link">&para;</a></h2>
-<p>Installation Guide</p>
-<hr />
-<p>This agent authenticates with your cluster and collects information regarding entities like nodes,pods,namespaces</p>
-<p>Command to create a namespace</p>
-<div class="highlight"><pre><span></span><code>kubectl create namespace &lt;namespace-name&gt;
-</code></pre></div>
-<p>Commands to create cluster role</p>
-<div class="highlight"><pre><span></span><code>kubectl create clusterrole &lt;cluster-role-name&gt; 
---verb=get,list,watch 
---resource=nodes,pods,namespace,services,endpoints
-</code></pre></div>
-<p>YAML to create service account</p>
-<p>Note: Service Account Name and Namespace should be the same while creating role binding.</p>
-<div class="highlight"><pre><span></span><code>accuknox-sa.yaml
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: accuknox-agents
-  namespace: accuknox-agents
-secrets:
-- name: accuknox-agent-secrets
-</code></pre></div>
-<p>Apply Yaml</p>
-<div class="highlight"><pre><span></span><code>kubectl apply -f &lt;yaml-file-name&gt; -n &lt;namespace&gt;
-</code></pre></div>
-<p>Create cluster role binding</p>
-<div class="highlight"><pre><span></span><code>kubectl create clusterrolebinding &lt;cluster-rolebinding-name&gt; 
---clusterrole=&lt;cluster-role-name-used-above&gt; 
---serviceaccount=&lt;namespace&gt;:&lt;serviceaccountname&gt;
-</code></pre></div>
-<p>Command for installing shared-informer-agent</p>
-<div class="highlight"><pre><span></span><code>kubectl apply -f https://github.com/accuknox/Onboarding-Agents-File/raw/master/sia-deploy.yaml -n &lt;namespace-name&gt;
-</code></pre></div>
-<p>Apply yaml file</p>
-<div class="highlight"><pre><span></span><code>kubectl apply -f &lt;name-of-yaml-file&gt;
-</code></pre></div>
-<h2 id="cilium">Cilium<a class="headerlink" href="#cilium" title="Permanent link">&para;</a></h2>
-<p>Installation Guide </p>
-<hr />
-<p>This agent is used to apply network policies</p>
-<p>For managed environment (GKE):</p>
-<hr />
-<p>Command to Extract the Cluster CIDR to enable native-routing</p>
-<p><div class="highlight"><pre><span></span><code>NATIVE_CIDR=$(gcloud container clusters describe $CLUSTER_NAME --zone $CLUSTER_ZONE --format &#39;value(clusterIpv4Cidr)&#39;)
-</code></pre></div>
-Setup Helm repository</p>
-<div class="highlight"><pre><span></span><code>helm repo add cilium https://helm.cilium.io/
-</code></pre></div>
-<p>Deploy Cilium release via Helm</p>
-<div class="highlight"><pre><span></span><code>helm install cilium cilium/cilium --version 1.9.8 \ 
---namespace kube-system \ 
---set nodeinit.enabled=true \ 
---set nodeinit.reconfigureKubelet=true \ 
---set nodeinit.removeCbrBridge=true \ 
---set cni.binPath=/home/kubernetes/bin \ 
---set gke.enabled=true \ 
---set ipam.mode=kubernetes \ 
---set nativeRoutingCIDR=$NATIVE_CIDR
-</code></pre></div>
-<h2 id="kubearmor">KubeArmor<a class="headerlink" href="#kubearmor" title="Permanent link">&para;</a></h2>
-<p>Installation Guide</p>
-<hr />
-<p>Trains a model based on container workload type. It constantly monitors the syscalls happening inside the container. After training, if the vae sees syscalls happening in a way not seen in training phase, it will send high reconstruction error with detailed forensics information.</p>
-<p>Deploy KubeArmor for GKE</p>
-<div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/kubearmor/KubeArmor/master/deployments/GKE/kubearmor.```
-
-Deploy KubeArmor Host Policy
-</code></pre></div>
-<p>kubectl apply -f <a href="https://raw.githubusercontent.com/kubearmor/KubeArmor/master/pkg/KubeArmorHostPolicy/config/crd/bases/security.kubearmor.com_kubearmorhostpolicies.yaml">https://raw.githubusercontent.com/kubearmor/KubeArmor/master/pkg/KubeArmorHostPolicy/config/crd/bases/security.kubearmor.com_kubearmorhostpolicies.yaml</a>
-<div class="highlight"><pre><span></span><code>Deploy KubeArmor Policy
+                  <h1>AccuKnox Agents</h1>
+                
+                <h2 id="accuknox-agents-description">AccuKnox Agents Description<a class="headerlink" href="#accuknox-agents-description" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Accuknox core agents</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KubeArmor</td>
+<td>This agent is used to apply system level policies.</td>
+</tr>
+<tr>
+<td>Cilium</td>
+<td>This agent is used to apply network level policies.</td>
+</tr>
+<tr>
+<td>Shared Informer Agent</td>
+<td>This agent authenticates with your cluster and collects information regarding entities like Nodes, Pods, Namespaces.</td>
+</tr>
+<tr>
+<td>Feeder Service</td>
+<td>Feeder service deployment that collects feeds from Kubearmor and Cilium.</td>
+</tr>
+<tr>
+<td>Policy Enforcement</td>
+<td>This agent authenticates with your cluster and enforces label and policy.</td>
+</tr>
+<tr>
+<td>Discovery Engine Agent</td>
+<td>Discovery Engine discovers the security posture for your workloads and auto-discovers the policy-set required to put the workload in least-permissive mode. The engine leverages the rich visibility provided by KubeArmor and Cilium to auto discover the systems and network security posture</td>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-platforms">Supported platforms<a class="headerlink" href="#supported-platforms" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Deployments</th>
+<th>Deployment Type</th>
+<th>Supported version  (Kubernetes)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KubeArmor</td>
+<td>DaemonSet</td>
+<td><a href="../../docs_sample/open-source/kubearmor/eks.md">EKS Ubuntu Server 20.04</a>, <br> <a href="../../docs_sample/open-source/kubearmor/minikube.md">Minikube Cluster</a>, <br> <a href="../../docs_sample/open-source/kubearmor/microk8s.md">MicroK8's Cluster</a>, <br> <a href="../../docs_sample/open-source/kubearmor/k3s.md">K3's Cluster</a>, <br> <a href="../../docs_sample/open-source/kubearmor/cos.md">GKE with COS and Ubuntu</a>, <br> <a href="../../docs_sample/open-source/kubearmor/eks_al2/eks_al2.md">EKS Amazon Linux 2</a></td>
+</tr>
+<tr>
+<td>Shared Informer Agent</td>
+<td>DaemonSet</td>
+<td>EKS Ubuntu Server 20.04, <br> Minikube Cluster, <br> MicroK8's Cluster, <br> K3's Cluster, <rb> GKE with COS and Ubuntu, <br> EKS Amazon Linux 2</td>
+</tr>
+<tr>
+<td>Feeder Service</td>
+<td>ReplicaSet</td>
+<td>EKS Ubuntu Server 20.04, <br> Minikube Cluster, <br> MicroK8's Cluster, <br> K3's Cluster, <br> GKE with COS and Ubuntu, <br> EKS Amazon Linux 2</td>
+</tr>
+<tr>
+<td>Policy Enforcement</td>
+<td>DaemonSet</td>
+<td>EKS Ubuntu Server 20.04, <br> Minikube Cluster, <br> MicroK8's Cluster, <br> K3's Cluster, <br> GKE with COS and Ubuntu, <br> EKS Amazon Linux 2</td>
+</tr>
+<tr>
+<td>Discovery Engine Agent</td>
+<td>DaemonSet</td>
+<td>EKS Ubuntu Server 20.04, <br> Minikube Cluster, <br> MicroK8's Cluster, <br> K3's Cluster, <br> GKE with COS and Ubuntu, <br> EKS Amazon Linux 2</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>It is assumed that the user has some basic familiarity with Kubernetes, kubectl and helm. It also assumes that you are familiar with the AccuKnox opensource tool workflow. If you're new to AccuKnox itself, refer first to <a href="../../docs_sample/open-source/quick_start_guide.md">Getting Started</a>.</p>
+</li>
+<li>
+<p>It is recommended to have the following configured before onboarding:</p>
+</li>
+<li>
+<p><a href="https://kubernetes.io/docs/tasks/tools/" title="https://kubernetes.io/docs/tasks/tools/">Kubectl</a></p>
+</li>
+<li><a href="https://helm.sh/docs/intro/install/" title="https://helm.sh/docs/intro/install/">Helm</a></li>
+</ul>
+<h2 id="pre-requisites"><strong>Pre-requisites</strong><a class="headerlink" href="#pre-requisites" title="Permanent link">&para;</a></h2>
+<h3 id="minimum-resource-required">Minimum Resource required<a class="headerlink" href="#minimum-resource-required" title="Permanent link">&para;</a></h3>
+<p>A Kubernetes cluster with</p>
+<blockquote>
+<ul>
+<li>Number of Nodes : 3</li>
+<li>Machine Type: e2-standard-2    </li>
+<li>Total vCPUs : 6</li>
+<li>Total Memory: 24GB</li>
+</ul>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Deployments</th>
+<th>Resource usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KubeArmor</td>
+<td>CPU: 100 m, Memory: 20 Mi</td>
+</tr>
+<tr>
+<td>Shared Informer Agent</td>
+<td>CPU: 500 m, Memory: 750 Mi</td>
+</tr>
+<tr>
+<td>Feeder Service</td>
+<td>CPU: 1, Memory: 500 Mi</td>
+</tr>
+<tr>
+<td>Policy Enforcement</td>
+<td>CPU: 200 m, Memory: 800 M</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Ports</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9093, 443, 80</td>
+<td>The worker cluster will communicate with accuknox SaaS and general internet</td>
+</tr>
+</tbody>
+</table>
+<h2 id="agents-installations"><strong>Agents Installations</strong><a class="headerlink" href="#agents-installations" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Create Namespace
+<div class="highlight"><pre><span></span><code> kubectl create namespace accuknox-agents
+</code></pre></div></li>
+<li>Adding AccuKnox Helm repository. <br> Required incase of installing by Helm</li>
+<li>Add AccuKnox repository to install agents helm package.
+<div class="highlight"><pre><span></span><code>helm repo add accuknox-agents https://accuknox-agents:xxxxxxxxxxxxxxx@agents.accuknox.com/repository/accuknox-agents
+</code></pre></div><blockquote>
+<p>Note: "accuknox-agents" keys will be unique and provided through accuknox saas platform.</p>
+</blockquote>
+</li>
+<li>Once repository added successfully, update the helm repository.
+<div class="highlight"><pre><span></span><code>helm repo update
+</code></pre></div></li>
+</ol>
+<h2 id="1-cilium">1. Cilium<a class="headerlink" href="#1-cilium" title="Permanent link">&para;</a></h2>
+<p>This agent is used to apply network policies.</p>
+<p><strong>Installation Guide</strong></p>
+<ol>
+<li>Download Cilium CLI.
+<div class="highlight"><pre><span></span><code>curl -L --remote-name-all https://github.com/cilium/cilium-cli/releases/latest/download/cilium-linux-amd64.tar.gz<span class="o">{</span>,.sha256sum<span class="o">}</span>
+sha256sum --check cilium-linux-amd64.tar.gz.sha256sum
+sudo tar xzvfC cilium-linux-amd64.tar.gz /usr/local/bin
+rm cilium-linux-amd64.tar.gz<span class="o">{</span>,.sha256sum<span class="o">}</span>
+</code></pre></div></li>
+<li>Install Cilium.
+<div class="highlight"><pre><span></span><code>cilium install
+</code></pre></div></li>
+<li>Enable Hubble in Cilium.
+<div class="highlight"><pre><span></span><code>cilium hubble <span class="nb">enable</span>
+</code></pre></div></li>
+</ol>
+<h2 id="2-kubearmor">2. KubeArmor<a class="headerlink" href="#2-kubearmor" title="Permanent link">&para;</a></h2>
+<p>This agent is used to apply system level policies.</p>
+<p><strong>Installation Guide</strong></p>
+<ol>
+<li>Download and install Karmor CLI.
+<div class="highlight"><pre><span></span><code>curl -sfL http://get.kubearmor.io/ <span class="p">|</span> sudo sh -s -- -b /usr/local/bin
+</code></pre></div></li>
+<li>Install KubeArmor.
+<div class="highlight"><pre><span></span><code>karmor install
+</code></pre></div></li>
+</ol>
+<h2 id="3-feeder-service">3. Feeder Service<a class="headerlink" href="#3-feeder-service" title="Permanent link">&para;</a></h2>
+<p>Feeder service deployment that collects feeds from Kubearmor and Cilium.</p>
+<p><strong>Installation Guide</strong></p>
+<ol>
+<li>To Install agents on destination cluster.
+<div class="highlight"><pre><span></span><code> helm upgrade --install feeder-service  accuknox-agents/feeder-service-chart -n accuknox-agents
+</code></pre></div></li>
+<li>Set the env of Feeder Service.
+<div class="highlight"><pre><span></span><code> kubectl <span class="nb">set</span> env deploy/feeder-service <span class="nv">tenant_id</span><span class="o">=</span><span class="m">241</span> <span class="nv">cluster_id</span><span class="o">=</span><span class="m">427</span> <span class="nv">cluster_name</span><span class="o">=</span>prod-cluster-onboarding -n accuknox-agents
+</code></pre></div><blockquote>
+<p>Note: <code>tenant_id</code> and <code>cluster_id</code> will be unique from user to user, replace it with your <code>tenant_id</code> and <code>cluster_id</code>.</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="4-shared-informer-agent">4. Shared Informer Agent<a class="headerlink" href="#4-shared-informer-agent" title="Permanent link">&para;</a></h2>
+<p>This agent authenticates with your cluster and collects information regarding entities like nodes, pods, namespaces.</p>
+<p><strong>Installation Guide</strong></p>
+<p>1.To Install agents on destination cluster.
+<div class="highlight"><pre><span></span><code>helm upgrade --install shared-informer-agent-chart accuknox-agents/shared-informer-agent-chart -n accuknox-agents
 </code></pre></div></p>
-<p>kubectl apply -f <a href="https://raw.githubusercontent.com/kubearmor/KubeArmor/master/pkg/KubeArmorPolicy/config/crd/bases/security.kubearmor.com_kubearmorpolicies.yaml">https://raw.githubusercontent.com/kubearmor/KubeArmor/master/pkg/KubeArmorPolicy/config/crd/bases/security.kubearmor.com_kubearmorpolicies.yaml</a> ```</p>
-<h2 id="feeder-service">Feeder Service<a class="headerlink" href="#feeder-service" title="Permanent link">&para;</a></h2>
-<p>Installation Guide</p>
-<hr />
-<p>Feeder service deployment that collects feeds from Kubearmor and Cilium</p>
-<p>Download the YAML file</p>
-<div class="highlight"><pre><span></span><code>wget https://raw.githubusercontent.com/accuknox/Onboarding-Agents-File/master/feeder-service.yaml
+<h2 id="5-policy-enforcement-agent">5. Policy Enforcement Agent<a class="headerlink" href="#5-policy-enforcement-agent" title="Permanent link">&para;</a></h2>
+<p>This agent authenticates with your cluster and enforces label and policy.</p>
+<p><strong>Installation Guide</strong></p>
+<ol>
+<li>To Install agents on destination cluster.
+<div class="highlight"><pre><span></span><code>helm upgrade --install policy-enforcement-agent accuknox-agents/policy-enforcement-agent-chart -n accuknox-agents
+</code></pre></div></li>
+<li>Set the env of policy-enforcement-agent.</li>
+</ol>
+<div class="highlight"><pre><span></span><code>kubectl <span class="nb">set</span> env deploy/policy-enforcement-agent -n accuknox-agents <span class="nv">workspace_id</span><span class="o">=</span><span class="m">241</span> <span class="nv">cluster_name</span><span class="o">=</span>prod-cluster-onboarding
 </code></pre></div>
-<p>Copy paste the values into the above YAML File</p>
-<p>Append the following code at the end of the YAML file</p>
-<p>Note: Note: kindly maintain the indentation of the code.</p>
-<div class="highlight"><pre><span></span><code>      - name: KAFKA_BOOTSTRAP_SERVERS
-        value: &quot;34.133.201.60:9095&quot;
-      - name: KAFKA_PORT
-        value: &quot;9095&quot;
-      - name: HUBBLE_URL
-        value: &quot;hubble-relay.kube-system.svc.cluster.local&quot;
-      - name: HUBBLE_PORT
-        value: &quot;80&quot;
-      - name: KUBEARMOR_URL
-        value: &quot;kubearmor.kube-system.svc.cluster.local
-      - name: KUBEARMOR_PORT
-        value: &quot;32767&quot;
-      - name: KAFKA_SSL_CA_LOCATION
-        value: &quot;/home/feeder-service/ca.pem&quot;
-      - name: KAFKA_SSL_KEYSTORE_LOCATION
-        value: &quot;/home/feeder-service/user.p12&quot;
-      - name: KAFKA_SSL_KEYSTORE_PASSWORD
-        value: &quot;REhtSHdOWXkyMkF0&quot;
-</code></pre></div>
-<p>Apply the YAML file</p>
-<div class="highlight"><pre><span></span><code>kubectl apply -f &lt;yaml file name&gt; -n &lt;namespace&gt;
-</code></pre></div>
-<p>Set the env of Feeder Service</p>
-<div class="highlight"><pre><span></span><code>kubectl set env deploy/feeder -n feeder-service tenant_id=51 cluster_id=345
-</code></pre></div>
+<blockquote>
+<p>Note: <code>workspace_id</code> and <code>cluster_name</code> will be unique from user to user, replace it with your <code>workspace_id</code> and <code>cluste_name</code>.</p>
+</blockquote>
+<h2 id="6-discovery-engine-agent">6. Discovery Engine Agent<a class="headerlink" href="#6-discovery-engine-agent" title="Permanent link">&para;</a></h2>
+<p>Discovery Engine discovers the security posture for your workloads and auto-discovers the policy-set required to put the workload in least-permissive mode. The engine leverages the rich visibility provided by KubeArmor and Cilium to auto discover the systems and network security posture.</p>
+<p><strong>Installation Guide</strong></p>
+<ol>
+<li>To Install agent on the destination cluster.
+<div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/accuknox/discovery-engine/dev/deployments/k8s/deployment.yaml -n accuknox-agents
+</code></pre></div></li>
+<li>Set the env of policy-enforcement-agent.
+<div class="highlight"><pre><span></span><code>kubectl <span class="nb">set</span> env deploy/knoxautopolicy -n accuknox-agents <span class="nv">workspace_id</span><span class="o">=</span><span class="m">147</span> <span class="nv">cluster_name</span><span class="o">=</span>accuknox-e2e-01
+</code></pre></div><blockquote>
+<p>Note: <code>workspace_id</code> and <code>cluster_name</code> will be unique from user to user, replace your <code>workspace_id</code> and <code>cluster_name</code>.</p>
+</blockquote>
+</li>
+</ol>
                 
               
               
