@@ -4538,82 +4538,6 @@ bash: /usr/bin/apt-get: Permission denied
 <h2 id="4-get-recommended-policies">4. Get Recommended Policies<a class="headerlink" href="#4-get-recommended-policies" title="Permanent link">&para;</a></h2>
 <p>In the above <a href="#3-demo-scenario--use-cases">Demo Scenario</a>, we had to explicitly write KubeArmor policies. But with the new KubeArmor recommendation it is easy to get a set of security best practice policies tailored to your environment. </p>
 <details>
-  <summary> <b><i>karmor recommend --help</i></b> </summary>
-
-<div class="highlight"><pre><span></span><code>Recommend policies based on container image, k8s manifest or the actual runtime env
-
-Usage:
-  karmor recommend <span class="o">[</span>flags<span class="o">]</span>
-  karmor recommend <span class="o">[</span>command<span class="o">]</span>
-
-Available Commands:
-  update      Updates policy-template cache
-
-Flags:
-  -c, --config string      absolute path to image registry configuration file
-  -h, --help               <span class="nb">help</span> <span class="k">for</span> recommend
-  -i, --image strings      Container image list <span class="o">(</span>comma separated<span class="o">)</span>
-  -l, --labels strings     User defined labels <span class="k">for</span> policy <span class="o">(</span>comma separated<span class="o">)</span>
-  -n, --namespace string   User defined namespace value <span class="k">for</span> policies
-  -o, --outdir string      output folder to write policies <span class="o">(</span>default <span class="s2">&quot;out&quot;</span><span class="o">)</span>
-  -r, --report string      report file <span class="o">(</span>default <span class="s2">&quot;report.txt&quot;</span><span class="o">)</span>
-  -t, --tag strings        tags <span class="o">(</span>comma-separated<span class="o">)</span> to apply. Eg. PCI-DSS, MITRE
-
-Global Flags:
-      --context string      Name of the kubeconfig context to use
-      --kubeconfig string   Path to the kubeconfig file to use
-
-Use <span class="s2">&quot;karmor recommend [command] --help&quot;</span> <span class="k">for</span> more information about a command.
-</code></pre></div>
-</details>
-
-<p>The <code>karmor recommend update</code> fetches the latest release of policy-templates and saves them locally. These policies are later recommended to the user according to the identified os distribution and preconditions. </p>
-<p>It is a good practice to update the recommendation before running it.</p>
-<details>
-  <summary> <b><i>karmor recommend update</i></b> </summary>
-
-<div class="highlight"><pre><span></span><code>INFO<span class="o">[</span><span class="m">0008</span><span class="o">]</span> policy-templates updated                      Current <span class="nv">Version</span><span class="o">=</span>v0.1.4
-</code></pre></div>
-</details>
-
-<p>You can get recommendation for an image or your kubernetes deployments.</p>
-<p><code>karmor recommend</code> with <code>--namespace</code> flag will generate security policies for your active cluster if there is atleast one deployment in the namespace.</p>
-<details>
-  <summary> <b><i>karmor recommend --namespace wordpress-mysql</i></b> </summary>
-
-<div class="highlight"><pre><span></span><code>INFO<span class="o">[</span><span class="m">0005</span><span class="o">]</span> pulling image                                 <span class="nv">image</span><span class="o">=</span><span class="s2">&quot;mysql:5.6&quot;</span>
-<span class="m">5</span>.6: Pulling from library/mysql
-Digest: sha256:20575ecebe6216036d25dab5903808211f1e9ba63dc7825ac20cb975e34cfcae
-Status: Image is up to date <span class="k">for</span> mysql:5.6
-INFO<span class="o">[</span><span class="m">0012</span><span class="o">]</span> dumped image to tar                           <span class="nv">tar</span><span class="o">=</span>/tmp/karmor877338619/eCAIymyP.tar
-Distribution debian
-INFO<span class="o">[</span><span class="m">0013</span><span class="o">]</span> No runtime policy generated <span class="k">for</span> wordpress-mysql/mysql/mysql:5.6 
-created policy out/wordpress-mysql-mysql/mysql-5-6-cis-mysql-1-2.yaml ...
-created policy out/wordpress-mysql-mysql/mysql-5-6-audit-access-to-mysqldump.yaml ...
-created policy out/wordpress-mysql-mysql/mysql-5-6-maintenance-tool-access.yaml ...
-created policy out/wordpress-mysql-mysql/mysql-5-6-cert-access.yaml ...
-created policy out/wordpress-mysql-mysql/mysql-5-6-system-owner-discovery.yaml ...
-created policy out/wordpress-mysql-mysql/mysql-5-6-system-monitoring-deny-write-under-bin-directory.yaml ...
-created policy out/wordpress-mysql-mysql/mysql-5-6-least-functionality-execute-package-management-process-in-container.yaml ...
-INFO<span class="o">[</span><span class="m">0014</span><span class="o">]</span> pulling image                                 <span class="nv">image</span><span class="o">=</span><span class="s2">&quot;wordpress:4.8-apache&quot;</span>
-<span class="m">4</span>.8-apache: Pulling from library/wordpress
-Digest: sha256:6216f64ab88fc51d311e38c7f69ca3f9aaba621492b4f1fa93ddf63093768845
-Status: Image is up to date <span class="k">for</span> wordpress:4.8-apache
-INFO<span class="o">[</span><span class="m">0024</span><span class="o">]</span> dumped image to tar                           <span class="nv">tar</span><span class="o">=</span>/tmp/karmor615747835/DDgLodyj.tar
-Distribution debian
-INFO<span class="o">[</span><span class="m">0026</span><span class="o">]</span> No runtime policy generated <span class="k">for</span> wordpress-mysql/wordpress/wordpress:4.8-apache 
-created policy out/wordpress-mysql-wordpress/wordpress-4-8-apache-maintenance-tool-access.yaml ...
-created policy out/wordpress-mysql-wordpress/wordpress-4-8-apache-cert-access.yaml ...
-created policy out/wordpress-mysql-wordpress/wordpress-4-8-apache-system-owner-discovery.yaml ...
-created policy out/wordpress-mysql-wordpress/wordpress-4-8-apache-system-monitoring-deny-write-under-bin-directory.yaml ...
-created policy out/wordpress-mysql-wordpress/wordpress-4-8-apache-system-monitoring-write-under-dev-directory.yaml ...
-created policy out/wordpress-mysql-wordpress/wordpress-4-8-apache-least-functionality-execute-package-management-process-in-container.yaml ...
-output report <span class="k">in</span> out/report.txt ...
-</code></pre></div>
-</details>
-
-<p>The recommendation can be further filtered down using the flag <code>--labels</code>. With this the user can input an array of labels belonging to deployments which needs policy recommendation.</p>
-<details>
   <summary> <b><i>karmor recommend --namespace wordpress-mysql --labels app=wordpress</i></b> </summary>
 
 <div class="highlight"><pre><span></span><code>INFO<span class="o">[</span><span class="m">0000</span><span class="o">]</span> pulling image                                 <span class="nv">image</span><span class="o">=</span><span class="s2">&quot;wordpress:4.8-apache&quot;</span>
@@ -4633,103 +4557,59 @@ output report <span class="k">in</span> out/report.txt ...
 </code></pre></div>
 </details>
 
-<p>Policy recommendation can also be used on docker images using <code>karmor recommend</code>. The <code>--images</code> flag lets the user to get recommendation for any docker images.</p>
 <details>
-  <summary> <b><i>karmor recommend --image ubuntu:latest </i></b> </summary>
-
-<div class="highlight"><pre><span></span><code>INFO<span class="o">[</span><span class="m">0000</span><span class="o">]</span> pulling image                                 <span class="nv">image</span><span class="o">=</span><span class="s2">&quot;ubuntu:latest&quot;</span>
-latest: Pulling from library/ubuntu
-Digest: sha256:4b1d0c4a2d2aaf63b37111f34eb9fa89fa1bf53dd6e4ca954d47caebca4005c2
-Status: Image is up to date <span class="k">for</span> ubuntu:latest
-INFO<span class="o">[</span><span class="m">0010</span><span class="o">]</span> dumped image to tar                           <span class="nv">tar</span><span class="o">=</span>/tmp/karmor4157088184/DRHNcyic.tar
-Distribution ubuntu
-INFO<span class="o">[</span><span class="m">0011</span><span class="o">]</span> No runtime policy generated <span class="k">for</span> //ubuntu:latest 
-created policy out/ubuntu-latest/maintenance-tool-access.yaml ...
-created policy out/ubuntu-latest/system-owner-discovery.yaml ...
-created policy out/ubuntu-latest/system-monitoring-deny-write-under-bin-directory.yaml ...
-created policy out/ubuntu-latest/least-functionality-execute-package-management-process-in-container.yaml ...
-output report <span class="k">in</span> out/report.txt ...
+<summary>Using recommended policies</summary>
+<p>The recommended policy <code>xx-xx-cert-access.yaml</code> is a powerful policy which enables read access to trusted certificates but denied any form of write to it. This inturn enables the integrity of the file and denies malware/adware to have Adversary-in-the-Middle capability (Ref <a href="https://attack.mitre.org/techniques/T1553/">MITRE-T1553</a>).</p>
+<p><strong>Executing inside WordPress pod:</strong> Before applying policy
+<div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -it wordpress-xxxxxxxxx-xxxxx -n wordpress-mysql -- bash
+root@wordpress-cb9c668d4-zgczt:/var/www/html# <span class="nb">cd</span> /etc/ssl/
+root@wordpress-cb9c668d4-zgczt:/etc/ssl# <span class="nb">echo</span> <span class="s2">&quot;new private key&quot;</span> &gt; myssl.pem
+root@wordpress-cb9c668d4-zgczt:/etc/ssl# cat myssl.pem 
+new private key
+root@wordpress-cb9c668d4-zgczt:/etc/ssl#
+</code></pre></div></p>
+<p><img alt="Alt" src="../quick_start/images/before_rec.png" /></p>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span><span class="w"></span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorPolicy</span><span class="w"></span>
+<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress-wordpress-4-8-apache-cert-access</span><span class="w"></span>
+<span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress-mysql</span><span class="w"></span>
+<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
+<span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Block</span><span class="w"></span>
+<span class="nt">file</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">matchDirectories</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/ssl/</span><span class="w"></span>
+<span class="w">    </span><span class="nt">readOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">    </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/pki/</span><span class="w"></span>
+<span class="w">    </span><span class="nt">readOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">    </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/local/share/ca-certificates/</span><span class="w"></span>
+<span class="w">    </span><span class="nt">readOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">    </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="nt">message</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Credentials modification denied</span><span class="w"></span>
+<span class="nt">selector</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress</span><span class="w"></span>
+<span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span><span class="w"></span>
+<span class="nt">tags</span><span class="p">:</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MITRE</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MITRE_T1552_unsecured_credentials</span><span class="w"></span>
 </code></pre></div>
+<p><strong>Applying Policy:</strong> Applying above recommended policy to deployed <a href="#2-install-sample-application">application</a>
+<div class="highlight"><pre><span></span><code>kubectl apply -f out/wordpress-mysql-wordpress/wordpress-4-8-apache-cert-access.yaml
+</code></pre></div></p>
+<p><strong>Executing inside WordPress pod:</strong> After applying policy
+<div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -it wordpress-cb9c668d4-zgczt -n wordpress-mysql –- bash
+root@wordpress-cb9c668d4-zgczt:/var/www/html# <span class="nb">cd</span> /etc/ssl/
+root@wordpress-cb9c668d4-zgczt:/var/www/html# cat myssl.pem 
+new private key
+root@wordpress-cb9c668d4-zgczt:/var/www/html# <span class="nb">echo</span> <span class="s2">&quot;updated ssl key&quot;</span> &gt;&gt; myssl.pem 
+bash: /etc/ssl/myssl.pem: Permission denied
+root@wordpress-cb9c668d4-zgczt:/var/www/html#
+</code></pre></div></p>
+<p><img alt="Alt" src="../quick_start/images/after_rec.png" /> </p>
 </details>
-
-<p><code>karmor recommend</code> is also equipped with 2 reporting features: <strong><em>text and html</em></strong>. The text based reporting is enabled by default and creates a <code>report.txt</code> file under the default output directory <code>out</code>. Both the directory and report file can be customized using <code>--outdir</code> and <code>--report</code> flags respectively.</p>
-<details>
-  <summary> <b><i>karmor recommend --namespace wordpress-mysql --labels app=wordpress --outdir wordpress-out</i></b> </summary>
-
-<div class="highlight"><pre><span></span><code>INFO<span class="o">[</span><span class="m">0000</span><span class="o">]</span> pulling image                                 <span class="nv">image</span><span class="o">=</span><span class="s2">&quot;wordpress:4.8-apache&quot;</span>
-<span class="m">4</span>.8-apache: Pulling from library/wordpress
-Digest: sha256:6216f64ab88fc51d311e38c7f69ca3f9aaba621492b4f1fa93ddf63093768845
-Status: Image is up to date <span class="k">for</span> wordpress:4.8-apache
-INFO<span class="o">[</span><span class="m">0020</span><span class="o">]</span> dumped image to tar                           <span class="nv">tar</span><span class="o">=</span>/tmp/karmor1901668123/uFSqMXLS.tar
-Distribution debian
-INFO<span class="o">[</span><span class="m">0022</span><span class="o">]</span> No runtime policy generated <span class="k">for</span> wordpress-mysql/wordpress/wordpress:4.8-apache 
-created policy wordpress-out/wordpress-mysql-wordpress/wordpress-4-8-apache-maintenance-tool-access.yaml ...
-created policy wordpress-out/wordpress-mysql-wordpress/wordpress-4-8-apache-cert-access.yaml ...
-created policy wordpress-out/wordpress-mysql-wordpress/wordpress-4-8-apache-system-owner-discovery.yaml ...
-created policy wordpress-out/wordpress-mysql-wordpress/wordpress-4-8-apache-system-monitoring-deny-write-under-bin-directory.yaml ...
-created policy wordpress-out/wordpress-mysql-wordpress/wordpress-4-8-apache-system-monitoring-write-under-dev-directory.yaml ...
-created policy wordpress-out/wordpress-mysql-wordpress/wordpress-4-8-apache-least-functionality-execute-package-management-process-in-container.yaml ...
-output report <span class="k">in</span> wordpress-out/report.txt ...
-  Deployment              <span class="p">|</span> wordpress-mysql/wordpress                
-  Container               <span class="p">|</span> wordpress:4.8-apache                     
-  OS                      <span class="p">|</span> linux                                    
-  Arch                    <span class="p">|</span> amd64                                    
-  Distro                  <span class="p">|</span> debian                                   
-  Output Directory        <span class="p">|</span> wordpress-out/wordpress-mysql-wordpress  
-  policy-template version <span class="p">|</span> v0.1.4                                   
-+------------------------------------+--------------------------------+----------+--------+-----------------------------------------------------------------------+
-<span class="p">|</span>               POLICY               <span class="p">|</span>           SHORT DESC           <span class="p">|</span> SEVERITY <span class="p">|</span> ACTION <span class="p">|</span>                                 TAGS                                  <span class="p">|</span>
-+------------------------------------+--------------------------------+----------+--------+-----------------------------------------------------------------------+
-<span class="p">|</span> wordpress-4-8-apache-maintenance-  <span class="p">|</span> Restrict access to maintenance <span class="p">|</span> <span class="m">1</span>        <span class="p">|</span> Audit  <span class="p">|</span> PCI_DSS,MITRE                                                         <span class="p">|</span>
-<span class="p">|</span> tool-access.yaml                   <span class="p">|</span> tools <span class="o">(</span>apk, mii-tool, ...<span class="o">)</span>     <span class="p">|</span>          <span class="p">|</span>        <span class="p">|</span>                                                                       <span class="p">|</span>
-+------------------------------------+--------------------------------+----------+--------+-----------------------------------------------------------------------+
-<span class="p">|</span> wordpress-4-8-apache-cert-         <span class="p">|</span> Restrict access to trusted     <span class="p">|</span> <span class="m">1</span>        <span class="p">|</span> Block  <span class="p">|</span> MITRE,MITRE_T1552_unsecured_credentials                               <span class="p">|</span>
-<span class="p">|</span> access.yaml                        <span class="p">|</span> certificated bundles <span class="k">in</span> the OS <span class="p">|</span>          <span class="p">|</span>        <span class="p">|</span>                                                                       <span class="p">|</span>
-<span class="p">|</span>                                    <span class="p">|</span> image                          <span class="p">|</span>          <span class="p">|</span>        <span class="p">|</span>                                                                       <span class="p">|</span>
-+------------------------------------+--------------------------------+----------+--------+-----------------------------------------------------------------------+
-<span class="p">|</span> wordpress-4-8-apache-system-owner- <span class="p">|</span> System Information Discovery   <span class="p">|</span> <span class="m">3</span>        <span class="p">|</span> Block  <span class="p">|</span> MITRE,MITRE_T1082_system_information_discovery                        <span class="p">|</span>
-<span class="p">|</span> discovery.yaml                     <span class="p">|</span> - block system owner discovery <span class="p">|</span>          <span class="p">|</span>        <span class="p">|</span>                                                                       <span class="p">|</span>
-<span class="p">|</span>                                    <span class="p">|</span> commands                       <span class="p">|</span>          <span class="p">|</span>        <span class="p">|</span>                                                                       <span class="p">|</span>
-+------------------------------------+--------------------------------+----------+--------+-----------------------------------------------------------------------+
-<span class="p">|</span> wordpress-4-8-apache-system-       <span class="p">|</span> System and Information         <span class="p">|</span> <span class="m">5</span>        <span class="p">|</span> Block  <span class="p">|</span> NIST,MITRE,NIST_800-53_AU-2,NIST_800-53_SI-4,MITRE_T1036_masquerading <span class="p">|</span>
-<span class="p">|</span> monitoring-deny-write-under-bin-   <span class="p">|</span> Integrity - System Monitoring  <span class="p">|</span>          <span class="p">|</span>        <span class="p">|</span>                                                                       <span class="p">|</span>
-<span class="p">|</span> directory.yaml                     <span class="p">|</span> make directory under /bin/     <span class="p">|</span>          <span class="p">|</span>        <span class="p">|</span>                                                                       <span class="p">|</span>
-+------------------------------------+--------------------------------+----------+--------+-----------------------------------------------------------------------+
-<span class="p">|</span> wordpress-4-8-apache-system-       <span class="p">|</span> System and Information         <span class="p">|</span> <span class="m">5</span>        <span class="p">|</span> Audit  <span class="p">|</span> NIST,MITRE,NIST_800-53_AU-2,NIST_800-53_SI-4,MITRE_T1036_masquerading <span class="p">|</span>
-<span class="p">|</span> monitoring-write-under-dev-        <span class="p">|</span> Integrity - System Monitoring  <span class="p">|</span>          <span class="p">|</span>        <span class="p">|</span>                                                                       <span class="p">|</span>
-<span class="p">|</span> directory.yaml                     <span class="p">|</span> make files under /dev/         <span class="p">|</span>          <span class="p">|</span>        <span class="p">|</span>                                                                       <span class="p">|</span>
-+------------------------------------+--------------------------------+----------+--------+-----------------------------------------------------------------------+
-<span class="p">|</span> wordpress-4-8-apache-least-        <span class="p">|</span> System and Information         <span class="p">|</span> <span class="m">5</span>        <span class="p">|</span> Block  <span class="p">|</span> SI-4,NIST,NIST_800-53_CM-7<span class="o">(</span><span class="m">4</span><span class="o">)</span>,NIST_800-53_SI-4,process                <span class="p">|</span>
-<span class="p">|</span> functionality-execute-package-     <span class="p">|</span> Integrity - Least              <span class="p">|</span>          <span class="p">|</span>        <span class="p">|</span>                                                                       <span class="p">|</span>
-<span class="p">|</span> management-process-in-             <span class="p">|</span> Functionality deny execution   <span class="p">|</span>          <span class="p">|</span>        <span class="p">|</span>                                                                       <span class="p">|</span>
-<span class="p">|</span> container.yaml                     <span class="p">|</span> of package manager process <span class="k">in</span>  <span class="p">|</span>          <span class="p">|</span>        <span class="p">|</span>                                                                       <span class="p">|</span>
-<span class="p">|</span>                                    <span class="p">|</span> container                      <span class="p">|</span>          <span class="p">|</span>        <span class="p">|</span>                                                                       <span class="p">|</span>
-+------------------------------------+--------------------------------+----------+--------+-----------------------------------------------------------------------+
-</code></pre></div>
-</details>
-
-<p>The <code>html</code> reporting will generate an html page with the all the important information.</p>
-<details>
-  <summary> <b><i>karmor recommend --namespace wordpress-mysql --labels app=wordpress --outdir wordpress-out  --report wordpress.html</i></b> </summary>
-
-<div class="highlight"><pre><span></span><code>INFO<span class="o">[</span><span class="m">0000</span><span class="o">]</span> pulling image                                 <span class="nv">image</span><span class="o">=</span><span class="s2">&quot;wordpress:4.8-apache&quot;</span>
-<span class="m">4</span>.8-apache: Pulling from library/wordpress
-Digest: sha256:6216f64ab88fc51d311e38c7f69ca3f9aaba621492b4f1fa93ddf63093768845
-Status: Image is up to date <span class="k">for</span> wordpress:4.8-apache
-INFO<span class="o">[</span><span class="m">0015</span><span class="o">]</span> dumped image to tar                           <span class="nv">tar</span><span class="o">=</span>/tmp/karmor3128023835/TFNSLVYA.tar
-Distribution debian
-INFO<span class="o">[</span><span class="m">0017</span><span class="o">]</span> No runtime policy generated <span class="k">for</span> wordpress-mysql/wordpress/wordpress:4.8-apache 
-created policy wordpress-out/wordpress-mysql-wordpress/wordpress-4-8-apache-maintenance-tool-access.yaml ...
-created policy wordpress-out/wordpress-mysql-wordpress/wordpress-4-8-apache-cert-access.yaml ...
-created policy wordpress-out/wordpress-mysql-wordpress/wordpress-4-8-apache-system-owner-discovery.yaml ...
-created policy wordpress-out/wordpress-mysql-wordpress/wordpress-4-8-apache-system-monitoring-deny-write-under-bin-directory.yaml ...
-created policy wordpress-out/wordpress-mysql-wordpress/wordpress-4-8-apache-system-monitoring-write-under-dev-directory.yaml ...
-created policy wordpress-out/wordpress-mysql-wordpress/wordpress-4-8-apache-least-functionality-execute-package-management-process-in-container.yaml ...
-output report <span class="k">in</span> wordpress-out/wordpress.html ...
-</code></pre></div>
-</details>
-
-<p>The recommended policy <code>xx-xx-cert-access.yaml</code> is a powerful policy which enables read access to trusted certificates but denied any form of write to it. This inturn enables the integrity of the file and denies malware/adware to have Adversary-in-the-Middle capability (Ref <a href="https://attack.mitre.org/techniques/T1553/">MITRE-T1553</a>). </p>
 <h2 id="5-get-auto-discovered-policies">5. Get Auto-Discovered Policies<a class="headerlink" href="#5-get-auto-discovered-policies" title="Permanent link">&para;</a></h2>
 <p>In the above <a href="#3-demo-scenario--use-cases">Demo Scenario</a> <em>(last 3 use-cases)</em>, we had explicit <strong>Deny</strong> based policies. KubeArmor also supports <strong>Allow</strong> based policies i.e., allow only specific actions and audit/deny everything else. Also the allow-policies are auto-discovered by examining the workloads at runtime.</p>
 <p>To retrieve the auto discovered policies you can use:
