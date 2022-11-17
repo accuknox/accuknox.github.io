@@ -13,7 +13,7 @@
         <meta name="author" content="Asif Ali">
       
       
-        <link rel="canonical" href="https://accuknox.com/how-to/SplunkApp/AccuKnox-splunk-app-installation-configuration/">
+        <link rel="canonical" href="https://accuknox.com/how-to/SplunkApp/accuKnox-splunk-app-installation-configuration/">
       
       <link rel="icon" href="../../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-7.3.6">
@@ -4063,6 +4063,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#what-data-types-does-accuknox-exportintegrate-into-splunk" class="md-nav__link">
+    What data types does AccuKnox export/integrate into Splunk?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#forwarding-events-to-splunk-from-feeder" class="md-nav__link">
     Forwarding Events to Splunk from Feeder
   </a>
@@ -4083,16 +4090,56 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    
+  <a href="#from-saas-channel-integration" class="md-nav__link">
+    From SAAS, Channel Integration
   </a>
+  
+    <nav class="md-nav" aria-label="From SAAS, Channel Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#integration-of-splunk" class="md-nav__link">
+    Integration of Splunk:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-prerequisites" class="md-nav__link">
+    1. Prerequisites:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-steps-to-integrate" class="md-nav__link">
+    2. Steps to Integrate:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    
+  <a href="#managing-what-type-of-data-can-be-sent-to-splunk" class="md-nav__link">
+    Managing what type of data can be sent to Splunk?
   </a>
+  
+    <nav class="md-nav" aria-label="Managing what type of data can be sent to Splunk?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-create-a-new-trigger" class="md-nav__link">
+    How to create a new trigger?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -4194,6 +4241,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#what-data-types-does-accuknox-exportintegrate-into-splunk" class="md-nav__link">
+    What data types does AccuKnox export/integrate into Splunk?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#forwarding-events-to-splunk-from-feeder" class="md-nav__link">
     Forwarding Events to Splunk from Feeder
   </a>
@@ -4214,16 +4268,56 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    
+  <a href="#from-saas-channel-integration" class="md-nav__link">
+    From SAAS, Channel Integration
   </a>
+  
+    <nav class="md-nav" aria-label="From SAAS, Channel Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#integration-of-splunk" class="md-nav__link">
+    Integration of Splunk:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-prerequisites" class="md-nav__link">
+    1. Prerequisites:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-steps-to-integrate" class="md-nav__link">
+    2. Steps to Integrate:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    
+  <a href="#managing-what-type-of-data-can-be-sent-to-splunk" class="md-nav__link">
+    Managing what type of data can be sent to Splunk?
   </a>
+  
+    <nav class="md-nav" aria-label="Managing what type of data can be sent to Splunk?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-create-a-new-trigger" class="md-nav__link">
+    How to create a new trigger?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -4239,7 +4333,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/accuknox/accuknox-help/edit/main/docs_sample/how-to/SplunkApp/AccuKnox-splunk-app-installation-configuration.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/accuknox/accuknox-help/edit/main/docs_sample/how-to/SplunkApp/accuKnox-splunk-app-installation-configuration.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
                   </a>
                 
@@ -4251,13 +4345,13 @@
 Users can view the real-time alerts in form of logs and telemetries.</p>
 <p><strong><em>Important features</em></strong>
  - Dashboard to track the real time alerts genrated from K8s cluster.
- - Datamodels with pivots for easy access to data and visualization.
+ - Data models with pivots for easy access to data and visualization.
  - Filter out the Alerts based on defferent namespaces, pods, operations, severity, tags and the actions of policies.
  - Drilldown ability to see how the alerts genrated, what policy was violated and what was the result for the same.</p>
 <h2 id="installation"><strong>Installation</strong><a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
 <h4 id="prerequisites"><strong>Prerequisites :</strong><a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h4>
-<p><em>1. K8s Cluster with Accuknox agents installed, up and running fine. KubeArmor and Feeder Service are mandatory. The environment variable for the feeder is set for the K8s cluster in use.</em>
-<em>2. An active Splunk Deployment and Access to the same.</em></p>
+<p><em>1. K8s Cluster with AccuKnox agents installed, up and running fine. KubeArmor and Feeder Service are mandatory. The environment variable for the feeder is set for the K8s cluster in use.</em></p>
+<p><em>2. An active Splunk Deployment and Access to the same.</em></p>
 <blockquote>
 <p><em>To depoy Splunk on Kubernetes Cluster follow <a href="https://splunk.github.io/splunk-operator/">https://splunk.github.io/splunk-operator/</a></em>  <em>and for Linux follow <a href="https://docs.splunk.com/Documentation/Splunk/9.0.1/Installation/InstallonLinux">https://docs.splunk.com/Documentation/Splunk/9.0.1/Installation/InstallonLinux</a></em></p>
 </blockquote>
@@ -4266,14 +4360,14 @@ Users can view the real-time alerts in form of logs and telemetries.</p>
 <strong><em>User can install the App using three different ways.</em></strong></p>
 <h2 id="option-1-install-from-file">Option 1: Install from File<a class="headerlink" href="#option-1-install-from-file" title="Permanent link">&para;</a></h2>
 <p><strong>This App can be installed by Uploading the file to the Splunk UI.</strong>
-  1. Download the AccuKnox Splunk App file, by typing the following command,This file can be downloaded anywhere from where the user can upload the file to Splunk UI.
+  1. Download the AccuKnox Splunk App file, by typing the following command. This file can be downloaded anywhere from where the user can upload the file to Splunk UI.
  <div class="highlight"><pre><span></span><code>git clone https://github.com/accuknox/splunk.git AccuKnox
 tar -czvf AccuKnox.tar.gz AccuKnox
 </code></pre></div>
 2. Log in to your <strong>Splunk Deployment.</strong>
     <img alt="" src="../Images/Login-Splunk.png" />
-3. Click on the gear <img alt=":gear:" src="https://pf-emoji-service--cdn.us-east-1.prod.public.atl-paas.net/standard/caa27a19-fc09-4452-b2b4-a301552fd69c/64x64/2699.png" style="height:15px;width:15px" /> icon next to <strong>Apps.</strong> 
-   <img alt="" src="../Images/manageapps.png" />
+3. Click on the gear <img alt=":gear:" src="https://pf-emoji-service--cdn.us-east-1.prod.public.atl-paas.net/standard/caa27a19-fc09-4452-b2b4-a301552fd69c/64x64/2699.png" style="height:15px;width:15px" /> icon next to <strong>Apps.</strong><br />
+<img alt="" src="../Images/manageapps.png" />
 4. This will navigate you to the <strong>Apps Dashboard.</strong> On the top right, click on <strong>Install app from file.</strong>
    <img alt="" src="../Images/installappfromfile.png" />
 5. This will navigate to <strong>Upload App</strong> Screen. Select <strong>AccuKnox.tar.gz</strong> file downloaded in the <em>first step</em>, and upload. In case you are updating the app and it’s already installed, mark the check box for Upgrade App.
@@ -4286,7 +4380,7 @@ tar -czvf AccuKnox.tar.gz AccuKnox
 <p><img alt="" src="../Images/Dashboard.png" />
 9. Click on the <strong>AccuKnox App</strong> to launch the App. This will navigate you to the App dashboard.</p>
 <p><img alt="" src="../Images/SplunkDashboard.png" /></p>
-<p><em>*Note:</em></p>
+<p><em><em>Note:</em></em></p>
 <ol>
 <li>
 <p><em>If Dashboards shows no data, you need to configure the HEC on Splunk and Forward the data first, check below how to configure and <a href="https://docs.splunk.com/Documentation/Splunk/9.0.1/Data/UsetheHTTPEventCollector">create HEC</a> and <a href=""> forward the data</a>.</em></p>
@@ -4311,11 +4405,24 @@ tar -czvf AccuKnox.tar.gz AccuKnox
 <p>From the directory <code>$SPLUNK_HOME/etc/apps/</code>, type the following command:
 <div class="highlight"><pre><span></span><code>git clone https://github.com/accuknox/splunk.git AccuKnox
 </code></pre></div></p>
+<h2 id="what-data-types-does-accuknox-exportintegrate-into-splunk"><strong>What data types does AccuKnox export/integrate into Splunk?</strong><a class="headerlink" href="#what-data-types-does-accuknox-exportintegrate-into-splunk" title="Permanent link">&para;</a></h2>
+<ul>
+<li>KubeArmor Alert</li>
+<li>KubeArmor Container Logs</li>
+<li>Cilium Alerts</li>
+<li>Cilium Logs</li>
+</ul>
+<p><strong>Managing data sent to Splunk, What can be sent?</strong></p>
+<p>AccuKnox can forward the data to Splunk in two ways:</p>
+<ol>
+<li>From feeder service running on client cluster </li>
+<li>From SAAS platform</li>
+</ol>
 <h2 id="forwarding-events-to-splunk-from-feeder"><strong>Forwarding Events to Splunk from Feeder</strong><a class="headerlink" href="#forwarding-events-to-splunk-from-feeder" title="Permanent link">&para;</a></h2>
 <p><strong>Prerequisites:</strong>
-1.  <em>Feeder Service and KubeArmor are Installed and running on the user’s K8s Cluster.</em></p>
+1.  Feeder Service and KubeArmor are Installed and running on the user’s K8s Cluster.</p>
 <ol>
-<li>A sample application can be used to generate the alerts, check <a href="https://help.accuknox.com/open-source/quick_start_guide/#2-install-sample-application" title="https://help.accuknox.com/open-source/quick_start_guide/#2-install-sample-application">how to deploy a sample application</a>, and generate alerts.</li>
+<li>A sample application can be used to generate the alerts, check <a href="../../../open-source/quick_start_guide/#2">how to deploy a sample application</a>, and generate alerts.</li>
 </ol>
 <h4 id="configuring-feeder-for-the-first-time-to-forward-the-events"><strong>Configuring feeder for the first time to forward the events:</strong><a class="headerlink" href="#configuring-feeder-for-the-first-time-to-forward-the-events" title="Permanent link">&para;</a></h4>
 <p>1 . Assuming the user is inside their K8s Cluster, type the following command to edit the feeder deployment.
@@ -4331,7 +4438,7 @@ tar -czvf AccuKnox.tar.gz AccuKnox
 <p><em><strong>name: SPLUNK_FEEDER_URL</strong></em></p>
 <p><em><strong>value:</strong></em>  <code>https://&lt;splunk-host&gt;</code></p>
 <blockquote>
-<p>change value to the <code>HEC URL</code> created, check how to create HEC.</p>
+<p>change value to the <code>HEC URL</code> created.</p>
 </blockquote>
 <p><em><strong>name: SPLUNK_FEEDER_TOKEN</strong></em></p>
 <p><strong>value:</strong>  <code>" x000x0x0x-0xxx-0xxx-xxxx-xxxxx00000"</code></p>
@@ -4355,15 +4462,99 @@ _
 <p>change the value as to <code>main</code></p>
 </blockquote>
 <p><strong>Hit <code>ctrl + c</code> once editing is done, and enter <code>:wq</code> and hit <code>enter</code></strong> <strong>to save the configuration.</strong></p>
-<h2 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><em>Additionaly you can Enable and Disable the event forwarding by Enabling/Disabling Splunk (Runtime):</em></p>
 </blockquote>
 <div class="highlight"><pre><span></span><code>kubectl <span class="nb">set</span> env deploy/feeder-service <span class="nv">SPLUNK_FEEDER_ENABLED</span><span class="o">=</span><span class="s2">&quot;true&quot;</span> -n accuknox-agents
 </code></pre></div>
 <p><em>By enabling the flag to true (as above), the events will be pushed to Splunk. And disabling it to <code>false</code> will stop pushing logs.</em></p>
-<p><strong><em>Note*</em></strong>: Likewise other configuration parameters can be updated in Runtime.*</p>
-<h2 id="_2"><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><strong><em>Note</em></strong>: <em>Likewise other configuration parameters can be updated in Runtime.</em></p>
+<h2 id="from-saas-channel-integration">From SAAS, Channel Integration<a class="headerlink" href="#from-saas-channel-integration" title="Permanent link">&para;</a></h2>
+<h3 id="integration-of-splunk">Integration of Splunk:<a class="headerlink" href="#integration-of-splunk" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../Images/channel-integration.png" /></p>
+<h3 id="1-prerequisites">1. Prerequisites:<a class="headerlink" href="#1-prerequisites" title="Permanent link">&para;</a></h3>
+<p>Set up Splunk HTTP Event Collector (HEC) to view alert notifications from AccuKnox in Splunk. Splunk HEC lets you send data and application events to a Splunk deployment over the HTTP and Secure HTTP (HTTPS) protocols.</p>
+<ul>
+<li>
+<p>To set up HEC, use instructions in <a href="https://docs.splunk.com/Documentation/Splunk/latest/Data/UsetheHTTPEventCollector">Splunk documentation</a>. For source type,_json is the default; if you specify a custom string on AccuKnox, that value will overwrite anything you set here.</p>
+</li>
+<li>
+<p>Select Settings &gt; Data inputs &gt; HTTP Event Collector and make sure you see HEC added in the list and that the status shows that it is Enabled .</p>
+</li>
+</ul>
+<h3 id="2-steps-to-integrate">2. Steps to Integrate:<a class="headerlink" href="#2-steps-to-integrate" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Go to <a href="https://app.accuknox.com/channel-integrations">Channel Integration</a>.</p>
+</li>
+<li>
+<p>Click integrate now on Splunk.</p>
+</li>
+<li>
+<p>Enter the following details to configure Splunk.</p>
+</li>
+<li>
+<p>Select the Splunk App : From the dropdown, Select Splunk Enterprise.</p>
+<ul>
+<li>
+<p><strong>Integration Name</strong>: Enter the name for the integration. You can set any name. e.g., Test Splunk</p>
+</li>
+<li>
+<p><strong>Splunk HTTP event collector URL</strong>: Enter your Splunk HEC URL generated earlier. e.g  <a href="https://splunk-xxxxxxxxxx.com/services/collector">https://splunk-xxxxxxxxxx.com/services/collector</a></p>
+</li>
+<li>
+<p><strong>Index</strong>: Enter your Splunk Index, once created while creating HEC. e.g  main</p>
+</li>
+<li>
+<p><strong>Token</strong>: Enter your Splunk Token, generated while creating HEC URL. e.g  <code>x000x0x0x-0xxx-0xxx-xxxx-xxxxx00000</code></p>
+</li>
+<li>
+<p><strong>Source</strong>: Enter the source as <code>http:kafka</code></p>
+</li>
+<li>
+<p><strong>Source Type</strong>: Enter your Source Type here, this can be anything and the same will be attach to the event type forwarded to splunk. e.g  <code>_json</code></p>
+</li>
+<li>
+<p>Click <strong>Test</strong> to check the new functionality, You will receive the test message on configured slack channel. e.g <code>Test Message host = xxxxxx-deployment-xxxxxx-xxx00 source = http:kafka sourcetype = trials</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Click Save to save the Integration. You can now configure <a href="../../../logs_summary/triggers/">Alert Triggers</a> for Slack Notifications.</p>
+</li>
+</ul>
+<p><strong>How will AccuKnox manage the Splunk data—what will be sent &amp; what will not be sent?</strong></p>
+<h2 id="managing-what-type-of-data-can-be-sent-to-splunk"><strong>Managing what type of data can be sent to Splunk?</strong><a class="headerlink" href="#managing-what-type-of-data-can-be-sent-to-splunk" title="Permanent link">&para;</a></h2>
+<p>From AccuKnox we can manage the type of data forwardered to integration using triggers. </p>
+<h3 id="how-to-create-a-new-trigger"><strong>How to create a new trigger?</strong><a class="headerlink" href="#how-to-create-a-new-trigger" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>After choosing specific log filter from the Logs Screen, click on <code>Create Trigger</code> button. You can either click elements directly from the log events list, search for elements directly in the filter, or use Search Filters to choose a specific log filter</p>
+</li>
+<li>
+<p>Configure the required options:</p>
+<p><img alt="" src="../Images/create-trigger.png" /></p>
+</li>
+<li>
+<p><strong>Name:</strong> Define an alert trigger name.</p>
+</li>
+<li>
+<p><strong>When to initiate this trigger:</strong> Set the frequency of the trigger. You have four options to select, (1) Runtime as it happens (2) Once a day (3) Once a week (4) Once a month</p>
+</li>
+<li>
+<p><strong>Define Threat Level:</strong> Define the threat level for the trigger. You have three options (1) High (2) Medium (3) Low</p>
+</li>
+<li>
+<p><strong>Selected Filter:</strong> The chosen log filter from step 1 is populated here. You can shift to predefined filters from here also.</p>
+</li>
+<li>
+<p><strong>Notification channel:</strong> Choose the notification channel that should receive the alerts.</p>
+</li>
+</ol>
+<p>Note: Before selecting the notification channel, you should complete the  channel integration for this channel. Review the Channel Integration for more context.        <a href="../../../getting-started/slack-integration/">Channel Integration Guide</a></p>
+<ol>
+<li>Click <code>Save</code> button to store the trigger in database.</li>
+</ol>
                 
               
               
