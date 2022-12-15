@@ -294,7 +294,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../how-to/protect-mysql-application/" class="md-tabs__link">
+      <a href="../../how-to/SplunkApp/accuKnox-splunk-app-installation-configuration/" class="md-tabs__link">
         How To Guides
       </a>
     </li>
@@ -4021,6 +4021,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../how-to/SplunkApp/accuKnox-splunk-app-installation-configuration/" class="md-nav__link">
+        How to Install AccuKnox Splunk App and forward the events
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../how-to/protect-mysql-application/" class="md-nav__link">
         How to protect MySQL application with AccuKnox
       </a>
@@ -4065,20 +4079,6 @@
     <li class="md-nav__item">
       <a href="../../how-to/ensure-policies-will-not-break-application/" class="md-nav__link">
         How to ensure enforcing policies will not break my application
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../how-to/SplunkApp/accuKnox-splunk-app-installation-configuration/" class="md-nav__link">
-        How to Install AccuKnox Splunk App and forward the events
       </a>
     </li>
   
@@ -4352,13 +4352,13 @@ kubectl apply -f https://raw.githubusercontent.com/kubearmor/discovery-engine/de
 </code></pre></div>
 <details>
 <summary>Output from <em>kubectl get pods -A</em></summary>
-<div class="highlight"><pre><span></span><code>NAMESPACE     NAME                                                 READY   STATUS    RESTARTS   AGE
-explorer      knoxautopolicy-7d77f658fb-m2g8q                      <span class="m">1</span>/1     Running   <span class="m">0</span>          3m58s
-kube-system   kubearmor-78tnh                                      <span class="m">1</span>/1     Running   <span class="m">0</span>          4m7s
-kube-system   kubearmor-annotation-manager-797c848b9c-vxq8c        <span class="m">2</span>/2     Running   <span class="m">0</span>          4m
-kube-system   kubearmor-host-policy-manager-766447b4d7-fr5m4       <span class="m">2</span>/2     Running   <span class="m">0</span>          4m6s
-kube-system   kubearmor-policy-manager-54ffc4dc56-8szmn            <span class="m">2</span>/2     Running   <span class="m">0</span>          4m6s
-kube-system   kubearmor-relay-645667c695-bfwcn                     <span class="m">1</span>/1     Running   <span class="m">0</span>          4m7s
+<div class="highlight"><pre><span></span><code>NAMESPACE         NAME                                                 READY   STATUS    RESTARTS   AGE
+accuknox-agents   discovery-engine-7b6ddbd7d7-swk7j                    <span class="m">1</span>/1     Running   <span class="m">0</span>          3m58s
+kube-system       kubearmor-78tnh                                      <span class="m">1</span>/1     Running   <span class="m">0</span>          4m7s
+kube-system       kubearmor-annotation-manager-797c848b9c-vxq8c        <span class="m">2</span>/2     Running   <span class="m">0</span>          4m
+kube-system       kubearmor-host-policy-manager-766447b4d7-fr5m4       <span class="m">2</span>/2     Running   <span class="m">0</span>          4m6s
+kube-system       kubearmor-policy-manager-54ffc4dc56-8szmn            <span class="m">2</span>/2     Running   <span class="m">0</span>          4m6s
+kube-system       kubearmor-relay-645667c695-bfwcn                     <span class="m">1</span>/1     Running   <span class="m">0</span>          4m7s
 ...
 </code></pre></div>
 <p>We have following installed:</p>
@@ -4652,11 +4652,13 @@ This discovers the policies for a workload in <code>wordpress-mysql</code> names
 </details>
 <h2 id="6-uninstall">6. Uninstall<a class="headerlink" href="#6-uninstall" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>karmor uninstall
-kubectl delete ns explorer
+
+<span class="c1"># If there is no other workloads deployed in accuknox-agents namesapce apart from DE, this can be removed</span>
+kubectl delete ns accuknox-agents
 </code></pre></div>
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <ol>
-<li><a href="../integration/">Elastic and Splunk Integration Guide</a></li>
+<li><a href="../../how-to/SplunkApp/accuKnox-splunk-app-installation-configuration/">AccuKnox Splunk App for Compliance and K8s Events</a></li>
 <li><a href="https://github.com/kubearmor/KubeArmor/blob/main/getting-started/support_matrix.md">KubeArmor support matrix</a></li>
 <li><a href="https://github.com/kubearmor/kubearmor-prometheus-exporter">Integrating Kubearmor with Prometheus and Grafana</a></li>
 </ol>
