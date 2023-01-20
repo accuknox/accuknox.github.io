@@ -150,46 +150,6 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
       <div class="md-header__source">
         
@@ -3741,6 +3701,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_11_4_1">
@@ -3833,6 +3795,20 @@
     <li class="md-nav__item">
       <a href="../../../getting-started/jira-integration/" class="md-nav__link">
         Jira
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting-started/rsyslog-integration/" class="md-nav__link">
+        RSyslog
       </a>
     </li>
   
@@ -4128,62 +4104,62 @@
 <p>This user journey guides you to install and verify the compatibility of Kuberarmor on Ubuntu 18.04 with 5.4 Kernel Version by applying policies on VM workloads.</p>
 <h2 id="step-1-install-kubearmor-on-vm"><strong>Step 1: Install Kubearmor on VM</strong><a class="headerlink" href="#step-1-install-kubearmor-on-vm" title="Permanent link">&para;</a></h2>
 <p><strong>Install pre-requisites:</strong></p>
-<div class="highlight"><pre><span></span><code>sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4052245BD4284CDD
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-key<span class="w"> </span>adv<span class="w"> </span>--keyserver<span class="w"> </span>keyserver.ubuntu.com<span class="w"> </span>--recv-keys<span class="w"> </span>4052245BD4284CDD
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s2">&quot;deb https://repo.iovisor.org/apt/</span><span class="k">$(</span>lsb_release -cs<span class="k">)</span><span class="s2"> </span><span class="k">$(</span>lsb_release -cs<span class="k">)</span><span class="s2"> main&quot;</span> <span class="p">|</span> sudo tee /etc/apt/sources.list.d/iovisor.list
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;deb https://repo.iovisor.org/apt/</span><span class="k">$(</span>lsb_release<span class="w"> </span>-cs<span class="k">)</span><span class="s2"> </span><span class="k">$(</span>lsb_release<span class="w"> </span>-cs<span class="k">)</span><span class="s2"> main&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/sources.list.d/iovisor.list
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo apt-get update
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo apt-get install bcc-tools libbcc-examples linux-headers-<span class="k">$(</span>uname -r<span class="k">)</span>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>bcc-tools<span class="w"> </span>libbcc-examples<span class="w"> </span>linux-headers-<span class="k">$(</span>uname<span class="w"> </span>-r<span class="k">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo apt install bpfcc-tools linux-headers-<span class="k">$(</span>uname -r<span class="k">)</span>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>bpfcc-tools<span class="w"> </span>linux-headers-<span class="k">$(</span>uname<span class="w"> </span>-r<span class="k">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo apt-get install linux-headers-generic
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>linux-headers-generic
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo apt --fix-broken install
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>--fix-broken<span class="w"> </span>install
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo apt-get update
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
 </code></pre></div>
 <p><a href="https://github.com/kubearmor/KubeArmor/releases">Download &amp; Install the Latest release of KubeArmor</a></p>
-<div class="highlight"><pre><span></span><code>wget https://github.com/kubearmor/KubeArmor/releases/download/v0.3.1/kubearmor_0.3.1_linux-amd64.deb <span class="o">&amp;&amp;</span> sudo dpkg -i kubearmor_0.3.1_linux-amd64.deb
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://github.com/kubearmor/KubeArmor/releases/download/v0.3.1/kubearmor_0.3.1_linux-amd64.deb<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>dpkg<span class="w"> </span>-i<span class="w"> </span>kubearmor_0.3.1_linux-amd64.deb
 </code></pre></div>
 <p><strong>Start and Check the status of Kubearmor:</strong></p>
-<div class="highlight"><pre><span></span><code>sudo systemctl start kubearmor
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>kubearmor
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo systemctl <span class="nb">enable</span> kubearmor
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>kubearmor
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo systemctl status kubearmor
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>kubearmor
 </code></pre></div>
 <p><img alt="Alt" src="../../ubuntu18.04/images/19.png" /></p>
 <h2 id="step-2-apply-and-verify-kubearmor-system-policy"><strong>Step 2: Apply and Verify KubeArmor system policy</strong><a class="headerlink" href="#step-2-apply-and-verify-kubearmor-system-policy" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>vim sleepdenypolicy.yaml
+<div class="highlight"><pre><span></span><code>vim<span class="w"> </span>sleepdenypolicy.yaml
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorHostPolicy</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">hsp-kubearmor-dev-proc-path-block</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">process</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bin/sleep</span><span class="w"> </span><span class="c1"># try sleep 1</span><span class="w"></span>
-<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">Block</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorHostPolicy</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">hsp-kubearmor-dev-proc-path-block</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">process</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bin/sleep</span><span class="w"> </span><span class="c1"># try sleep 1</span>
+<span class="w">  </span><span class="nt">action</span><span class="p">:</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">Block</span>
 </code></pre></div>
 <p><strong>Run this command to apply the policy:</strong></p>
-<div class="highlight"><pre><span></span><code>karmor vm --kvms policy add sleepdenypolicy.yaml
+<div class="highlight"><pre><span></span><code>karmor<span class="w"> </span>vm<span class="w"> </span>--kvms<span class="w"> </span>policy<span class="w"> </span>add<span class="w"> </span>sleepdenypolicy.yaml
 </code></pre></div>
 <p><img alt="Alt" src="../../ubuntu18.04/images/20.png" /></p>
 <p><strong>Note:</strong> With the above mentioned policy enforced in master VM, if a user tries to access sleep command, user will see permission denied error and karmor log will show the alert log for blocking the file access.</p>
 <h2 id="step-3-policy-violation"><strong>Step 3: Policy Violation</strong><a class="headerlink" href="#step-3-policy-violation" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>sleep <span class="m">2</span>
+<div class="highlight"><pre><span></span><code>sleep<span class="w"> </span><span class="m">2</span>
 </code></pre></div>
 <p><img alt="Alt" src="../../ubuntu18.04/images/21.png" /></p>
 <p><strong>Verifying policy Violation logs:</strong></p>
-<div class="highlight"><pre><span></span><code>karmor log
+<div class="highlight"><pre><span></span><code>karmor<span class="w"> </span>log
 </code></pre></div>
 <p><img alt="Alt" src="../../ubuntu18.04/images/222.png" /></p>
 <p><strong>Deleting the applied policy:</strong> </p>
-<div class="highlight"><pre><span></span><code>karmor vm --kvms policy delete sleepdenypolicy.yaml
+<div class="highlight"><pre><span></span><code>karmor<span class="w"> </span>vm<span class="w"> </span>--kvms<span class="w"> </span>policy<span class="w"> </span>delete<span class="w"> </span>sleepdenypolicy.yaml
 </code></pre></div>
 <p><img alt="Alt" src="../../ubuntu18.04/images/223.png" /></p>
                 

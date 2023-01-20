@@ -150,46 +150,6 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
       <div class="md-header__source">
         
@@ -3672,6 +3632,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_11_4_1">
@@ -3764,6 +3726,20 @@
     <li class="md-nav__item">
       <a href="../../getting-started/jira-integration/" class="md-nav__link">
         Jira
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/rsyslog-integration/" class="md-nav__link">
+        RSyslog
       </a>
     </li>
   
@@ -4269,206 +4245,206 @@
 <p><b>For more reference:</b> <a href="https://helm.sh/docs/intro/install/">Click here..</a></p>
 <hr />
 <h3 id="add-accuknox-repository-to-install-core-components-helm-package">Add accuknox repository to install Core Components helm package:<a class="headerlink" href="#add-accuknox-repository-to-install-core-components-helm-package" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>helm repo add accuknox-onprem-services https://USERNAME:PASSWORD@onprem.accuknox.com/repository/accuknox-onprem-services
-helm repo update
-helm search repo accuknox-onprem-services
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>repo<span class="w"> </span>add<span class="w"> </span>accuknox-onprem-services<span class="w"> </span>https://USERNAME:PASSWORD@onprem.accuknox.com/repository/accuknox-onprem-services
+helm<span class="w"> </span>repo<span class="w"> </span>update
+helm<span class="w"> </span>search<span class="w"> </span>repo<span class="w"> </span>accuknox-onprem-services
 </code></pre></div>
 <p><b>Follow the below order to install onprem-services on k8s cluster</b></p>
 <h2 id="keycloak">Keycloak<a class="headerlink" href="#keycloak" title="Permanent link">&para;</a></h2>
 <p>Step 1 : </p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-user-mgmt
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-user-mgmt
 </code></pre></div>
 <p>Step 2: </p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-keycloak accuknox-onprem-services/keycloak -n accuknox-user-mgmt
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-keycloak<span class="w"> </span>accuknox-onprem-services/keycloak<span class="w"> </span>-n<span class="w"> </span>accuknox-user-mgmt
 </code></pre></div>
 <h2 id="usermanagement">Usermanagement<a class="headerlink" href="#usermanagement" title="Permanent link">&para;</a></h2>
 <p>helm upgrade --install accuknox-user-mgmt-service accuknox-onprem-services/user-management-service -n accuknox-user-mgmt</p>
 <h2 id="agents-auth-service">Agents-Auth-Service<a class="headerlink" href="#agents-auth-service" title="Permanent link">&para;</a></h2>
 <p>Step 1 :</p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-agents-auth-service
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-agents-auth-service
 </code></pre></div>
 <p>Step 2 :</p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-agents-auth-service  accuknox-onprem-services/agents-auth-service-charts -n accuknox-agents-auth-service
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-agents-auth-service<span class="w">  </span>accuknox-onprem-services/agents-auth-service-charts<span class="w"> </span>-n<span class="w"> </span>accuknox-agents-auth-service
 </code></pre></div>
 <h2 id="anomaly-detection-publisher-core">Anomaly-detection-publisher-core<a class="headerlink" href="#anomaly-detection-publisher-core" title="Permanent link">&para;</a></h2>
 <p>Step 1 : </p>
-<p><div class="highlight"><pre><span></span><code>kubectl create ns accuknox-ad-core
+<p><div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-ad-core
 </code></pre></div>
 Step 2 :</p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-ad-core accuknox-onprem-services/anomaly-detection-publisher-core-chart -n accuknox-ad-core
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-ad-core<span class="w"> </span>accuknox-onprem-services/anomaly-detection-publisher-core-chart<span class="w"> </span>-n<span class="w"> </span>accuknox-ad-core
 </code></pre></div>
 <h2 id="cluster-management-service">Cluster-management-service<a class="headerlink" href="#cluster-management-service" title="Permanent link">&para;</a></h2>
 <p>Step 1 : </p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-cluster-mgmt
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-cluster-mgmt
 </code></pre></div>
 <p>Step 2 :</p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-cluster-mgmt accuknox-onprem-services/cluster-management-service-chart -n accuknox-cluster-mgmt
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-cluster-mgmt<span class="w"> </span>accuknox-onprem-services/cluster-management-service-chart<span class="w"> </span>-n<span class="w"> </span>accuknox-cluster-mgmt
 </code></pre></div>
 <h2 id="anomaly-detection-management">Anomaly-detection-management<a class="headerlink" href="#anomaly-detection-management" title="Permanent link">&para;</a></h2>
 <p>Step 1 :</p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-ad-mgmt
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-ad-mgmt
 </code></pre></div>
 <p>Step 2 :  </p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-ad-mgmt accuknox-onprem-services/anomaly-detection-mgmt-chart -n accuknox-ad-mgmt
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-ad-mgmt<span class="w"> </span>accuknox-onprem-services/anomaly-detection-mgmt-chart<span class="w"> </span>-n<span class="w"> </span>accuknox-ad-mgmt
 </code></pre></div>
 <h2 id="data-protection-mgmt">Data-protection-mgmt<a class="headerlink" href="#data-protection-mgmt" title="Permanent link">&para;</a></h2>
 <p>Step 1 : </p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-dp-mgmt
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-dp-mgmt
 </code></pre></div>
 <p>Step 2 : </p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-dp-mgmt accuknox-onprem-services/data-protection-mgmt -n accuknox-dp-mgmt
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-dp-mgmt<span class="w"> </span>accuknox-onprem-services/data-protection-mgmt<span class="w"> </span>-n<span class="w"> </span>accuknox-dp-mgmt
 </code></pre></div>
 <h2 id="data-protection-core">Data-protection-core<a class="headerlink" href="#data-protection-core" title="Permanent link">&para;</a></h2>
 <p>Step 1 : </p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-dp-core
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-dp-core
 </code></pre></div>
 <p>Step 2 :</p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-dp-core accuknox-onprem-services/data-protection-core -n accuknox-dp-core
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-dp-core<span class="w"> </span>accuknox-onprem-services/data-protection-core<span class="w"> </span>-n<span class="w"> </span>accuknox-dp-core
 </code></pre></div>
 <h2 id="data-protection-consumer">Data-protection-consumer<a class="headerlink" href="#data-protection-consumer" title="Permanent link">&para;</a></h2>
 <p>Step 1 :</p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-data-protection-consumer accuknox-onprem-services/data-protection-consumer -n accuknox-dp-core
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-data-protection-consumer<span class="w"> </span>accuknox-onprem-services/data-protection-consumer<span class="w"> </span>-n<span class="w"> </span>accuknox-dp-core
 </code></pre></div>
 <h2 id="s3-audit-report-consumer">S3-audit-report-consumer<a class="headerlink" href="#s3-audit-report-consumer" title="Permanent link">&para;</a></h2>
 <p>Step 1 : </p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-s3-audit-reporter-consumer
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-s3-audit-reporter-consumer
 </code></pre></div>
 <p>Step 2 :</p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-s3-audit-reporter-consumer accuknox-onprem-services/s3-audit-reporter-consumer-charts -n accuknox-s3-audit-reporter-consumer
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-s3-audit-reporter-consumer<span class="w"> </span>accuknox-onprem-services/s3-audit-reporter-consumer-charts<span class="w"> </span>-n<span class="w"> </span>accuknox-s3-audit-reporter-consumer
 </code></pre></div>
 <h2 id="dp-db-audit-log-processor">Dp-db-audit-log-processor<a class="headerlink" href="#dp-db-audit-log-processor" title="Permanent link">&para;</a></h2>
 <p>Step 1 : </p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-dp-db-audit-log-processor accuknox-onprem-services/dp-db-audit-log-processor-chart -n accuknox-dp-core
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-dp-db-audit-log-processor<span class="w"> </span>accuknox-onprem-services/dp-db-audit-log-processor-chart<span class="w"> </span>-n<span class="w"> </span>accuknox-dp-core
 </code></pre></div>
 <h2 id="data-classification-pipeline-consumer">Data-classification-pipeline-consumer<a class="headerlink" href="#data-classification-pipeline-consumer" title="Permanent link">&para;</a></h2>
 <p>Step 1 :</p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-data-classification-pipeline-consumer
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-data-classification-pipeline-consumer
 </code></pre></div>
 <p>Step 2 : </p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-data-classification-pipeline-consumer accuknox-onprem-services/data-classification-pipeline-consumer-chart -n accuknox-data-classification-pipeline-consumer
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-data-classification-pipeline-consumer<span class="w"> </span>accuknox-onprem-services/data-classification-pipeline-consumer-chart<span class="w"> </span>-n<span class="w"> </span>accuknox-data-classification-pipeline-consumer
 </code></pre></div>
 <h2 id="agent-data-collector">Agent-data-collector<a class="headerlink" href="#agent-data-collector" title="Permanent link">&para;</a></h2>
 <p>Step 1 :</p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-adc
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-adc
 </code></pre></div>
 <p>Step 2 : </p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-adc accuknox-onprem-services/agent-data-collector-charts -n accuknox-adc
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-adc<span class="w"> </span>accuknox-onprem-services/agent-data-collector-charts<span class="w"> </span>-n<span class="w"> </span>accuknox-adc
 </code></pre></div>
 <h2 id="cluster-onboarding-service">Cluster-onboarding-service<a class="headerlink" href="#cluster-onboarding-service" title="Permanent link">&para;</a></h2>
 <p>Step 1 :</p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-cluster-onboard
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-cluster-onboard
 </code></pre></div>
 <p>Step 2 : </p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-cluster-onboard accuknox-onprem-services/cluster-onboarding-service -n accuknox-cluster-onboard
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-cluster-onboard<span class="w"> </span>accuknox-onprem-services/cluster-onboarding-service<span class="w"> </span>-n<span class="w"> </span>accuknox-cluster-onboard
 </code></pre></div>
 <h2 id="cluster-entity-daemon">Cluster-entity-daemon<a class="headerlink" href="#cluster-entity-daemon" title="Permanent link">&para;</a></h2>
 <p>Step 1 : 
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-cluster-entity-daemon
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-cluster-entity-daemon
 </code></pre></div></p>
 <p>Step 2 :</p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-cluster-entity-daemon accuknox-onprem-services/cluster-entity-daemon-chart -n accuknox-cluster-entity-daemon
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-cluster-entity-daemon<span class="w"> </span>accuknox-onprem-services/cluster-entity-daemon-chart<span class="w"> </span>-n<span class="w"> </span>accuknox-cluster-entity-daemon
 </code></pre></div>
 <h2 id="shared-informer-service">Shared-informer-service<a class="headerlink" href="#shared-informer-service" title="Permanent link">&para;</a></h2>
 <p>Step 1 :
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-shared-informer-service
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-shared-informer-service
 </code></pre></div></p>
 <p>Step 2 :</p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-shared-informer-service accuknox-onprem-services/shared-informer-service-chart -n accuknox-shared-informer-service
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-shared-informer-service<span class="w"> </span>accuknox-onprem-services/shared-informer-service-chart<span class="w"> </span>-n<span class="w"> </span>accuknox-shared-informer-service
 </code></pre></div>
 <h2 id="data-pipeline-api">Data-pipeline-api<a class="headerlink" href="#data-pipeline-api" title="Permanent link">&para;</a></h2>
 <p>Step 1 : </p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-datapipeline-api
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-datapipeline-api
 </code></pre></div>
 <p>Step 2 : </p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-datapipeline-api accuknox-onprem-services/data-pipeline-api-charts  -n accuknox-datapipeline-api
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-datapipeline-api<span class="w"> </span>accuknox-onprem-services/data-pipeline-api-charts<span class="w">  </span>-n<span class="w"> </span>accuknox-datapipeline-api
 </code></pre></div>
 <h2 id="datapipeline-temporal">Datapipeline-temporal<a class="headerlink" href="#datapipeline-temporal" title="Permanent link">&para;</a></h2>
 <p>Step 1 : 
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-temporal
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-temporal
 </code></pre></div></p>
 <p>Step 2 : 
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-temporal accuknox-onprem-services/datapipeline-temporal-charts   -n accuknox-temporal
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-temporal<span class="w"> </span>accuknox-onprem-services/datapipeline-temporal-charts<span class="w">   </span>-n<span class="w"> </span>accuknox-temporal
 </code></pre></div></p>
 <h2 id="zookeeper">Zookeeper<a class="headerlink" href="#zookeeper" title="Permanent link">&para;</a></h2>
 <p>Step 1 :</p>
-<p><div class="highlight"><pre><span></span><code>kubectl create ns accuknox-samzajobs 
+<p><div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-samzajobs<span class="w"> </span>
 </code></pre></div>
 Step 2 :
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-zookeeper accuknox-onprem-services/zookeeper -n accuknox-samzajobs 
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-zookeeper<span class="w"> </span>accuknox-onprem-services/zookeeper<span class="w"> </span>-n<span class="w"> </span>accuknox-samzajobs<span class="w"> </span>
 </code></pre></div></p>
 <h2 id="data-pipeline-samza-jobs">Data-pipeline-samza-jobs<a class="headerlink" href="#data-pipeline-samza-jobs" title="Permanent link">&para;</a></h2>
 <p>Step 1 : 
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-samzajobs accuknox-onprem-services/datapipeline-samza -n accuknox-samzajobs
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-samzajobs<span class="w"> </span>accuknox-onprem-services/datapipeline-samza<span class="w"> </span>-n<span class="w"> </span>accuknox-samzajobs
 </code></pre></div></p>
 <h2 id="feeder-grpc-server">Feeder-grpc-server<a class="headerlink" href="#feeder-grpc-server" title="Permanent link">&para;</a></h2>
 <p>Step 1 : </p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-feeder-grpc-server
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-feeder-grpc-server
 </code></pre></div>
 <p>Step 2 :</p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-feeder-grpc-server accuknox-onprem-services/feeder-grpc-server-chart -n accuknox-feeder-grpc-server
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-feeder-grpc-server<span class="w"> </span>accuknox-onprem-services/feeder-grpc-server-chart<span class="w"> </span>-n<span class="w"> </span>accuknox-feeder-grpc-server
 </code></pre></div>
 <h2 id="policy-service">Policy-service<a class="headerlink" href="#policy-service" title="Permanent link">&para;</a></h2>
 <p>Step 1 : </p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-policy-service
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-policy-service
 </code></pre></div>
 <p>Step 2 :</p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-policy-service accuknox-onprem-services/policy-service-charts -n accuknox-policy-service
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-policy-service<span class="w"> </span>accuknox-onprem-services/policy-service-charts<span class="w"> </span>-n<span class="w"> </span>accuknox-policy-service
 </code></pre></div>
 <h2 id="policy-daemon">Policy-daemon<a class="headerlink" href="#policy-daemon" title="Permanent link">&para;</a></h2>
 <p>Step 1 : </p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-policy-daemon
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-policy-daemon
 </code></pre></div>
 <p>Step 2 :</p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-policy-daemon accuknox-onprem-services/policy-daemon-charts -n accuknox-policy-daemon
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-policy-daemon<span class="w"> </span>accuknox-onprem-services/policy-daemon-charts<span class="w"> </span>-n<span class="w"> </span>accuknox-policy-daemon
 </code></pre></div>
 <h2 id="policy-provider-service">Policy-provider-service<a class="headerlink" href="#policy-provider-service" title="Permanent link">&para;</a></h2>
 <p>Step 1 : </p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-policy-provider-service
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-policy-provider-service
 </code></pre></div>
 <p>Step 2 : </p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-policy-provider-service accuknox-onprem-services/policy-provider-service -n accuknox-policy-provider-service
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-policy-provider-service<span class="w"> </span>accuknox-onprem-services/policy-provider-service<span class="w"> </span>-n<span class="w"> </span>accuknox-policy-provider-service
 </code></pre></div>
 <h2 id="workload-identity-daemon">Workload-identity-daemon<a class="headerlink" href="#workload-identity-daemon" title="Permanent link">&para;</a></h2>
 <p>Step 1 :</p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-workload-identity-daemon
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-workload-identity-daemon
 </code></pre></div>
 <p>Step 2 :</p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-workload-identity-daemon accuknox-onprem-services/workload-identity-daemon-chart -n accuknox-workload-identity-daemon
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-workload-identity-daemon<span class="w"> </span>accuknox-onprem-services/workload-identity-daemon-chart<span class="w"> </span>-n<span class="w"> </span>accuknox-workload-identity-daemon
 </code></pre></div>
 <h2 id="recommended-policy-daemon">Recommended-policy-daemon<a class="headerlink" href="#recommended-policy-daemon" title="Permanent link">&para;</a></h2>
 <p>Step 1 : </p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-recommended-policy-daemon
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-recommended-policy-daemon
 </code></pre></div>
 <p>Step 2 : </p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-recommended-policy-daemon accuknox-onprem-services/recommended-policy-daemon -n accuknox-recommended-policy-daemon
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-recommended-policy-daemon<span class="w"> </span>accuknox-onprem-services/recommended-policy-daemon<span class="w"> </span>-n<span class="w"> </span>accuknox-recommended-policy-daemon
 </code></pre></div>
 <h2 id="discoveredpolicy-daemon">Discoveredpolicy-daemon<a class="headerlink" href="#discoveredpolicy-daemon" title="Permanent link">&para;</a></h2>
 <p>Step 1 :</p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-discovered-policy-daemon
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-discovered-policy-daemon
 </code></pre></div>
 <p>Step 2 : </p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-discovered-policy-daemon accuknox-onprem-services/discoveredpolicy-daemon-charts -n accuknox-discovered-policy-daemon
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-discovered-policy-daemon<span class="w"> </span>accuknox-onprem-services/discoveredpolicy-daemon-charts<span class="w"> </span>-n<span class="w"> </span>accuknox-discovered-policy-daemon
 </code></pre></div>
 <h2 id="label-service">Label-service<a class="headerlink" href="#label-service" title="Permanent link">&para;</a></h2>
 <p>Step 1 :</p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-label-service
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-label-service
 </code></pre></div>
 <p>Step 2 :</p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-label-service accuknox-onprem-services/label-service-chart -n accuknox-label-service
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-label-service<span class="w"> </span>accuknox-onprem-services/label-service-chart<span class="w"> </span>-n<span class="w"> </span>accuknox-label-service
 </code></pre></div>
 <h2 id="knox-auto-policy">Knox-auto-policy<a class="headerlink" href="#knox-auto-policy" title="Permanent link">&para;</a></h2>
 <p>Step 1 : </p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-knoxautopolicy
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-knoxautopolicy
 </code></pre></div>
 <p>Step 2 : </p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-knoxautopolicy accuknox-onprem-services/knox-auto-policy-chart -n accuknox-knoxautopolicy
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-knoxautopolicy<span class="w"> </span>accuknox-onprem-services/knox-auto-policy-chart<span class="w"> </span>-n<span class="w"> </span>accuknox-knoxautopolicy
 </code></pre></div>
 <h2 id="kvm-service">Kvm-service<a class="headerlink" href="#kvm-service" title="Permanent link">&para;</a></h2>
 <p>Step 1 :</p>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-kvmservice
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-kvmservice
 </code></pre></div>
 <p>Step 2 : </p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-kvmservice accuknox-onprem-services/kvm-service-chart -n accuknox-kvmservice
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-kvmservice<span class="w"> </span>accuknox-onprem-services/kvm-service-chart<span class="w"> </span>-n<span class="w"> </span>accuknox-kvmservice
 </code></pre></div>
                 
               

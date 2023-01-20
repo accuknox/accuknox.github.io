@@ -150,46 +150,6 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
       <div class="md-header__source">
         
@@ -3762,6 +3722,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_11_4_1">
@@ -3854,6 +3816,20 @@
     <li class="md-nav__item">
       <a href="../../../getting-started/jira-integration/" class="md-nav__link">
         Jira
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting-started/rsyslog-integration/" class="md-nav__link">
+        RSyslog
       </a>
     </li>
   
@@ -4169,38 +4145,38 @@
                 <h2 id="overview"><strong>Overview</strong><a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>This user journey guides you to install and verify the compatibility of Cilium on GKE with COS and Ubuntu by applying policies on Kubernetes workloads.</p>
 <h2 id="step-1-install-daemonsets-services"><strong>Step 1: Install Daemonsets &amp; Services</strong><a class="headerlink" href="#step-1-install-daemonsets-services" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>curl -s https://raw.githubusercontent.com/accuknox/tools/main/install.sh <span class="p">|</span> bash
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-s<span class="w"> </span>https://raw.githubusercontent.com/accuknox/tools/main/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
 </code></pre></div>
 <p><strong>Note:</strong> This will Install all the components.</p>
 <h2 id="step-2-verify-the-installation"><strong>Step 2: Verify the Installation</strong><a class="headerlink" href="#step-2-verify-the-installation" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>Kubectl get pods -A
+<div class="highlight"><pre><span></span><code>Kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-A
 </code></pre></div>
 <p><img alt="Alt" src="../../gke-cos/images/1.png" /></p>
 <h2 id="step-3-install-sample-k8s-application"><strong>Step 3: Install sample K8's Application</strong><a class="headerlink" href="#step-3-install-sample-k8s-application" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/kubearmor/KubeArmor/main/examples/wordpress-mysql/wordpress-mysql-deployment.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/kubearmor/KubeArmor/main/examples/wordpress-mysql/wordpress-mysql-deployment.yaml
 </code></pre></div>
 <h2 id="step-4-verify-the-installation"><strong>Step 4: Verify the Installation</strong><a class="headerlink" href="#step-4-verify-the-installation" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>kubectl get pods -n wordpress-mysql
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>wordpress-mysql
 </code></pre></div>
 <p><img alt="Alt" src="../../gke-cos/images/2.png" /></p>
 <h2 id="step-5-get-auto-discovered-policies"><strong>Step 5: Get Auto discovered policies</strong><a class="headerlink" href="#step-5-get-auto-discovered-policies" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>curl -s https://raw.githubusercontent.com/accuknox/tools/main/get_discovered_yamls.sh <span class="p">|</span> bash
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-s<span class="w"> </span>https://raw.githubusercontent.com/accuknox/tools/main/get_discovered_yamls.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
 </code></pre></div>
 <p><img alt="Alt" src="../../gke-cos/images/3.png" /></p>
 <h2 id="step-6-applying-auto-discovered-policies-on-cluster"><strong>Step 6: Applying Auto discovered policies on Cluster</strong><a class="headerlink" href="#step-6-applying-auto-discovered-policies-on-cluster" title="Permanent link">&para;</a></h2>
 <p>These policies can then be applied on the k8s cluster running <a href="https://help.accuknox.com/open-source/cilium-install/">Cilium</a>.</p>
 <p>Auto-discovery-policy service will audit the process and network and will give policies to allow only those processes and network.</p>
 <p><strong>Apply Cilium policy:</strong></p>
-<div class="highlight"><pre><span></span><code>kubectl apply -f cilium_policies.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>cilium_policies.yaml
 </code></pre></div>
 <p>To list applied policies,</p>
-<p><div class="highlight"><pre><span></span><code>kubectl get ksp,cnp -A
+<p><div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>ksp,cnp<span class="w"> </span>-A
 </code></pre></div>
 <img alt="Alt" src="../../gke-cos/images/5.png" /></p>
 <p><strong>To uninstall all the services Installed:</strong></p>
-<div class="highlight"><pre><span></span><code>curl -s https://raw.githubusercontent.com/accuknox/tools/main/uninstall.sh <span class="p">|</span> bash
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-s<span class="w"> </span>https://raw.githubusercontent.com/accuknox/tools/main/uninstall.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>kubectl delete -f https://raw.githubusercontent.com/kubearmor/KubeArmor/main/examples/wordpress-mysql/wordpress-mysql-deployment.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>delete<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/kubearmor/KubeArmor/main/examples/wordpress-mysql/wordpress-mysql-deployment.yaml
 </code></pre></div>
                 
               

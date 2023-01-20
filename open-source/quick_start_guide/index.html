@@ -150,46 +150,6 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
       <div class="md-header__source">
         
@@ -3780,6 +3740,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_11_4_1">
@@ -3872,6 +3834,20 @@
     <li class="md-nav__item">
       <a href="../../getting-started/jira-integration/" class="md-nav__link">
         Jira
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/rsyslog-integration/" class="md-nav__link">
+        RSyslog
       </a>
     </li>
   
@@ -4215,100 +4191,100 @@
 <blockquote>
 <p>Note: Recommended base OS image is Ubuntu 20.04.</p>
 </blockquote>
-<div class="highlight"><pre><span></span><code>curl -sfL https://get.k3s.io <span class="p">|</span> <span class="nv">INSTALL_K3S_EXEC</span><span class="o">=</span><span class="s1">&#39;--disable traefik&#39;</span> sh -s - --write-kubeconfig-mode <span class="m">644</span>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-sfL<span class="w"> </span>https://get.k3s.io<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nv">INSTALL_K3S_EXEC</span><span class="o">=</span><span class="s1">&#39;--disable traefik&#39;</span><span class="w"> </span>sh<span class="w"> </span>-s<span class="w"> </span>-<span class="w"> </span>--write-kubeconfig-mode<span class="w"> </span><span class="m">644</span>
 </code></pre></div>
 <p><strong>Make K3's cluster config the default</strong></p>
-<div class="highlight"><pre><span></span><code>mkdir -p ~/.kube <span class="o">&amp;&amp;</span> cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.kube<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>cp<span class="w"> </span>/etc/rancher/k3s/k3s.yaml<span class="w"> </span>~/.kube/config
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">create a cluster</span><span class="w"></span>
-<span class="w">   </span><span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">localhost</span><span class="w"></span>
-<span class="w">   </span><span class="nt">tasks</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">create a cluster</span><span class="w"></span>
-<span class="w">      </span><span class="nt">google.cloud.gcp_container_cluster</span><span class="p">:</span><span class="w"></span>
-<span class="w">       </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gkecluster</span><span class="w"></span>
-<span class="w">       </span><span class="nt">initial_node_count</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span><span class="w"></span>
-<span class="w">       </span><span class="nt">node_config</span><span class="p">:</span><span class="w"></span>
-<span class="w">         </span><span class="nt">machine_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e2-medium</span><span class="w"></span>
-<span class="w">         </span><span class="nt">disk_size_gb</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span><span class="w"></span>
-<span class="w">         </span><span class="nt">taints</span><span class="p">:</span><span class="w"></span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">effect</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PREFER_NO_SCHEDULE</span><span class="w"></span>
-<span class="w">            </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">node.cilium.io/agent-not-ready</span><span class="w"></span>
-<span class="w">            </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;true&quot;</span><span class="w"></span>
-<span class="w">       </span><span class="nt">location</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">asia-east1</span><span class="w"></span>
-<span class="w">       </span><span class="nt">project</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{{project_id}}&quot;</span><span class="w"></span>
-<span class="w">       </span><span class="nt">auth_kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">serviceaccount</span><span class="w"></span>
-<span class="w">       </span><span class="nt">service_account_file</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{{service_account_file}}&quot;</span><span class="w"></span>
-<span class="w">       </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">present</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">create a cluster</span>
+<span class="w">   </span><span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">localhost</span>
+<span class="w">   </span><span class="nt">tasks</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">create a cluster</span>
+<span class="w">      </span><span class="nt">google.cloud.gcp_container_cluster</span><span class="p">:</span>
+<span class="w">       </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gkecluster</span>
+<span class="w">       </span><span class="nt">initial_node_count</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">       </span><span class="nt">node_config</span><span class="p">:</span>
+<span class="w">         </span><span class="nt">machine_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e2-medium</span>
+<span class="w">         </span><span class="nt">disk_size_gb</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+<span class="w">         </span><span class="nt">taints</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">effect</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PREFER_NO_SCHEDULE</span>
+<span class="w">            </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">node.cilium.io/agent-not-ready</span>
+<span class="w">            </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;true&quot;</span>
+<span class="w">       </span><span class="nt">location</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">asia-east1</span>
+<span class="w">       </span><span class="nt">project</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{{project_id}}&quot;</span>
+<span class="w">       </span><span class="nt">auth_kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">serviceaccount</span>
+<span class="w">       </span><span class="nt">service_account_file</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{{service_account_file}}&quot;</span>
+<span class="w">       </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">present</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo apt-get install python3 -y
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3<span class="w"> </span>-y
 </code></pre></div>
-<p><div class="highlight"><pre><span></span><code>sudo apt-get install ansible
+<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>ansible
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>ansible-galaxy collection install google.cloud
+<div class="highlight"><pre><span></span><code>ansible-galaxy<span class="w"> </span>collection<span class="w"> </span>install<span class="w"> </span>google.cloud
 </code></pre></div></p>
-<div class="highlight"><pre><span></span><code>ansible-playbook kube-cluster.yaml
+<div class="highlight"><pre><span></span><code>ansible-playbook<span class="w"> </span>kube-cluster.yaml
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Create a managed Azure Container Services (AKS) instance</span><span class="w"></span>
-<span class="w">   </span><span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">localhost</span><span class="w"></span>
-<span class="w">   </span><span class="nt">tasks</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">azure_rm_aks</span><span class="p">:</span><span class="w"></span>
-<span class="w">       </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">myAKS</span><span class="w"></span>
-<span class="w">       </span><span class="nt">location</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eastus</span><span class="w"></span>
-<span class="w">       </span><span class="nt">resource_group</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">myResourceGroup</span><span class="w"></span>
-<span class="w">       </span><span class="nt">dns_prefix</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">akstest</span><span class="w"></span>
-<span class="w">       </span><span class="nt">kubernetes_version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.24.3</span><span class="w"></span>
-<span class="w">       </span><span class="nt">linux_profile</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="nt">admin_username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">azureuser</span><span class="w"></span>
-<span class="w">        </span><span class="nt">ssh_key</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{{local_ssh_key}}&quot;</span><span class="w"></span>
-<span class="w">       </span><span class="nt">service_principal</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="nt">client_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{{azure_account_client_id}}&quot;</span><span class="w"></span>
-<span class="w">        </span><span class="nt">client_secret</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{{azure_account_client_secret}}&quot;</span><span class="w"></span>
-<span class="w">       </span><span class="nt">agent_pool_profiles</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span><span class="w"></span>
-<span class="w">          </span><span class="nt">count</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span><span class="w"></span>
-<span class="w">          </span><span class="nt">vm_size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Standard_D2_v2</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Create a managed Azure Container Services (AKS) instance</span>
+<span class="w">   </span><span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">localhost</span>
+<span class="w">   </span><span class="nt">tasks</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">azure_rm_aks</span><span class="p">:</span>
+<span class="w">       </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">myAKS</span>
+<span class="w">       </span><span class="nt">location</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eastus</span>
+<span class="w">       </span><span class="nt">resource_group</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">myResourceGroup</span>
+<span class="w">       </span><span class="nt">dns_prefix</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">akstest</span>
+<span class="w">       </span><span class="nt">kubernetes_version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.24.3</span>
+<span class="w">       </span><span class="nt">linux_profile</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">admin_username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">azureuser</span>
+<span class="w">        </span><span class="nt">ssh_key</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{{local_ssh_key}}&quot;</span>
+<span class="w">       </span><span class="nt">service_principal</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">client_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{{azure_account_client_id}}&quot;</span>
+<span class="w">        </span><span class="nt">client_secret</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{{azure_account_client_secret}}&quot;</span>
+<span class="w">       </span><span class="nt">agent_pool_profiles</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span>
+<span class="w">          </span><span class="nt">count</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="w">          </span><span class="nt">vm_size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Standard_D2_v2</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo apt-get install python3 -y
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3<span class="w"> </span>-y
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo apt-get install ansible
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>ansible
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>ansible-galaxy collection install azure.azcollection
+<div class="highlight"><pre><span></span><code>ansible-galaxy<span class="w"> </span>collection<span class="w"> </span>install<span class="w"> </span>azure.azcollection
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>ansible-playbook aks-cluster.yaml
+<div class="highlight"><pre><span></span><code>ansible-playbook<span class="w"> </span>aks-cluster.yaml
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eksctl.io/v1alpha5</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterConfig</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eksctl.io/v1alpha5</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterConfig</span>
 
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubearmor-ub20</span><span class="w"></span>
-<span class="w">  </span><span class="nt">region</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">us-east-2</span><span class="w"></span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubearmor-ub20</span>
+<span class="w">  </span><span class="nt">region</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">us-east-2</span>
 
-<span class="nt">nodeGroups</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ng-1</span><span class="w"></span>
-<span class="w">    </span><span class="nt">amiFamily</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Ubuntu2004&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="nt">privateNetworking</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">    </span><span class="nt">desiredCapacity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span><span class="w"></span>
-<span class="w">    </span><span class="c1"># taint nodes so that application pods are</span><span class="w"></span>
-<span class="w">    </span><span class="c1"># not scheduled until Cilium is deployed.</span><span class="w"></span>
-<span class="w">    </span><span class="nt">taints</span><span class="p">:</span><span class="w"></span>
-<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;node.cilium.io/agent-not-ready&quot;</span><span class="w"></span>
-<span class="w">       </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;true&quot;</span><span class="w"></span>
-<span class="w">       </span><span class="nt">effect</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;NoSchedule&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="nt">ssh</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">allow</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">    </span><span class="nt">preBootstrapCommands</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;sudo</span><span class="nv"> </span><span class="s">apt</span><span class="nv"> </span><span class="s">install</span><span class="nv"> </span><span class="s">linux-headers-$(uname</span><span class="nv"> </span><span class="s">-r)&quot;</span><span class="w"></span>
+<span class="nt">nodeGroups</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ng-1</span>
+<span class="w">    </span><span class="nt">amiFamily</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Ubuntu2004&quot;</span>
+<span class="w">    </span><span class="nt">privateNetworking</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">desiredCapacity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="w">    </span><span class="c1"># taint nodes so that application pods are</span>
+<span class="w">    </span><span class="c1"># not scheduled until Cilium is deployed.</span>
+<span class="w">    </span><span class="nt">taints</span><span class="p">:</span>
+<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;node.cilium.io/agent-not-ready&quot;</span>
+<span class="w">       </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;true&quot;</span>
+<span class="w">       </span><span class="nt">effect</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;NoSchedule&quot;</span>
+<span class="w">    </span><span class="nt">ssh</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">allow</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">preBootstrapCommands</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;sudo</span><span class="nv"> </span><span class="s">apt</span><span class="nv"> </span><span class="s">install</span><span class="nv"> </span><span class="s">linux-headers-$(uname</span><span class="nv"> </span><span class="s">-r)&quot;</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>eksctl create cluster -f sample-ubuntu-18.04-cluster.yaml
+<div class="highlight"><pre><span></span><code>eksctl<span class="w"> </span>create<span class="w"> </span>cluster<span class="w"> </span>-f<span class="w"> </span>sample-ubuntu-18.04-cluster.yaml
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>aws eks --region us-east-1 update-kubeconfig --name kubearmor-ub20
+<div class="highlight"><pre><span></span><code>aws<span class="w"> </span>eks<span class="w"> </span>--region<span class="w"> </span>us-east-1<span class="w"> </span>update-kubeconfig<span class="w"> </span>--name<span class="w"> </span>kubearmor-ub20
 </code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -4332,7 +4308,7 @@
 <li><a href="../quick_start/vagrant-k8s-ubuntu2204.tar.gz">Click here to download</a></li>
 </ul>
 <p>Untar and goto the Vagrant setup directory, Run the below command</p>
-<div class="highlight"><pre><span></span><code>vagrant up
+<div class="highlight"><pre><span></span><code>vagrant<span class="w"> </span>up
 </code></pre></div>
 </div>
 </div>
@@ -4341,24 +4317,24 @@
 </details>
 <h2 id="1-install-kubearmor-cli-tool-daemonsets-and-services">1. Install kubearmor cli tool, daemonsets and services<a class="headerlink" href="#1-install-kubearmor-cli-tool-daemonsets-and-services" title="Permanent link">&para;</a></h2>
 <h4 id="install-kubearmor-cli-tool">Install kubearmor cli tool<a class="headerlink" href="#install-kubearmor-cli-tool" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>curl -sfL http://get.kubearmor.io/ <span class="p">|</span> sudo sh -s -- -b /usr/local/bin
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-sfL<span class="w"> </span>http://get.kubearmor.io/<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>sh<span class="w"> </span>-s<span class="w"> </span>--<span class="w"> </span>-b<span class="w"> </span>/usr/local/bin
 </code></pre></div>
 <h4 id="install-daemonsets-and-services">Install DaemonSets and Services<a class="headerlink" href="#install-daemonsets-and-services" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="c1"># Install KubeArmor</span>
-karmor install
+karmor<span class="w"> </span>install
 
 <span class="c1"># Install Discovery-Engine</span>
-kubectl apply -f https://raw.githubusercontent.com/kubearmor/discovery-engine/dev/deployments/k8s/deployment.yaml
+kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/kubearmor/discovery-engine/dev/deployments/k8s/deployment.yaml
 </code></pre></div>
 <details>
 <summary>Output from <em>kubectl get pods -A</em></summary>
-<div class="highlight"><pre><span></span><code>NAMESPACE         NAME                                                 READY   STATUS    RESTARTS   AGE
-accuknox-agents   discovery-engine-7b6ddbd7d7-swk7j                    <span class="m">1</span>/1     Running   <span class="m">0</span>          3m58s
-kube-system       kubearmor-78tnh                                      <span class="m">1</span>/1     Running   <span class="m">0</span>          4m7s
-kube-system       kubearmor-annotation-manager-797c848b9c-vxq8c        <span class="m">2</span>/2     Running   <span class="m">0</span>          4m
-kube-system       kubearmor-host-policy-manager-766447b4d7-fr5m4       <span class="m">2</span>/2     Running   <span class="m">0</span>          4m6s
-kube-system       kubearmor-policy-manager-54ffc4dc56-8szmn            <span class="m">2</span>/2     Running   <span class="m">0</span>          4m6s
-kube-system       kubearmor-relay-645667c695-bfwcn                     <span class="m">1</span>/1     Running   <span class="m">0</span>          4m7s
+<div class="highlight"><pre><span></span><code>NAMESPACE<span class="w">         </span>NAME<span class="w">                                                 </span>READY<span class="w">   </span>STATUS<span class="w">    </span>RESTARTS<span class="w">   </span>AGE
+accuknox-agents<span class="w">   </span>discovery-engine-7b6ddbd7d7-swk7j<span class="w">                    </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>3m58s
+kube-system<span class="w">       </span>kubearmor-78tnh<span class="w">                                      </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>4m7s
+kube-system<span class="w">       </span>kubearmor-annotation-manager-797c848b9c-vxq8c<span class="w">        </span><span class="m">2</span>/2<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>4m
+kube-system<span class="w">       </span>kubearmor-host-policy-manager-766447b4d7-fr5m4<span class="w">       </span><span class="m">2</span>/2<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>4m6s
+kube-system<span class="w">       </span>kubearmor-policy-manager-54ffc4dc56-8szmn<span class="w">            </span><span class="m">2</span>/2<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>4m6s
+kube-system<span class="w">       </span>kubearmor-relay-645667c695-bfwcn<span class="w">                     </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>4m7s
 ...
 </code></pre></div>
 <p>We have following installed:</p>
@@ -4370,13 +4346,13 @@ kube-system       kubearmor-relay-645667c695-bfwcn                     <span cla
 </details>
 <h2 id="2-install-sample-application">2. Install Sample Application<a class="headerlink" href="#2-install-sample-application" title="Permanent link">&para;</a></h2>
 <p>Install the following app (<em>WordPress</em>) or you can try your own K8s app.</p>
-<div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/kubearmor/KubeArmor/main/examples/wordpress-mysql/wordpress-mysql-deployment.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/kubearmor/KubeArmor/main/examples/wordpress-mysql/wordpress-mysql-deployment.yaml
 </code></pre></div>
 <details>
 <summary>Output from <em>kubectl get pods -n wordpress-mysql</em></summary>
-<div class="highlight"><pre><span></span><code>NAME                        READY   STATUS    RESTARTS   AGE
-mysql-58cdf6ccf-kzbp8       <span class="m">1</span>/1     Running   <span class="m">0</span>          12s
-wordpress-bf95888cb-2kx65   <span class="m">1</span>/1     Running   <span class="m">0</span>          13s
+<div class="highlight"><pre><span></span><code>NAME<span class="w">                        </span>READY<span class="w">   </span>STATUS<span class="w">    </span>RESTARTS<span class="w">   </span>AGE
+mysql-58cdf6ccf-kzbp8<span class="w">       </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>12s
+wordpress-bf95888cb-2kx65<span class="w">   </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>13s
 </code></pre></div>
 <p>Keep a note of these pods name <code>mysql-xxxxxxxxx-xxxxx</code> &amp; <code>wordpress-xxxxxxxxx-xxxxx</code>, it'll be different for your environment</p>
 </details>
@@ -4386,45 +4362,45 @@ wordpress-bf95888cb-2kx65   <span class="m">1</span>/1     Running   <span class
 <details>
 <summary>Use-case 1: Audit access to sensitive data paths</summary>
 <p>MySQL keeps all its database tables as part of <code>/var/lib/mysql</code> folder path. <strong>Audit</strong> access to this folder path recursively (sub-folders inclusive).</p>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorPolicy</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ksp-mysql-audit-dir</span><span class="w"></span>
-<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress-mysql</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span><span class="w"></span>
-<span class="w">  </span><span class="nt">selector</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql</span><span class="w"></span>
-<span class="w">  </span><span class="nt">file</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchDirectories</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/lib/mysql/</span><span class="w"></span>
-<span class="w">        </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Audit</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorPolicy</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ksp-mysql-audit-dir</span>
+<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress-mysql</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="w">  </span><span class="nt">selector</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql</span>
+<span class="w">  </span><span class="nt">file</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchDirectories</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/lib/mysql/</span>
+<span class="w">        </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Audit</span>
 </code></pre></div>
 <p><strong>Executing inside MySQL pod:</strong> Before applying policy
-<div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -it mysql-xxxxxxxxx-xxxxx -n wordpress-mysql -- bash
-root@mysql-58cdf6ccf-kzbp8:/# touch /var/lib/mysql/test
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>mysql-xxxxxxxxx-xxxxx<span class="w"> </span>-n<span class="w"> </span>wordpress-mysql<span class="w"> </span>--<span class="w"> </span>bash
+root@mysql-58cdf6ccf-kzbp8:/#<span class="w"> </span>touch<span class="w"> </span>/var/lib/mysql/test
 </code></pre></div></p>
 <blockquote>
 <p><strong><em>NOTE 01:</em></strong> Replace <code>mysql-xxxxxxxxx-xxxxx</code> with pod name from Step <a href="#2-install-sample-application">#2</a></p>
 </blockquote>
 <p><img alt="Alt" src="../quick_start/images/7.png" /></p>
 <p><strong>Applying Policy:</strong> Applying above <a href="https://raw.githubusercontent.com/kubearmor/KubeArmor/main/examples/wordpress-mysql/security-policies/ksp-mysql-audit-dir.yaml">policy</a> to deployed <a href="#2-install-sample-application">application</a>
-<div class="highlight"><pre><span></span><code>kubectl apply -f ksp-mysql-audit-dir.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>ksp-mysql-audit-dir.yaml
 </code></pre></div></p>
 <p><strong>Port Forwarding:</strong> We'll be using KubeArmor relay to forward logs to our local system
-<div class="highlight"><pre><span></span><code>kubectl -n kube-system port-forward service/kubearmor --address <span class="m">0</span>.0.0.0 --address :: <span class="m">32767</span>:32767
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>-n<span class="w"> </span>kube-system<span class="w"> </span>port-forward<span class="w"> </span>service/kubearmor<span class="w"> </span>--address<span class="w"> </span><span class="m">0</span>.0.0.0<span class="w"> </span>--address<span class="w"> </span>::<span class="w"> </span><span class="m">32767</span>:32767
 </code></pre></div></p>
 <p><strong>Realtime Logs Streaming:</strong>
-<div class="highlight"><pre><span></span><code>karmor log
+<div class="highlight"><pre><span></span><code>karmor<span class="w"> </span>log
 </code></pre></div></p>
 <blockquote>
 <p><strong><em>NOTE 02:</em></strong> Above 2 commands will be common for all use cases, keep this open in separate terminals (<em>right section of screenshot</em>)</p>
 </blockquote>
 <p><strong>Executing inside MySQL pod:</strong> After applying policy
-<div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -it mysql-xxxxxxxxx-xxxxx -n wordpress-mysql -- bash
-root@mysql-58cdf6ccf-kzbp8:/# touch /var/lib/mysql/test-2
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>mysql-xxxxxxxxx-xxxxx<span class="w"> </span>-n<span class="w"> </span>wordpress-mysql<span class="w"> </span>--<span class="w"> </span>bash
+root@mysql-58cdf6ccf-kzbp8:/#<span class="w"> </span>touch<span class="w"> </span>/var/lib/mysql/test-2
 </code></pre></div>
 <img alt="Alt" src="../quick_start/images/8.png" /></p>
 </details>
@@ -4432,34 +4408,34 @@ root@mysql-58cdf6ccf-kzbp8:/# touch /var/lib/mysql/test-2
 <summary>Use-case 2: Block access to files containing sensitive data</summary>
 <p>WordPress pod contains a file <code>wp-config.php</code> that has sensitive auth credentials. This use-case is to <strong>Block</strong> access to this file from unknown processes.</p>
 <p><strong>Executing inside WordPress pod:</strong> Before applying policy
-<div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -it wordpress-xxxxxxxxx-xxxxx -n wordpress-mysql -- bash
-root@wordpress-bf95888cb-2kx65:/var/www/html# cat /var/www/html/wp-config.php
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>wordpress-xxxxxxxxx-xxxxx<span class="w"> </span>-n<span class="w"> </span>wordpress-mysql<span class="w"> </span>--<span class="w"> </span>bash
+root@wordpress-bf95888cb-2kx65:/var/www/html#<span class="w"> </span>cat<span class="w"> </span>/var/www/html/wp-config.php
 </code></pre></div></p>
 <p><img alt="Alt" src="../quick_start/images/9.png" /></p>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorPolicy</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ksp-wordpress-block-config</span><span class="w"></span>
-<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress-mysql</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span><span class="w"></span>
-<span class="w">  </span><span class="nt">selector</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress</span><span class="w"></span>
-<span class="w">  </span><span class="nt">file</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/www/html/wp-config.php</span><span class="w"></span>
-<span class="w">        </span><span class="nt">fromSource</span><span class="p">:</span><span class="w"></span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/bin/cat</span><span class="w"></span>
-<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Block</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorPolicy</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ksp-wordpress-block-config</span>
+<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress-mysql</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+<span class="w">  </span><span class="nt">selector</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress</span>
+<span class="w">  </span><span class="nt">file</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/www/html/wp-config.php</span>
+<span class="w">        </span><span class="nt">fromSource</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/bin/cat</span>
+<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Block</span>
 </code></pre></div>
 <p><strong>Applying Policy:</strong> Applying above <a href="https://raw.githubusercontent.com/kubearmor/KubeArmor/main/examples/wordpress-mysql/security-policies/ksp-wordpress-block-config.yaml">policy</a> to deployed <a href="#2-install-sample-application">application</a>
-<div class="highlight"><pre><span></span><code>kubectl apply -f ksp-wordpress-block-config.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>ksp-wordpress-block-config.yaml
 </code></pre></div></p>
 <p><strong>Executing inside WordPress pod:</strong> After applying policy
-<div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -it wordpress-xxxxxxxxx-xxxxx -n wordpress-mysql -- bash
-root@wordpress-bf95888cb-2kx65:/var/www/html# cat /var/www/html/wp-config.php
-cat: /var/www/html/wp-config.php: Permission denied
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>wordpress-xxxxxxxxx-xxxxx<span class="w"> </span>-n<span class="w"> </span>wordpress-mysql<span class="w"> </span>--<span class="w"> </span>bash
+root@wordpress-bf95888cb-2kx65:/var/www/html#<span class="w"> </span>cat<span class="w"> </span>/var/www/html/wp-config.php
+cat:<span class="w"> </span>/var/www/html/wp-config.php:<span class="w"> </span>Permission<span class="w"> </span>denied
 </code></pre></div></p>
 <p><img alt="Alt" src="../quick_start/images/10.png" /></p>
 </details>
@@ -4467,33 +4443,33 @@ cat: /var/www/html/wp-config.php: Permission denied
 <summary>Use-case 3: Block access to K8s service account token</summary>
 <p>A <a href="https://kubernetes.io/docs/concepts/workloads/pods/">pod</a> is the primary execution unit in K8s. One problem with this approach is that all the processes within that pod have unrestricted access to the pod's volume mounts. One such volume mount is a service account token. Thus, accessing a service account token using an injected binary is a common attack pattern in K8s. This use-case explains how you can protect access (<strong>Block</strong>) to the service account token through known processes only.</p>
 <p><strong>Executing inside WordPress pod:</strong> Before applying policy
-<div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -it wordpress-xxxxxxxxx-xxxxx -n wordpress-mysql -- bash
-root@wordpress-bf95888cb-2kx65:/var/www/html# cat /run/secrets/kubernetes.io/serviceaccount/token
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>wordpress-xxxxxxxxx-xxxxx<span class="w"> </span>-n<span class="w"> </span>wordpress-mysql<span class="w"> </span>--<span class="w"> </span>bash
+root@wordpress-bf95888cb-2kx65:/var/www/html#<span class="w"> </span>cat<span class="w"> </span>/run/secrets/kubernetes.io/serviceaccount/token
 </code></pre></div></p>
 <p><img alt="Alt" src="../quick_start/images/11.png" /></p>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorPolicy</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ksp-wordpress-block-sa</span><span class="w"></span>
-<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress-mysql</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">7</span><span class="w"></span>
-<span class="w">  </span><span class="nt">selector</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress</span><span class="w"></span>
-<span class="w">  </span><span class="nt">file</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchDirectories</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/run/secrets/kubernetes.io/serviceaccount/</span><span class="w"></span>
-<span class="w">        </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Block</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorPolicy</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ksp-wordpress-block-sa</span>
+<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress-mysql</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">7</span>
+<span class="w">  </span><span class="nt">selector</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress</span>
+<span class="w">  </span><span class="nt">file</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchDirectories</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/run/secrets/kubernetes.io/serviceaccount/</span>
+<span class="w">        </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Block</span>
 </code></pre></div>
 <p><strong>Applying Policy:</strong> Applying above <a href="https://raw.githubusercontent.com/kubearmor/KubeArmor/main/examples/wordpress-mysql/security-policies/ksp-wordpress-block-sa.yaml">policy</a> to deployed <a href="#2-install-sample-application">application</a>
-<div class="highlight"><pre><span></span><code>kubectl apply -f ksp-wordpress-block-sa.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>ksp-wordpress-block-sa.yaml
 </code></pre></div></p>
 <p><strong>Executing inside WordPress pod:</strong> After applying policy
-<div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -it wordpress-xxxxxxxxx-xxxxx -n wordpress-mysql -- bash
-root@wordpress-bf95888cb-2kx65:/var/www/html# cat /run/secrets/kubernetes.io/serviceaccount/token
-cat: /run/secrets/kubernetes.io/serviceaccount/token: Permission denied
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>wordpress-xxxxxxxxx-xxxxx<span class="w"> </span>-n<span class="w"> </span>wordpress-mysql<span class="w"> </span>--<span class="w"> </span>bash
+root@wordpress-bf95888cb-2kx65:/var/www/html#<span class="w"> </span>cat<span class="w"> </span>/run/secrets/kubernetes.io/serviceaccount/token
+cat:<span class="w"> </span>/run/secrets/kubernetes.io/serviceaccount/token:<span class="w"> </span>Permission<span class="w"> </span>denied
 </code></pre></div></p>
 <p><img alt="Alt" src="../quick_start/images/12.png" /></p>
 </details>
@@ -4501,36 +4477,36 @@ cat: /run/secrets/kubernetes.io/serviceaccount/token: Permission denied
 <summary>Use-case 4: Block execution of unwanted processes</summary>
 <p>A <a href="https://kubernetes.io/docs/concepts/containers/images/">container image</a> might get shipped with binaries that are not supposed to be executed in production environments. For e.g., WordPress contains <code>apt</code>, <code>apt-get</code> binaries that are used for dynamic package management. These should never be used in the production environment since it will create drift (change) in the container contents i.e., introduce new files/binaries that might increase the attack surface. The following policy <strong>Block</strong> the execution of such processes.</p>
 <p><strong>Executing inside WordPress pod:</strong> Before applying policy
-<div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -it wordpress-xxxxxxxxx-xxxxx -n wordpress-mysql -- bash
-root@wordpress-bf95888cb-2kx65:/var/www/html# apt
-root@wordpress-bf95888cb-2kx65:/var/www/html# apt-get update
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>wordpress-xxxxxxxxx-xxxxx<span class="w"> </span>-n<span class="w"> </span>wordpress-mysql<span class="w"> </span>--<span class="w"> </span>bash
+root@wordpress-bf95888cb-2kx65:/var/www/html#<span class="w"> </span>apt
+root@wordpress-bf95888cb-2kx65:/var/www/html#<span class="w"> </span>apt-get<span class="w"> </span>update
 </code></pre></div></p>
 <p><img alt="Alt" src="../quick_start/images/13.png" /></p>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorPolicy</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ksp-wordpress-block-process</span><span class="w"></span>
-<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress-mysql</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span><span class="w"></span>
-<span class="w">  </span><span class="nt">selector</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress</span><span class="w"></span>
-<span class="w">  </span><span class="nt">process</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/bin/apt</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/bin/apt-get</span><span class="w"></span>
-<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Block</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorPolicy</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ksp-wordpress-block-process</span>
+<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress-mysql</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span>
+<span class="w">  </span><span class="nt">selector</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress</span>
+<span class="w">  </span><span class="nt">process</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/bin/apt</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/bin/apt-get</span>
+<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Block</span>
 </code></pre></div>
 <p><strong>Applying Policy:</strong> Applying above <a href="https://raw.githubusercontent.com/kubearmor/KubeArmor/main/examples/wordpress-mysql/security-policies/ksp-wordpress-block-process.yaml">policy</a> to deployed <a href="#2-install-sample-application">application</a>
-<div class="highlight"><pre><span></span><code>kubectl apply -f ksp-wordpress-block-process.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>ksp-wordpress-block-process.yaml
 </code></pre></div></p>
 <p><strong>Executing inside WordPress pod:</strong> After applying policy
-<div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -it wordpress-5679855487-58rfz -n wordpress-mysql –- bash
-root@wordpress-bf95888cb-2kx65:/var/www/html# apt
-bash: /usr/bin/apt: Permission denied
-root@wordpress-bf95888cb-2kx65:/var/www/html# apt-get update
-bash: /usr/bin/apt-get: Permission denied
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>wordpress-5679855487-58rfz<span class="w"> </span>-n<span class="w"> </span>wordpress-mysql<span class="w"> </span>–-<span class="w"> </span>bash
+root@wordpress-bf95888cb-2kx65:/var/www/html#<span class="w"> </span>apt
+bash:<span class="w"> </span>/usr/bin/apt:<span class="w"> </span>Permission<span class="w"> </span>denied
+root@wordpress-bf95888cb-2kx65:/var/www/html#<span class="w"> </span>apt-get<span class="w"> </span>update
+bash:<span class="w"> </span>/usr/bin/apt-get:<span class="w"> </span>Permission<span class="w"> </span>denied
 </code></pre></div></p>
 <p><img alt="Alt" src="../quick_start/images/14.png" /></p>
 </details>
@@ -4539,20 +4515,20 @@ bash: /usr/bin/apt-get: Permission denied
 <details>
   <summary> <b><i>karmor recommend --namespace wordpress-mysql --labels app=wordpress</i></b> </summary>
 
-<div class="highlight"><pre><span></span><code>INFO<span class="o">[</span><span class="m">0000</span><span class="o">]</span> pulling image                                 <span class="nv">image</span><span class="o">=</span><span class="s2">&quot;wordpress:4.8-apache&quot;</span>
-<span class="m">4</span>.8-apache: Pulling from library/wordpress
-Digest: sha256:6216f64ab88fc51d311e38c7f69ca3f9aaba621492b4f1fa93ddf63093768845
-Status: Image is up to date <span class="k">for</span> wordpress:4.8-apache
-INFO<span class="o">[</span><span class="m">0015</span><span class="o">]</span> dumped image to tar                           <span class="nv">tar</span><span class="o">=</span>/tmp/karmor4070582578/GwoIiuRV.tar
-Distribution debian
-INFO<span class="o">[</span><span class="m">0018</span><span class="o">]</span> No runtime policy generated <span class="k">for</span> wordpress-mysql/wordpress/wordpress:4.8-apache 
-created policy out/wordpress-mysql-wordpress/wordpress-4-8-apache-maintenance-tool-access.yaml ...
-created policy out/wordpress-mysql-wordpress/wordpress-4-8-apache-cert-access.yaml ...
-created policy out/wordpress-mysql-wordpress/wordpress-4-8-apache-system-owner-discovery.yaml ...
-created policy out/wordpress-mysql-wordpress/wordpress-4-8-apache-system-monitoring-deny-write-under-bin-directory.yaml ...
-created policy out/wordpress-mysql-wordpress/wordpress-4-8-apache-system-monitoring-write-under-dev-directory.yaml ...
-created policy out/wordpress-mysql-wordpress/wordpress-4-8-apache-least-functionality-execute-package-management-process-in-container.yaml ...
-output report <span class="k">in</span> out/report.txt ...
+<div class="highlight"><pre><span></span><code>INFO<span class="o">[</span><span class="m">0000</span><span class="o">]</span><span class="w"> </span>pulling<span class="w"> </span>image<span class="w">                                 </span><span class="nv">image</span><span class="o">=</span><span class="s2">&quot;wordpress:4.8-apache&quot;</span>
+<span class="m">4</span>.8-apache:<span class="w"> </span>Pulling<span class="w"> </span>from<span class="w"> </span>library/wordpress
+Digest:<span class="w"> </span>sha256:6216f64ab88fc51d311e38c7f69ca3f9aaba621492b4f1fa93ddf63093768845
+Status:<span class="w"> </span>Image<span class="w"> </span>is<span class="w"> </span>up<span class="w"> </span>to<span class="w"> </span>date<span class="w"> </span><span class="k">for</span><span class="w"> </span>wordpress:4.8-apache
+INFO<span class="o">[</span><span class="m">0015</span><span class="o">]</span><span class="w"> </span>dumped<span class="w"> </span>image<span class="w"> </span>to<span class="w"> </span>tar<span class="w">                           </span><span class="nv">tar</span><span class="o">=</span>/tmp/karmor4070582578/GwoIiuRV.tar
+Distribution<span class="w"> </span>debian
+INFO<span class="o">[</span><span class="m">0018</span><span class="o">]</span><span class="w"> </span>No<span class="w"> </span>runtime<span class="w"> </span>policy<span class="w"> </span>generated<span class="w"> </span><span class="k">for</span><span class="w"> </span>wordpress-mysql/wordpress/wordpress:4.8-apache<span class="w"> </span>
+created<span class="w"> </span>policy<span class="w"> </span>out/wordpress-mysql-wordpress/wordpress-4-8-apache-maintenance-tool-access.yaml<span class="w"> </span>...
+created<span class="w"> </span>policy<span class="w"> </span>out/wordpress-mysql-wordpress/wordpress-4-8-apache-cert-access.yaml<span class="w"> </span>...
+created<span class="w"> </span>policy<span class="w"> </span>out/wordpress-mysql-wordpress/wordpress-4-8-apache-system-owner-discovery.yaml<span class="w"> </span>...
+created<span class="w"> </span>policy<span class="w"> </span>out/wordpress-mysql-wordpress/wordpress-4-8-apache-system-monitoring-deny-write-under-bin-directory.yaml<span class="w"> </span>...
+created<span class="w"> </span>policy<span class="w"> </span>out/wordpress-mysql-wordpress/wordpress-4-8-apache-system-monitoring-write-under-dev-directory.yaml<span class="w"> </span>...
+created<span class="w"> </span>policy<span class="w"> </span>out/wordpress-mysql-wordpress/wordpress-4-8-apache-least-functionality-execute-package-management-process-in-container.yaml<span class="w"> </span>...
+output<span class="w"> </span>report<span class="w"> </span><span class="k">in</span><span class="w"> </span>out/report.txt<span class="w"> </span>...
 </code></pre></div>
 </details>
 
@@ -4560,51 +4536,51 @@ output report <span class="k">in</span> out/report.txt ...
 <summary>Using recommended policies</summary>
 <p>The recommended policy <code>xx-xx-cert-access.yaml</code> is a powerful policy which enables read access to trusted certificates but denied any form of write to it. This inturn enables the integrity of the file and denies malware/adware to have Adversary-in-the-Middle capability (Ref <a href="https://attack.mitre.org/techniques/T1553/">MITRE-T1553</a>).</p>
 <p><strong>Executing inside WordPress pod:</strong> Before applying policy
-<div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -it wordpress-xxxxxxxxx-xxxxx -n wordpress-mysql -- bash
-root@wordpress-cb9c668d4-zgczt:/var/www/html# <span class="nb">cd</span> /etc/ssl/
-root@wordpress-cb9c668d4-zgczt:/etc/ssl# <span class="nb">echo</span> <span class="s2">&quot;new private key&quot;</span> &gt; myssl.pem
-root@wordpress-cb9c668d4-zgczt:/etc/ssl# cat myssl.pem 
-new private key
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>wordpress-xxxxxxxxx-xxxxx<span class="w"> </span>-n<span class="w"> </span>wordpress-mysql<span class="w"> </span>--<span class="w"> </span>bash
+root@wordpress-cb9c668d4-zgczt:/var/www/html#<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/etc/ssl/
+root@wordpress-cb9c668d4-zgczt:/etc/ssl#<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;new private key&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>myssl.pem
+root@wordpress-cb9c668d4-zgczt:/etc/ssl#<span class="w"> </span>cat<span class="w"> </span>myssl.pem<span class="w"> </span>
+new<span class="w"> </span>private<span class="w"> </span>key
 root@wordpress-cb9c668d4-zgczt:/etc/ssl#
 </code></pre></div></p>
 <p><img alt="Alt" src="../quick_start/images/before_rec.png" /></p>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorPolicy</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress-wordpress-4-8-apache-cert-access</span><span class="w"></span>
-<span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress-mysql</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Block</span><span class="w"></span>
-<span class="nt">file</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchDirectories</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/ssl/</span><span class="w"></span>
-<span class="w">    </span><span class="nt">readOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">    </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/pki/</span><span class="w"></span>
-<span class="w">    </span><span class="nt">readOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">    </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/local/share/ca-certificates/</span><span class="w"></span>
-<span class="w">    </span><span class="nt">readOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">    </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="nt">message</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Credentials modification denied</span><span class="w"></span>
-<span class="nt">selector</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress</span><span class="w"></span>
-<span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span><span class="w"></span>
-<span class="nt">tags</span><span class="p">:</span><span class="w"></span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MITRE</span><span class="w"></span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MITRE_T1552_unsecured_credentials</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorPolicy</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress-wordpress-4-8-apache-cert-access</span>
+<span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress-mysql</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Block</span>
+<span class="nt">file</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchDirectories</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/ssl/</span>
+<span class="w">    </span><span class="nt">readOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/pki/</span>
+<span class="w">    </span><span class="nt">readOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/local/share/ca-certificates/</span>
+<span class="w">    </span><span class="nt">readOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="nt">message</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Credentials modification denied</span>
+<span class="nt">selector</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress</span>
+<span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="nt">tags</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MITRE</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MITRE_T1552_unsecured_credentials</span>
 </code></pre></div>
 <p><strong>Applying Policy:</strong> Applying above recommended policy to deployed <a href="#2-install-sample-application">application</a>
-<div class="highlight"><pre><span></span><code>kubectl apply -f out/wordpress-mysql-wordpress/wordpress-4-8-apache-cert-access.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>out/wordpress-mysql-wordpress/wordpress-4-8-apache-cert-access.yaml
 </code></pre></div></p>
 <p><strong>Executing inside WordPress pod:</strong> After applying policy
-<div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -it wordpress-cb9c668d4-zgczt -n wordpress-mysql –- bash
-root@wordpress-cb9c668d4-zgczt:/var/www/html# <span class="nb">cd</span> /etc/ssl/
-root@wordpress-cb9c668d4-zgczt:/var/www/html# cat myssl.pem 
-new private key
-root@wordpress-cb9c668d4-zgczt:/var/www/html# <span class="nb">echo</span> <span class="s2">&quot;updated ssl key&quot;</span> &gt;&gt; myssl.pem 
-bash: /etc/ssl/myssl.pem: Permission denied
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>wordpress-cb9c668d4-zgczt<span class="w"> </span>-n<span class="w"> </span>wordpress-mysql<span class="w"> </span>–-<span class="w"> </span>bash
+root@wordpress-cb9c668d4-zgczt:/var/www/html#<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/etc/ssl/
+root@wordpress-cb9c668d4-zgczt:/var/www/html#<span class="w"> </span>cat<span class="w"> </span>myssl.pem<span class="w"> </span>
+new<span class="w"> </span>private<span class="w"> </span>key
+root@wordpress-cb9c668d4-zgczt:/var/www/html#<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;updated ssl key&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>myssl.pem<span class="w"> </span>
+bash:<span class="w"> </span>/etc/ssl/myssl.pem:<span class="w"> </span>Permission<span class="w"> </span>denied
 root@wordpress-cb9c668d4-zgczt:/var/www/html#
 </code></pre></div></p>
 <p><img alt="Alt" src="../quick_start/images/after_rec.png" /> </p>
@@ -4612,49 +4588,49 @@ root@wordpress-cb9c668d4-zgczt:/var/www/html#
 <h2 id="5-get-auto-discovered-policies">5. Get Auto-Discovered Policies<a class="headerlink" href="#5-get-auto-discovered-policies" title="Permanent link">&para;</a></h2>
 <p>In the above <a href="#3-demo-scenario--use-cases">Demo Scenario</a> <em>(last 3 use-cases)</em>, we had explicit <strong>Deny</strong> based policies. KubeArmor also supports <strong>Allow</strong> based policies i.e., allow only specific actions and audit/deny everything else. Also the allow-policies are auto-discovered by examining the workloads at runtime.</p>
 <p>To retrieve the auto discovered policies you can use:
-<div class="highlight"><pre><span></span><code>karmor discover -n wordpress-mysql -l <span class="s2">&quot;app=wordpress&quot;</span> -f yaml
+<div class="highlight"><pre><span></span><code>karmor<span class="w"> </span>discover<span class="w"> </span>-n<span class="w"> </span>wordpress-mysql<span class="w"> </span>-l<span class="w"> </span><span class="s2">&quot;app=wordpress&quot;</span><span class="w"> </span>-f<span class="w"> </span>yaml
 </code></pre></div>
 This discovers the policies for a workload in <code>wordpress-mysql</code> namespace having label <code>app=wordpress</code>.</p>
 <details>
 <summary>Output from <em>karmor discover -n wordpress-mysql -l "app=wordpress" -f yaml</em></summary>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorPolicy</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">autopol-system-3960684242</span><span class="w"></span>
-<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress-mysql</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Allow</span><span class="w"></span>
-<span class="w">  </span><span class="nt">file</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">fromSource</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/sbin/apache2</span><span class="w"></span>
-<span class="w">      </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/dev/urandom</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">fromSource</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/local/bin/php</span><span class="w"></span>
-<span class="w">      </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/hosts</span><span class="w"></span>
-<span class="w">  </span><span class="nt">network</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchProtocols</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">fromSource</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/local/bin/php</span><span class="w"></span>
-<span class="w">      </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tcp</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">fromSource</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/local/bin/php</span><span class="w"></span>
-<span class="w">      </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">udp</span><span class="w"></span>
-<span class="w">  </span><span class="nt">process</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/sbin/apache2</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/local/bin/php</span><span class="w"></span>
-<span class="w">  </span><span class="nt">selector</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress</span><span class="w"></span>
-<span class="w">  </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorPolicy</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">autopol-system-3960684242</span>
+<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress-mysql</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Allow</span>
+<span class="w">  </span><span class="nt">file</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">fromSource</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/sbin/apache2</span>
+<span class="w">      </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/dev/urandom</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">fromSource</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/local/bin/php</span>
+<span class="w">      </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/hosts</span>
+<span class="w">  </span><span class="nt">network</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchProtocols</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">fromSource</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/local/bin/php</span>
+<span class="w">      </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tcp</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">fromSource</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/local/bin/php</span>
+<span class="w">      </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">udp</span>
+<span class="w">  </span><span class="nt">process</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/sbin/apache2</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/local/bin/php</span>
+<span class="w">  </span><span class="nt">selector</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress</span>
+<span class="w">  </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
 </code></pre></div>
 </details>
 <h2 id="6-uninstall">6. Uninstall<a class="headerlink" href="#6-uninstall" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>karmor uninstall
+<div class="highlight"><pre><span></span><code>karmor<span class="w"> </span>uninstall
 
 <span class="c1"># If there is no other workloads deployed in accuknox-agents namesapce apart from DE, this can be removed</span>
-kubectl delete ns accuknox-agents
+kubectl<span class="w"> </span>delete<span class="w"> </span>ns<span class="w"> </span>accuknox-agents
 </code></pre></div>
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <ol>

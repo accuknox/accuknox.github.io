@@ -150,46 +150,6 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
       <div class="md-header__source">
         
@@ -3672,6 +3632,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_11_4_1">
@@ -3764,6 +3726,20 @@
     <li class="md-nav__item">
       <a href="../../getting-started/jira-integration/" class="md-nav__link">
         Jira
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/rsyslog-integration/" class="md-nav__link">
+        RSyslog
       </a>
     </li>
   
@@ -4157,56 +4133,56 @@
 <p><b>For more reference:</b> <a href="https://helm.sh/docs/intro/install/">Click here..</a></p>
 <hr />
 <p>Add accuknox repository to install strimzi-kafka-operator helm package:</p>
-<p><div class="highlight"><pre><span></span><code>helm repo add accuknox-onprem-prerequisites https://USERNAME:PASSWORD@onprem.accuknox.com/repository/accuknox-onprem-prerequisites
-helm repo update
-helm search repo accuknox-onprem-prerequisites
-helm pull accuknox-onprem-prerequisites/strimzi-kafka-operator --untar
+<p><div class="highlight"><pre><span></span><code>helm<span class="w"> </span>repo<span class="w"> </span>add<span class="w"> </span>accuknox-onprem-prerequisites<span class="w"> </span>https://USERNAME:PASSWORD@onprem.accuknox.com/repository/accuknox-onprem-prerequisites
+helm<span class="w"> </span>repo<span class="w"> </span>update
+helm<span class="w"> </span>search<span class="w"> </span>repo<span class="w"> </span>accuknox-onprem-prerequisites
+helm<span class="w"> </span>pull<span class="w"> </span>accuknox-onprem-prerequisites/strimzi-kafka-operator<span class="w"> </span>--untar
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>kubectl create namespace accuknox-kafka
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>namespace<span class="w"> </span>accuknox-kafka
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>helm install accuknox-kafka  strimzi-kafka-operator -n accuknox-kafka
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>install<span class="w"> </span>accuknox-kafka<span class="w">  </span>strimzi-kafka-operator<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka
 </code></pre></div></p>
 <p>Check the Pods deployment
-<div class="highlight"><pre><span></span><code>kubectl get pods -n accuknox-kafka
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka
 </code></pre></div></p>
 <p>Extract the connectivity information.</p>
 <h2 id="get-bootstrap-server-endpoint">Get bootstrap server endpoint<a class="headerlink" href="#get-bootstrap-server-endpoint" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>kubectl get kafka accuknox-kafka -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.status.listeners[?(@.type==&quot;external&quot;)].bootstrapServers}&#39;</span> -n accuknox-kafka
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>kafka<span class="w"> </span>accuknox-kafka<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.status.listeners[?(@.type==&quot;external&quot;)].bootstrapServers}&#39;</span><span class="w"> </span>-n<span class="w"> </span>accuknox-kafka
 </code></pre></div>
 <h2 id="get-ca">Get CA<a class="headerlink" href="#get-ca" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>kubectl get secret accuknox-kafka-cluster-ca-cert -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.ca\.p12}&#39;</span> -n accuknox-kafka <span class="p">|</span> base64 -d &gt; ca.p12
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>secret<span class="w"> </span>accuknox-kafka-cluster-ca-cert<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.ca\.p12}&#39;</span><span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>-d<span class="w"> </span>&gt;<span class="w"> </span>ca.p12
 </code></pre></div>
 <p>Note:</p>
 <p>For any application connecting to Kafka outside the GKE, It needs to communicate via SSL/TLS authentication.</p>
 <p>We need to provide the connectivity details to the component owners who are configuring the application deployed outside GKE Cluster..</p>
 <h2 id="get-ca-password">Get CA Password<a class="headerlink" href="#get-ca-password" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>kubectl get secret accuknox-kafka-cluster-ca-cert -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.ca\.password}&#39;</span> -n accuknox-kafka <span class="p">|</span> base64 -d &gt; ca.password
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>secret<span class="w"> </span>accuknox-kafka-cluster-ca-cert<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.ca\.password}&#39;</span><span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>-d<span class="w"> </span>&gt;<span class="w"> </span>ca.password
 </code></pre></div>
 <h2 id="get-user-cert">Get User Cert<a class="headerlink" href="#get-user-cert" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>kubectl get secret/node-event-feeder-common -n accuknox-kafka -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.user\.p12}&#39;</span> <span class="p">|</span> base64 -d &gt; user.p12
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>secret/node-event-feeder-common<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.user\.p12}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>-d<span class="w"> </span>&gt;<span class="w"> </span>user.p12
 </code></pre></div>
 <h2 id="get-user-password">Get user password<a class="headerlink" href="#get-user-password" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>kubectl get secret/node-event-feeder-common -n accuknox-kafka -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.user\.password}&#39;</span> <span class="p">|</span> base64 -d &gt; user.password
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>secret/node-event-feeder-common<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.user\.password}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>-d<span class="w"> </span>&gt;<span class="w"> </span>user.password
 </code></pre></div>
 <h2 id="convert-userp12-into-base64">Convert user.p12 into base64<a class="headerlink" href="#convert-userp12-into-base64" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>cat user.p12 <span class="p">|</span> base64 &gt; user.p12.base64
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>user.p12<span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>&gt;<span class="w"> </span>user.p12.base64
 </code></pre></div>
 <h2 id="convert-cap12-into-base64">Convert ca.p12 into base64<a class="headerlink" href="#convert-cap12-into-base64" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>cat ca.p12 <span class="p">|</span> base64 &gt; ca.p12.base64
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>ca.p12<span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>&gt;<span class="w"> </span>ca.p12.base64
 </code></pre></div>
 <h2 id="convert-capassword-into-base64">Convert ca.password into base64<a class="headerlink" href="#convert-capassword-into-base64" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>cat ca.password <span class="p">|</span> base64 &gt; ca.password.base64
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>ca.password<span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>&gt;<span class="w"> </span>ca.password.base64
 </code></pre></div>
 <h2 id="convert-userpassword-into-base64">Convert user.password into base64<a class="headerlink" href="#convert-userpassword-into-base64" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>cat user.password <span class="p">|</span> base64 &gt; user.password.base64
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>user.password<span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>&gt;<span class="w"> </span>user.password.base64
 </code></pre></div>
 <h2 id="convert-p12-to-pem">Convert p12 to pem<a class="headerlink" href="#convert-p12-to-pem" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>openssl pkcs12 -in ca.p12 -out ca.pem
+<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>pkcs12<span class="w"> </span>-in<span class="w"> </span>ca.p12<span class="w"> </span>-out<span class="w"> </span>ca.pem
 </code></pre></div>
 <p><img alt="Alt" src="../../images/ca-user-verify.png" /></p>
 <p>Note: copy the password from ca.password (file)</p>
 <h2 id="convert-capem-to-base64">Convert ca.pem to base64<a class="headerlink" href="#convert-capem-to-base64" title="Permanent link">&para;</a></h2>
-<p><div class="highlight"><pre><span></span><code>cat ca.pem <span class="p">|</span> base64 &gt; ca.pem.base64
+<p><div class="highlight"><pre><span></span><code>cat<span class="w"> </span>ca.pem<span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>&gt;<span class="w"> </span>ca.pem.base64
 </code></pre></div>
 Note: ca.p12, ca.password, user.p12 and user.password are required to be used in Java based applications. For Go based applications, use ca.pem, user.p12 and user.password. For use in Kubernetes, use the base64 versions of respective files.</p>
 <p>FQDN (K8’s Service name) Value for Internal Cluster application connectivity.</p>
@@ -4226,12 +4202,12 @@ And also turn off the auto certificate generation by configuring(uncomment) "clu
 </li>
 </ol>
 <p><img alt="Alt" src="../../images/kafka-cert-ref.png" /></p>
-<div class="highlight"><pre><span></span><code>kubectl get secret/accuknox-clients-ca -o yaml -n accuknox-kafka &gt; accuknox-clients-ca.yaml
-kubectl get secret/accuknox-clients-ca-cert -o yaml -n accuknox-kafka &gt; accuknox-clients-ca-cert.yaml
-kubectl get secret/accuknox-cluster-ca-cert -o yaml -n accuknox-kafka &gt; accuknox-cluster-ca-cert.yaml
-kubectl get secret/accuknox-cluster-ca -o yaml -n accuknox-kafka &gt; accuknox-cluster-ca.yaml
-kubectl get secret/node-event-feeder -o yaml -n accuknox-kafka &gt; node-event-feeder.yaml
-kubectl get secret/node-event-feeder-common -o yaml -n accuknox-kafka &gt; node-event-feeder-common.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>secret/accuknox-clients-ca<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span>&gt;<span class="w"> </span>accuknox-clients-ca.yaml
+kubectl<span class="w"> </span>get<span class="w"> </span>secret/accuknox-clients-ca-cert<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span>&gt;<span class="w"> </span>accuknox-clients-ca-cert.yaml
+kubectl<span class="w"> </span>get<span class="w"> </span>secret/accuknox-cluster-ca-cert<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span>&gt;<span class="w"> </span>accuknox-cluster-ca-cert.yaml
+kubectl<span class="w"> </span>get<span class="w"> </span>secret/accuknox-cluster-ca<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span>&gt;<span class="w"> </span>accuknox-cluster-ca.yaml
+kubectl<span class="w"> </span>get<span class="w"> </span>secret/node-event-feeder<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span>&gt;<span class="w"> </span>node-event-feeder.yaml
+kubectl<span class="w"> </span>get<span class="w"> </span>secret/node-event-feeder-common<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span>&gt;<span class="w"> </span>node-event-feeder-common.yaml
 </code></pre></div>
                 
               

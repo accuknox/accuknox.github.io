@@ -2,1177 +2,1182 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://accuknox.com/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/cilium/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/license/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/Devops/getting-started/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/FAQ/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/agents-install/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/agents-verify/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/ak-architecture-diagram-purpose/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/ak-architecture-diagram/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/core-components-install/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/core-components-verify/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/eck-install/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/eck-purpose/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/eck-verify/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/elastic-deploy/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/elastic/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/hw-req-agent/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/hw-req-core-components/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/hw-req-logging/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/hw-req-pre-requisites/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/hw-req-prom-graf/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/istio-install/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/istio-purpose/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/istio-verify/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/kafka-install/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/kafka-purpose/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/kafka-verify/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/loki-install/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/loki-purpose/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/loki-verify/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/mysql-install/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/mysql-purpose/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/mysql-verify/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/onprem-feeder/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/pinot-install/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/pinot-purpose/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/pinot-verify/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/prom-graf-install/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/prom-graf-purpose/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/prom-graf-verify/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/support/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/sw-req-pre-requisites/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/temporal-deploy/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/temporal/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/ui-deploy/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/ui-onprem-purpose/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/ui-onprem/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/what-is-ak-on-prem/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/elastic/elastic/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/logging/logging/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/monitoring/monitoring/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/onprem-setup-steps/accuknox-onprem/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/onprem-setup-steps/create-cluster/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/onprem-setup-steps/install-accuknox-ui/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/onprem-setup-steps/install-core-components/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/onprem-setup-steps/istio/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/onprem-setup-steps/kafka/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/onprem-setup-steps/mysql/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/onprem-setup-steps/pinot/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/onprem-setup-steps/temporal/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/onprem-setup-steps/what-is-next/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/anomaly-detection/how-does-it-work/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/anomaly-detection/how-to-train-containers/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/anomaly-detection/how-to-train-vm/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/anomaly-detection/pre-requisites-installation-requirements-for-k8s/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/anomaly-detection/pre-requisites-installation-requirements-for-vm/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/anomaly-detection/vm-audit-and-logs/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/anomaly-detection/what-does-the-container-audit-and-logs-mean/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/anomaly-detection/what-is-anomaly-detection/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/auto_discovery_of_policies/auto_discovery_of_policies/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/cluster_manager/cluster-management/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/cluster_manager/k8s-cluster-management/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/overview/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/types-of-solutions/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/user-personas-use-cases/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/data-agent/data-agent-installation/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/data-agent/introduction/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/data-agent/requirements/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/data-protection-saas/how-to-configure-datasource/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/data-protection-saas/how-to-manage-a-sensitive-class/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/data-protection-saas/how-to-manage-a-sensitive-tag/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/data-protection-saas/how-to-manage-database-policy/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/data-protection-saas/how-to-manage-databases/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/data-protection-saas/how-to-manage-s3-buckets/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/data-protection-saas/how-to-manage-sensitive-source-labels/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/data-protection-saas/overview/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/mysql/components-for-installation/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/mysql/introduction/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/mysql/audit-log-exporter/installation/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/mysql/audit-log-exporter/introduction/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/mysql/audit-log-exporter/requirements/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/mysql/data-agent/installation/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/mysql/data-agent/introduction/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/mysql/data-agent/requirements/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/s3/introduction/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/s3/requirements/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/s3/s3-audit-reporter-installation-guide/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/data-protection/s3/setup-and-configure/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/extensions/code-hilite/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/extensions/footnote/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/extensions/mathjax/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/Logs/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/Telemetry/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/accuknox-agents/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/agent-metrics/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/channel-integration/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/cilium-install/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/cloudwatch-integration/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/cluster-management/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/docker/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/elastic-integration/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/fine-grained-access-control/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/how-is-this-help-organized/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/jira-integration/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/k8s-workloads/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/list-of-components/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/lsm-and-kubearmor/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/open-source-vs-enterprise/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/policy-discovery/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/getting-started/rsyslog-integration/</loc>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/security-policy-as-code/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/slack-integration/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/splunk-integration/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/technology/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/vm-baremetal/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/vm-onboarding/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/what-is-runtime-security/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/what-is-the-problem-accuknox-solves/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/getting-started/workspace-manager/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/how-to/ensure-policies-will-not-break-application/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/how-to/protect-mysql-application/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/how-to/protect-python-microservice/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/how-to/protect-wordpress-application/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/how-to/SplunkApp/accuKnox-splunk-app-installation-configuration/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/how-to/SplunkApp/Images/info/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/label_manager/create_label/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/label_manager/edit_remove_labels/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/label_manager/overview/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/label_manager/view_labels/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/label_manager/what_are_labels/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/logs_summary/logs/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/logs_summary/overview/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/logs_summary/triggers/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/manage_policies/manage_policies/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/onboarding/installation/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/onboarding/onboarding/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/onboarding/pre-requisites/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/onboarding/sign-up/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/onboarding/verify-service-gke/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/auto-policy-generation/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/cilium-install/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/cilium-policy-audit/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/cilium-policy-stats/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/cilium-spire-spiffe/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/cilium-vm-k8s/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/ciliummatricx/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/integration/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/kubearmor-audit/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/kubearmor-install/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/kubearmor-vm/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/kubearmormatrix/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/kvmservice-nonk8s/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/open-source-accuknox/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/policy-specification-for-kubearmor/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/policy-templates/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/quick_start_guide/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/what-is-cilium/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/what-is-kubearmor/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/bullseye/bullseye/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/buster/buster/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/cilium/bullseye/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/cilium/buster/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/cilium/cos/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/cilium/eks/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/cilium/k3s/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/cilium/microk8s/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/cilium/minikube/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/cilium/suse_les_15/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/cilium/ubuntu18.04/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/cilium/ubuntu20.04/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/cilium/eks_al2/eksal2/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/eks/eks/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/gitops/AWS-user-credential-and-Jenkins-Integration/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/gitops/GCP-Service-Account-and-Jenkins-Integration/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/gitops/gitops/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/gke-cos/cos/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/jenkins-plugin-integration/jenkins-plugin-integration/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/k3s/k3s/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/kubearmor/bullseye/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/kubearmor/buster/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/kubearmor/cos/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/kubearmor/eks/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/kubearmor/k3s/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/kubearmor/microk8s/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/kubearmor/minikube/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/kubearmor/suse_les_15/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/kubearmor/ubuntu18.04/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/kubearmor/ubuntu20.04/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/kubearmor/al2/al2/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/kubearmor/eks_al2/eks_al2/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/microk8s/microk8s/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/minikube/minikube/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/suse_les_15/suse_les_15/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/ubuntu18.04/ubuntu18.04/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/open-source/ubuntu20.04/ubuntu20.04/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/policies-and-rule/policies-and-rule/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/policy_audit_logs/overview/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/policy_audit_logs/policy_audit_log/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/policy_audit_logs/policy_status/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/policy_audit_logs/status_of_changes/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/policy_manager/approve_policies/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/policy_manager/create_and_apply_policies/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/policy_manager/edit_and_delete_policies/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/policy_manager/network_and%20_system_policies/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/policy_manager/view_and_apply_auto_discovery_policy/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/policy_manager/view_and_apply_recommended_policy/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/s3-data-protection/Pre-requisites-S3-Audit-Reporter/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/s3-data-protection/istio-depolyment/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/s3-data-protection/kafka-operator-deployment/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/s3-data-protection/mysql-operator-deployment/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/s3-data-protection/overview/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/s3-data-protection/pinot-deployment/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/s3-data-protection/s3-access-audit/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/s3-data-protection/test-scenarios/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/saas-elk/elk/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/saas-splunk/splunk/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/telemetry/overview/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/telemetry/telemetry-gke/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/workspace-manager/channel-integration-overview/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/workspace-manager/edit-integration/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/workspace-manager/manage-instance-group/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/workspace-manager/manage-onboarded-clusters/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/workspace-manager/manage-service-account/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/workspace-manager/role_based_access_control/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://accuknox.com/workspace-manager/user_management/</loc>
-         <lastmod>2022-12-15</lastmod>
+         <lastmod>2023-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

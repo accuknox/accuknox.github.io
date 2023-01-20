@@ -150,46 +150,6 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
       <div class="md-header__source">
         
@@ -3674,6 +3634,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_11_4_1">
@@ -3766,6 +3728,20 @@
     <li class="md-nav__item">
       <a href="../../getting-started/jira-integration/" class="md-nav__link">
         Jira
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/rsyslog-integration/" class="md-nav__link">
+        RSyslog
       </a>
     </li>
   
@@ -4046,27 +4022,27 @@
 AccuKnox maintains <a href="https://github.com/accuknox/samples">repository</a> that contains various sample deployment that one can use to play with for various PoC scenarios.</p>
 <p>In this use case we are going to deploy an Online Book Store app made with mysql deployment.</p>
 <p><em>To create this mysql deployment into your cluster run this below command:</em></p>
-<div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/accuknox/samples/main/OnlineBookStore/mysql-deployment.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/accuknox/samples/main/OnlineBookStore/mysql-deployment.yaml
 </code></pre></div>
 <p>Output:</p>
-<div class="highlight"><pre><span></span><code>service/mysql created
-deployment.apps/mysql created
-persistentvolume/mysql-pv-volume created
-persistentvolumeclaim/mysql-pv-claim created
+<div class="highlight"><pre><span></span><code>service/mysql<span class="w"> </span>created
+deployment.apps/mysql<span class="w"> </span>created
+persistentvolume/mysql-pv-volume<span class="w"> </span>created
+persistentvolumeclaim/mysql-pv-claim<span class="w"> </span>created
 </code></pre></div>
 <p>Deployment state:</p>
-<div class="highlight"><pre><span></span><code>NAME                         READY   STATUS    RESTARTS   AGE
-pod/mysql-68579b78bb-rttvt   <span class="m">1</span>/1     Running   <span class="m">0</span>          24s
+<div class="highlight"><pre><span></span><code>NAME<span class="w">                         </span>READY<span class="w">   </span>STATUS<span class="w">    </span>RESTARTS<span class="w">   </span>AGE
+pod/mysql-68579b78bb-rttvt<span class="w">   </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>24s
 
-NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT<span class="o">(</span>S<span class="o">)</span>    AGE
-service/kubernetes   ClusterIP   <span class="m">10</span>.44.0.1    &lt;none&gt;        <span class="m">443</span>/TCP    3h3m
-service/mysql        ClusterIP   None         &lt;none&gt;        <span class="m">3306</span>/TCP   27s
+NAME<span class="w">                 </span>TYPE<span class="w">        </span>CLUSTER-IP<span class="w">   </span>EXTERNAL-IP<span class="w">   </span>PORT<span class="o">(</span>S<span class="o">)</span><span class="w">    </span>AGE
+service/kubernetes<span class="w">   </span>ClusterIP<span class="w">   </span><span class="m">10</span>.44.0.1<span class="w">    </span>&lt;none&gt;<span class="w">        </span><span class="m">443</span>/TCP<span class="w">    </span>3h3m
+service/mysql<span class="w">        </span>ClusterIP<span class="w">   </span>None<span class="w">         </span>&lt;none&gt;<span class="w">        </span><span class="m">3306</span>/TCP<span class="w">   </span>27s
 
-NAME                    READY   UP-TO-DATE   AVAILABLE   AGE
-deployment.apps/mysql   <span class="m">1</span>/1     <span class="m">1</span>            <span class="m">1</span>           26s
+NAME<span class="w">                    </span>READY<span class="w">   </span>UP-TO-DATE<span class="w">   </span>AVAILABLE<span class="w">   </span>AGE
+deployment.apps/mysql<span class="w">   </span><span class="m">1</span>/1<span class="w">     </span><span class="m">1</span><span class="w">            </span><span class="m">1</span><span class="w">           </span>26s
 
-NAME                               DESIRED   CURRENT   READY   AGE
-replicaset.apps/mysql-68579b78bb   <span class="m">1</span>         <span class="m">1</span>         <span class="m">1</span>       26s
+NAME<span class="w">                               </span>DESIRED<span class="w">   </span>CURRENT<span class="w">   </span>READY<span class="w">   </span>AGE
+replicaset.apps/mysql-68579b78bb<span class="w">   </span><span class="m">1</span><span class="w">         </span><span class="m">1</span><span class="w">         </span><span class="m">1</span><span class="w">       </span>26s
 </code></pre></div>
 <h1 id="policy-templates">Policy-Templates<a class="headerlink" href="#policy-templates" title="Permanent link">&para;</a></h1>
 <p>AccuKnox policy-templates  includes ready-made policy templates for all of our needs, from NIST, PCI-DSS, and STIG compliances to all CVEs and everything in between. That is the repository we will use in our use case. Check out <a href="https://github.com/kubearmor/policy-templates">policy-template</a> for further information.</p>
@@ -4079,240 +4055,240 @@ replicaset.apps/mysql-68579b78bb   <span class="m">1</span>         <span class=
 <div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/kubearmor/policy-templates/main/MySQL/system/ksp-restrict-access-mysql-server-config-files.yaml
 </code></pre></div>
 <p>Policy YAML:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># KubeArmor is an open source software that enables you to protect your cloud workload at run-time.</span><span class="w"></span>
-<span class="c1"># To learn more about KubeArmor visit:</span><span class="w"></span>
-<span class="c1"># https://www.accuknox.com/kubearmor/</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="c1"># KubeArmor is an open source software that enables you to protect your cloud workload at run-time.</span>
+<span class="c1"># To learn more about KubeArmor visit:</span>
+<span class="c1"># https://www.accuknox.com/kubearmor/</span>
 
-<span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorPolicy</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ksp-restrict-access-mysql-server-config</span><span class="w"></span>
-<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span><span class="w"> </span><span class="c1"># Change your namespace</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;MYSQL&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;config-files&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;mysqldump&quot;</span><span class="p p-Indicator">]</span><span class="w"></span>
-<span class="w">  </span><span class="nt">message</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alert!</span><span class="nv"> </span><span class="s">mysql</span><span class="nv"> </span><span class="s">configuration</span><span class="nv"> </span><span class="s">files</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">accessed</span><span class="nv"> </span><span class="s">and/or</span><span class="nv"> </span><span class="s">mysqldump</span><span class="nv"> </span><span class="s">command</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">used.&quot;</span><span class="w"></span>
-<span class="w">  </span><span class="nt">selector</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql8</span><span class="w"> </span><span class="c1"># Change your labels</span><span class="w"></span>
-<span class="w">  </span><span class="nt">file</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/mysql/my.cnf</span><span class="w"></span>
-<span class="w">      </span><span class="nt">ownerOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchDirectories</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/mysql/</span><span class="w"></span>
-<span class="w">      </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">      </span><span class="nt">ownerOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/lib/mysql/</span><span class="w"></span>
-<span class="w">      </span><span class="nt">readOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">      </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/log/mysql/</span><span class="w"></span>
-<span class="w">      </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">    </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Audit</span><span class="w"></span>
-<span class="w">  </span><span class="nt">process</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/bin/mysqldump</span><span class="w"></span>
-<span class="w">    </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Block</span><span class="w"></span>
+<span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorPolicy</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ksp-restrict-access-mysql-server-config</span>
+<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span><span class="w"> </span><span class="c1"># Change your namespace</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;MYSQL&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;config-files&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;mysqldump&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">  </span><span class="nt">message</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alert!</span><span class="nv"> </span><span class="s">mysql</span><span class="nv"> </span><span class="s">configuration</span><span class="nv"> </span><span class="s">files</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">accessed</span><span class="nv"> </span><span class="s">and/or</span><span class="nv"> </span><span class="s">mysqldump</span><span class="nv"> </span><span class="s">command</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">used.&quot;</span>
+<span class="w">  </span><span class="nt">selector</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql8</span><span class="w"> </span><span class="c1"># Change your labels</span>
+<span class="w">  </span><span class="nt">file</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/mysql/my.cnf</span>
+<span class="w">      </span><span class="nt">ownerOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">matchDirectories</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/mysql/</span>
+<span class="w">      </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="nt">ownerOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/lib/mysql/</span>
+<span class="w">      </span><span class="nt">readOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/log/mysql/</span>
+<span class="w">      </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Audit</span>
+<span class="w">  </span><span class="nt">process</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/bin/mysqldump</span>
+<span class="w">    </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Block</span>
 </code></pre></div>
 <p>In our policy we have mentioned the:</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/lib/mysql/</span><span class="w"></span>
-<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">readOnly</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">recursive</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/lib/mysql/</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">readOnly</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">recursive</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
 <p><code>readOnly: true</code> this rule will give appropriate permissions to the deployed application.  \
 So we can stop the logs from exposing and also our policy won’t break the applications functionality.</p>
 <ol>
 <li>In this policy we are going to protect the mysqldump to get accessed and to apply this policy run this command.</li>
 </ol>
-<div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/kubearmor/policy-templates/main/mitre/system/ksp-block-mysql-dump-in-pods.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/kubearmor/policy-templates/main/mitre/system/ksp-block-mysql-dump-in-pods.yaml
 </code></pre></div>
 <p>Policy YAML:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># KubeArmor is an open source software that enables you to protect your cloud workload at run-time.</span>
 <span class="c1"># To learn more about KubeArmor visit:</span>
 <span class="c1"># https://www.accuknox.com/kubearmor/</span>
 
-apiVersion: security.kubearmor.com/v1
-kind: KubeArmorPolicy
+apiVersion:<span class="w"> </span>security.kubearmor.com/v1
+kind:<span class="w"> </span>KubeArmorPolicy
 metadata:
-  name: ksp-block-mysql-dump-in-pods
-  namespace: default        <span class="c1"># Change your namespace</span>
+<span class="w">  </span>name:<span class="w"> </span>ksp-block-mysql-dump-in-pods
+<span class="w">  </span>namespace:<span class="w"> </span>default<span class="w">        </span><span class="c1"># Change your namespace</span>
 spec:
-  tags: <span class="o">[</span><span class="s2">&quot;mysql&quot;</span>,<span class="s2">&quot;system&quot;</span>,<span class="s2">&quot;K8s&quot;</span><span class="o">]</span>
-  message: <span class="s2">&quot;Warning! MySQLdump is blocked&quot;</span>
-  selector:
-    matchLabels:
-      app: testpod    <span class="c1">#change with your own label</span>
-  process:
-    matchPaths:
-    - path: /usr/bin/mysqldump
-    action: Block
-    severity: <span class="m">6</span>
+<span class="w">  </span>tags:<span class="w"> </span><span class="o">[</span><span class="s2">&quot;mysql&quot;</span>,<span class="s2">&quot;system&quot;</span>,<span class="s2">&quot;K8s&quot;</span><span class="o">]</span>
+<span class="w">  </span>message:<span class="w"> </span><span class="s2">&quot;Warning! MySQLdump is blocked&quot;</span>
+<span class="w">  </span>selector:
+<span class="w">    </span>matchLabels:
+<span class="w">      </span>app:<span class="w"> </span>testpod<span class="w">    </span><span class="c1">#change with your own label</span>
+<span class="w">  </span>process:
+<span class="w">    </span>matchPaths:
+<span class="w">    </span>-<span class="w"> </span>path:<span class="w"> </span>/usr/bin/mysqldump
+<span class="w">    </span>action:<span class="w"> </span>Block
+<span class="w">    </span>severity:<span class="w"> </span><span class="m">6</span>
 </code></pre></div>
 <ol>
 <li>In this policy we are protecting the configuration files from exposure. To apply the policy run this below command.</li>
 </ol>
-<div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/kubearmor/policy-templates/main/stigs/system/ksp-block-stigs-mysql-config-directory-access.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/kubearmor/policy-templates/main/stigs/system/ksp-block-stigs-mysql-config-directory-access.yaml
 </code></pre></div>
 <p>Policy YAML:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># KubeArmor is an open source software that enables you to protect your cloud workload at run-time.</span>
 <span class="c1"># To learn more about KubeArmor visit:</span>
 <span class="c1"># https://www.accuknox.com/kubearmor/</span>
 
-apiVersion: security.kubearmor.com/v1
-kind: KubeArmorPolicy
+apiVersion:<span class="w"> </span>security.kubearmor.com/v1
+kind:<span class="w"> </span>KubeArmorPolicy
 metadata:
-  name: ksp-block-stigs-mysql-config-directory-access
-  namespace: default <span class="c1"># Change your namespace</span>
+<span class="w">  </span>name:<span class="w"> </span>ksp-block-stigs-mysql-config-directory-access
+<span class="w">  </span>namespace:<span class="w"> </span>default<span class="w"> </span><span class="c1"># Change your namespace</span>
 spec:
-  tags: <span class="o">[</span><span class="s2">&quot;STIGS&quot;</span>, <span class="s2">&quot;MYSQL&quot;</span><span class="o">]</span>
-  message: <span class="s2">&quot;Alert! Access to mysql conf files has been denied&quot;</span>
-  selector:
-    matchLabels:
-      pod: mysql-1 <span class="c1"># Change your match labels</span>
-  file:
-    severity: <span class="m">5</span>
-    matchDirectories:
-    - dir: /etc/mysql/
-      recursive: <span class="nb">true</span>
-      ownerOnly: <span class="nb">true</span>
-    - dir: /usr/lib/mysql/
-      recursive: <span class="nb">true</span>
-      ownerOnly: <span class="nb">true</span>
-    - dir: /usr/share/mysql/
-      recursive: <span class="nb">true</span>
-      ownerOnly: <span class="nb">true</span>
-    - dir: /var/lib/mysql/
-      recursive: <span class="nb">true</span>
-      ownerOnly: <span class="nb">true</span>
-    - dir: /var/log/mysql/
-      recursive: <span class="nb">true</span>
-      ownerOnly: <span class="nb">true</span>
-    - dir: /usr/local/mysql/
-      recursive: <span class="nb">true</span>
-      ownerOnly: <span class="nb">true</span>
-    action: Block
+<span class="w">  </span>tags:<span class="w"> </span><span class="o">[</span><span class="s2">&quot;STIGS&quot;</span>,<span class="w"> </span><span class="s2">&quot;MYSQL&quot;</span><span class="o">]</span>
+<span class="w">  </span>message:<span class="w"> </span><span class="s2">&quot;Alert! Access to mysql conf files has been denied&quot;</span>
+<span class="w">  </span>selector:
+<span class="w">    </span>matchLabels:
+<span class="w">      </span>pod:<span class="w"> </span>mysql-1<span class="w"> </span><span class="c1"># Change your match labels</span>
+<span class="w">  </span>file:
+<span class="w">    </span>severity:<span class="w"> </span><span class="m">5</span>
+<span class="w">    </span>matchDirectories:
+<span class="w">    </span>-<span class="w"> </span>dir:<span class="w"> </span>/etc/mysql/
+<span class="w">      </span>recursive:<span class="w"> </span><span class="nb">true</span>
+<span class="w">      </span>ownerOnly:<span class="w"> </span><span class="nb">true</span>
+<span class="w">    </span>-<span class="w"> </span>dir:<span class="w"> </span>/usr/lib/mysql/
+<span class="w">      </span>recursive:<span class="w"> </span><span class="nb">true</span>
+<span class="w">      </span>ownerOnly:<span class="w"> </span><span class="nb">true</span>
+<span class="w">    </span>-<span class="w"> </span>dir:<span class="w"> </span>/usr/share/mysql/
+<span class="w">      </span>recursive:<span class="w"> </span><span class="nb">true</span>
+<span class="w">      </span>ownerOnly:<span class="w"> </span><span class="nb">true</span>
+<span class="w">    </span>-<span class="w"> </span>dir:<span class="w"> </span>/var/lib/mysql/
+<span class="w">      </span>recursive:<span class="w"> </span><span class="nb">true</span>
+<span class="w">      </span>ownerOnly:<span class="w"> </span><span class="nb">true</span>
+<span class="w">    </span>-<span class="w"> </span>dir:<span class="w"> </span>/var/log/mysql/
+<span class="w">      </span>recursive:<span class="w"> </span><span class="nb">true</span>
+<span class="w">      </span>ownerOnly:<span class="w"> </span><span class="nb">true</span>
+<span class="w">    </span>-<span class="w"> </span>dir:<span class="w"> </span>/usr/local/mysql/
+<span class="w">      </span>recursive:<span class="w"> </span><span class="nb">true</span>
+<span class="w">      </span>ownerOnly:<span class="w"> </span><span class="nb">true</span>
+<span class="w">    </span>action:<span class="w"> </span>Block
 </code></pre></div>
 <ol>
 <li>In this Cilium policy we are going to protect the unused ports from accessing the workloads. To apply the policy run this below command.</li>
 </ol>
-<div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/kubearmor/policy-templates/main/stigs/network/cnp-mysql-stig-v-235146.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/kubearmor/policy-templates/main/stigs/network/cnp-mysql-stig-v-235146.yaml
 </code></pre></div>
 <p>Policy YAML:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># https://www.stigviewer.com/stig/oracle_mysql_8.0/2021-12-10/finding/V-235146</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="c1"># https://www.stigviewer.com/stig/oracle_mysql_8.0/2021-12-10/finding/V-235146</span>
 
-<span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cilium.io/v2</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CiliumNetworkPolicy</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cnp-mysql-stig-v-235146</span><span class="w"></span>
-<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span><span class="w">        </span><span class="c1">#change default namespace to match your namespace</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Restrict</span><span class="nv"> </span><span class="s">access</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">unused</span><span class="nv"> </span><span class="s">ports&quot;</span><span class="w"></span>
-<span class="w">  </span><span class="nt">endpointSelector</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql</span><span class="w"> </span><span class="c1">#change label app: mysql with your own labels.</span><span class="w"></span>
-<span class="w">  </span><span class="nt">ingress</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">fromEndpoints</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{}</span><span class="w"></span>
-<span class="w">      </span><span class="nt">toPorts</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3306&quot;</span><span class="w"></span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;33060&quot;</span><span class="w"></span>
+<span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cilium.io/v2</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CiliumNetworkPolicy</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cnp-mysql-stig-v-235146</span>
+<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span><span class="w">        </span><span class="c1">#change default namespace to match your namespace</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Restrict</span><span class="nv"> </span><span class="s">access</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">unused</span><span class="nv"> </span><span class="s">ports&quot;</span>
+<span class="w">  </span><span class="nt">endpointSelector</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql</span><span class="w"> </span><span class="c1">#change label app: mysql with your own labels.</span>
+<span class="w">  </span><span class="nt">ingress</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">fromEndpoints</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{}</span>
+<span class="w">      </span><span class="nt">toPorts</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3306&quot;</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;33060&quot;</span>
 </code></pre></div>
 <ol>
 <li>In this cilium policy we are protecting from external access to our mysql workload. To apply the policy run the below command.</li>
 </ol>
-<div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/kubearmor/policy-templates/main/mitre/network/cnp-egress-deny-external-communication-from-mysql-pod.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/kubearmor/policy-templates/main/mitre/network/cnp-egress-deny-external-communication-from-mysql-pod.yaml
 </code></pre></div>
 <p>Policy YAML:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;cilium.io/v2&quot;</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CiliumNetworkPolicy</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cnp-egress-deny-external-communication-from-mysql-pod</span><span class="w"></span>
-<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span><span class="w">        </span><span class="c1">#change default namespace to match your namespace</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;To</span><span class="nv"> </span><span class="s">block</span><span class="nv"> </span><span class="s">all</span><span class="nv"> </span><span class="s">external</span><span class="nv"> </span><span class="s">world</span><span class="nv"> </span><span class="s">communication</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">mysql</span><span class="nv"> </span><span class="s">pod</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">limit</span><span class="nv"> </span><span class="s">it</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">specific</span><span class="nv"> </span><span class="s">pods&quot;</span><span class="w"></span>
-<span class="w">  </span><span class="nt">endpointSelector</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql</span><span class="w">      </span><span class="c1">#change app: mysql to match your label</span><span class="w"></span>
-<span class="w">  </span><span class="nt">egressDeny</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toEntities</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;world&quot;</span><span class="w"></span>
-<span class="w">  </span><span class="nt">egress</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toEndpoints</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">frontend</span><span class="w">   </span><span class="c1">#change app: frontend to match your label</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;cilium.io/v2&quot;</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CiliumNetworkPolicy</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cnp-egress-deny-external-communication-from-mysql-pod</span>
+<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span><span class="w">        </span><span class="c1">#change default namespace to match your namespace</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;To</span><span class="nv"> </span><span class="s">block</span><span class="nv"> </span><span class="s">all</span><span class="nv"> </span><span class="s">external</span><span class="nv"> </span><span class="s">world</span><span class="nv"> </span><span class="s">communication</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">mysql</span><span class="nv"> </span><span class="s">pod</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">limit</span><span class="nv"> </span><span class="s">it</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">specific</span><span class="nv"> </span><span class="s">pods&quot;</span>
+<span class="w">  </span><span class="nt">endpointSelector</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql</span><span class="w">      </span><span class="c1">#change app: mysql to match your label</span>
+<span class="w">  </span><span class="nt">egressDeny</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toEntities</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;world&quot;</span>
+<span class="w">  </span><span class="nt">egress</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toEndpoints</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">frontend</span><span class="w">   </span><span class="c1">#change app: frontend to match your label</span>
 </code></pre></div>
 <p><strong>Verification:</strong> After applying multiple policies from policy-template our deployment is still running and without any issues</p>
-<div class="highlight"><pre><span></span><code>❯ kubectl apply -f https://raw.githubusercontent.com/kubearmor/policy-templates/main/MySQL/system/ksp-restrict-access-mysql-server-config-files.yaml
-kubearmorpolicy.security.kubearmor.com/ksp-restrict-access-mysql-server-config unchanged
-❯ kubectl apply -f https://raw.githubusercontent.com/kubearmor/policy-templates/main/mitre/system/ksp-block-mysql-dump-in-pods.yaml
-kubearmorpolicy.security.kubearmor.com/ksp-block-mysql-dump-in-pods unchanged
-❯ kubectl apply -f https://raw.githubusercontent.com/kubearmor/policy-templates/main/stigs/system/ksp-block-stigs-mysql-config-directory-access.yaml
-kubearmorpolicy.security.kubearmor.com/ksp-block-stigs-mysql-config-directory-access unchanged
-❯ kubectl apply -f https://raw.githubusercontent.com/kubearmor/policy-templates/main/stigs/network/cnp-mysql-stig-v-235146.yaml
-ciliumnetworkpolicy.cilium.io/cnp-mysql-stig-v-235146 unchanged
-❯ kubectl apply -f https://raw.githubusercontent.com/kubearmor/policy-templates/main/mitre/network/cnp-egress-deny-external-communication-from-mysql-pod.yaml
-ciliumnetworkpolicy.cilium.io/cnp-egress-deny-external-communication-from-mysql-pod unchanged
+<div class="highlight"><pre><span></span><code>❯<span class="w"> </span>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/kubearmor/policy-templates/main/MySQL/system/ksp-restrict-access-mysql-server-config-files.yaml
+kubearmorpolicy.security.kubearmor.com/ksp-restrict-access-mysql-server-config<span class="w"> </span>unchanged
+❯<span class="w"> </span>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/kubearmor/policy-templates/main/mitre/system/ksp-block-mysql-dump-in-pods.yaml
+kubearmorpolicy.security.kubearmor.com/ksp-block-mysql-dump-in-pods<span class="w"> </span>unchanged
+❯<span class="w"> </span>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/kubearmor/policy-templates/main/stigs/system/ksp-block-stigs-mysql-config-directory-access.yaml
+kubearmorpolicy.security.kubearmor.com/ksp-block-stigs-mysql-config-directory-access<span class="w"> </span>unchanged
+❯<span class="w"> </span>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/kubearmor/policy-templates/main/stigs/network/cnp-mysql-stig-v-235146.yaml
+ciliumnetworkpolicy.cilium.io/cnp-mysql-stig-v-235146<span class="w"> </span>unchanged
+❯<span class="w"> </span>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/kubearmor/policy-templates/main/mitre/network/cnp-egress-deny-external-communication-from-mysql-pod.yaml
+ciliumnetworkpolicy.cilium.io/cnp-egress-deny-external-communication-from-mysql-pod<span class="w"> </span>unchanged
 </code></pre></div>
 <p>Deployment state after applied the policies:</p>
-<div class="highlight"><pre><span></span><code>❯ kubectl get all -A <span class="p">|</span> grep sql
-default       pod/wordpress-mysql-55556f7-nf5fm              <span class="m">1</span>/1     Running    <span class="m">0</span>            32m
-explorer      pod/mysql-0                                    <span class="m">1</span>/1     Running    <span class="m">0</span>            17m
-default       service/mysql                                          ClusterIP  None         &lt;none&gt;          <span class="m">3306</span>/TCP       5h23m
-default       service/wordpress-mysql                                ClusterIP  None         &lt;none&gt;          <span class="m">3306</span>/TCP       32m
-explorer      service/mysql                                          ClusterIP  <span class="m">10</span>.52.4.111  &lt;none&gt;          <span class="m">3306</span>/TCP       17m
-explorer      service/mysql-headless                                 ClusterIP  None         &lt;none&gt;          <span class="m">3306</span>/TCP       17m
-default       deployment.apps/wordpress-mysql                 <span class="m">1</span>/1     <span class="m">1</span>         <span class="m">1</span>             32m
-default       replicaset.apps/wordpress-mysql-55556f7                 <span class="m">1</span>         <span class="m">1</span>             32m
-default       replicaset.apps/wordpress-mysql-7fc5cb7ccc              <span class="m">0</span>         <span class="m">0</span>             32m
-explorer      statefulset.apps/mysql                          <span class="m">1</span>/1                             17m
+<div class="highlight"><pre><span></span><code>❯<span class="w"> </span>kubectl<span class="w"> </span>get<span class="w"> </span>all<span class="w"> </span>-A<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>sql
+default<span class="w">       </span>pod/wordpress-mysql-55556f7-nf5fm<span class="w">              </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">    </span><span class="m">0</span><span class="w">            </span>32m
+explorer<span class="w">      </span>pod/mysql-0<span class="w">                                    </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">    </span><span class="m">0</span><span class="w">            </span>17m
+default<span class="w">       </span>service/mysql<span class="w">                                          </span>ClusterIP<span class="w">  </span>None<span class="w">         </span>&lt;none&gt;<span class="w">          </span><span class="m">3306</span>/TCP<span class="w">       </span>5h23m
+default<span class="w">       </span>service/wordpress-mysql<span class="w">                                </span>ClusterIP<span class="w">  </span>None<span class="w">         </span>&lt;none&gt;<span class="w">          </span><span class="m">3306</span>/TCP<span class="w">       </span>32m
+explorer<span class="w">      </span>service/mysql<span class="w">                                          </span>ClusterIP<span class="w">  </span><span class="m">10</span>.52.4.111<span class="w">  </span>&lt;none&gt;<span class="w">          </span><span class="m">3306</span>/TCP<span class="w">       </span>17m
+explorer<span class="w">      </span>service/mysql-headless<span class="w">                                 </span>ClusterIP<span class="w">  </span>None<span class="w">         </span>&lt;none&gt;<span class="w">          </span><span class="m">3306</span>/TCP<span class="w">       </span>17m
+default<span class="w">       </span>deployment.apps/wordpress-mysql<span class="w">                 </span><span class="m">1</span>/1<span class="w">     </span><span class="m">1</span><span class="w">         </span><span class="m">1</span><span class="w">             </span>32m
+default<span class="w">       </span>replicaset.apps/wordpress-mysql-55556f7<span class="w">                 </span><span class="m">1</span><span class="w">         </span><span class="m">1</span><span class="w">             </span>32m
+default<span class="w">       </span>replicaset.apps/wordpress-mysql-7fc5cb7ccc<span class="w">              </span><span class="m">0</span><span class="w">         </span><span class="m">0</span><span class="w">             </span>32m
+explorer<span class="w">      </span>statefulset.apps/mysql<span class="w">                          </span><span class="m">1</span>/1<span class="w">                             </span>17m
 </code></pre></div>
 <p>Verifying logs using Cilium:</p>
 <p>List all cilium pods</p>
-<div class="highlight"><pre><span></span><code>❯ kubectl -n kube-system get pods -l k8s-app<span class="o">=</span>cilium
-NAME           READY   STATUS    RESTARTS   AGE
-cilium-6jbcf   <span class="m">1</span>/1     Running   <span class="m">0</span>          115m
-cilium-pj86d   <span class="m">1</span>/1     Running   <span class="m">0</span>          115m
-cilium-qp649   <span class="m">1</span>/1     Running   <span class="m">0</span>          115m
+<div class="highlight"><pre><span></span><code>❯<span class="w"> </span>kubectl<span class="w"> </span>-n<span class="w"> </span>kube-system<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-l<span class="w"> </span>k8s-app<span class="o">=</span>cilium
+NAME<span class="w">           </span>READY<span class="w">   </span>STATUS<span class="w">    </span>RESTARTS<span class="w">   </span>AGE
+cilium-6jbcf<span class="w">   </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>115m
+cilium-pj86d<span class="w">   </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>115m
+cilium-qp649<span class="w">   </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>115m
 </code></pre></div>
 <p>Run this command</p>
-<div class="highlight"><pre><span></span><code>kubectl -n kube-system <span class="nb">exec</span> -it cilium-6jbcf -- bash
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>-n<span class="w"> </span>kube-system<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>cilium-6jbcf<span class="w"> </span>--<span class="w"> </span>bash
 </code></pre></div>
 <p>[Note: Pods name may vary check with your deployment]</p>
 <p>After entering into the pod, Run this below command:</p>
-<div class="highlight"><pre><span></span><code>❯ kubectl -n kube-system <span class="nb">exec</span> -it cilium-6jbcf -- bash
-Defaulted container <span class="s2">&quot;cilium-agent&quot;</span> out of: cilium-agent, wait-for-node-init <span class="o">(</span>init<span class="o">)</span>, ebpf-mount <span class="o">(</span>init<span class="o">)</span>, clean-cilium-state <span class="o">(</span>init<span class="o">)</span>
-root@gke-cys-may-9-default-pool-8ddae69c-gnkg:/home/cilium# cilium monitor
-Listening <span class="k">for</span> events on <span class="m">2</span> CPUs with 64x4096 of shared memory
-Press Ctrl-C to quit
-<span class="nv">level</span><span class="o">=</span>info <span class="nv">msg</span><span class="o">=</span><span class="s2">&quot;Initializing dissection cache...&quot;</span> <span class="nv">subsys</span><span class="o">=</span>monitor
--&gt; endpoint <span class="m">1</span> flow 0x0 identity remote-node-&gt;health state new ifindex <span class="m">0</span> orig-ip <span class="m">10</span>.128.15.192: <span class="m">10</span>.128.15.192 -&gt; <span class="m">10</span>.40.2.23 EchoRequest
--&gt; stack flow 0x0 identity health-&gt;remote-node state reply ifindex <span class="m">0</span> orig-ip <span class="m">0</span>.0.0.0: <span class="m">10</span>.40.2.23 -&gt; <span class="m">10</span>.128.15.192 EchoReply
--&gt; endpoint <span class="m">1</span> flow 0x0 identity remote-node-&gt;health state established ifindex <span class="m">0</span> orig-ip <span class="m">10</span>.128.15.192: <span class="m">10</span>.128.15.192:58714 -&gt; <span class="m">10</span>.40.2.23:4240 tcp ACK
--&gt; stack flow 0x1e62a16c identity health-&gt;remote-node state reply ifindex <span class="m">0</span> orig-ip <span class="m">0</span>.0.0.0: <span class="m">10</span>.40.2.23:4240 -&gt; <span class="m">10</span>.128.15.192:58714 tcp ACK
--&gt; stack flow 0xd663c7fb identity health-&gt;remote-node state reply ifindex <span class="m">0</span> orig-ip <span class="m">0</span>.0.0.0: <span class="m">10</span>.40.2.23:4240 -&gt; <span class="m">10</span>.128.0.63:34796 tcp ACK
--&gt; endpoint <span class="m">1</span> flow 0x0 identity remote-node-&gt;health state established ifindex <span class="m">0</span> orig-ip <span class="m">10</span>.128.0.63: <span class="m">10</span>.128.0.63:34796 -&gt; <span class="m">10</span>.40.2.23:4240 tcp ACK
--&gt; stack flow 0x44777c79 identity health-&gt;host state reply ifindex <span class="m">0</span> orig-ip <span class="m">0</span>.0.0.0: <span class="m">10</span>.40.2.23:4240 -&gt; <span class="m">10</span>.128.0.62:36604 tcp ACK
--&gt; endpoint <span class="m">1</span> flow 0xf6e1704e identity host-&gt;health state established ifindex <span class="m">0</span> orig-ip <span class="m">10</span>.128.0.62: <span class="m">10</span>.128.0.62:36604 -&gt; <span class="m">10</span>.40.2.23:4240 tcp ACK
--&gt; stack flow 0x1e62a16c identity health-&gt;remote-node state reply ifindex <span class="m">0</span> orig-ip <span class="m">0</span>.0.0.0: <span class="m">10</span>.40.2.23:4240 -&gt; <span class="m">10</span>.128.15.192:58714 tcp ACK
--&gt; endpoint <span class="m">1</span> flow 0x0 identity remote-node-&gt;health state established ifindex <span class="m">0</span> orig-ip <span class="m">10</span>.128.15.192: <span class="m">10</span>.128.15.192:58714 -&gt; <span class="m">10</span>.40.2.23:4240 tcp ACK
--&gt; endpoint <span class="m">1</span> flow 0x0 identity remote-node-&gt;health state established ifindex <span class="m">0</span> orig-ip <span class="m">10</span>.128.0.63: <span class="m">10</span>.128.0.63:34796 -&gt; <span class="m">10</span>.40.2.23:4240 tcp ACK
--&gt; stack flow 0xd663c7fb identity health-&gt;remote-node state reply ifindex <span class="m">0</span> orig-ip <span class="m">0</span>.0.0.0: <span class="m">10</span>.40.2.23:4240 -&gt; <span class="m">10</span>.128.0.63:34796 tcp ACK
--&gt; endpoint <span class="m">1</span> flow 0xf6e1704e identity host-&gt;health state established ifindex <span class="m">0</span> orig-ip <span class="m">10</span>.128.0.62: <span class="m">10</span>.128.0.62:36604 -&gt; <span class="m">10</span>.40.2.23:4240 tcp ACK
--&gt; stack flow 0x44777c79 identity health-&gt;host state reply ifindex <span class="m">0</span> orig-ip <span class="m">0</span>.0.0.0: <span class="m">10</span>.40.2.23:4240 -&gt; <span class="m">10</span>.128.0.62:36604 tcp ACK
--&gt; endpoint <span class="m">1</span> flow 0x0 identity remote-node-&gt;health state established ifindex <span class="m">0</span> orig-ip <span class="m">10</span>.128.15.192: <span class="m">10</span>.128.15.192:58714 -&gt; <span class="m">10</span>.40.2.23:4240 tcp ACK
--&gt; stack flow 0x1e62a16c identity health-&gt;remote-node state reply ifindex <span class="m">0</span> orig-ip <span class="m">0</span>.0.0.0: <span class="m">10</span>.40.2.23:4240 -&gt; <span class="m">10</span>.128.15.192:58714 tcp ACK
--&gt; stack flow 0xd663c7fb identity health-&gt;remote-node state reply ifindex <span class="m">0</span> orig-ip <span class="m">0</span>.0.0.0: <span class="m">10</span>.40.2.23:4240 -&gt; <span class="m">10</span>.128.0.63:34796 tcp ACK
--&gt; endpoint <span class="m">1</span> flow 0x0 identity remote-node-&gt;health state established ifindex <span class="m">0</span> orig-ip <span class="m">10</span>.128.0.63: <span class="m">10</span>.128.0.63:34796 -&gt; <span class="m">10</span>.40.2.23:4240 tcp ACK
--&gt; stack flow 0x44777c79 identity health-&gt;host state reply ifindex <span class="m">0</span> orig-ip <span class="m">0</span>.0.0.0: <span class="m">10</span>.40.2.23:4240 -&gt; <span class="m">10</span>.128.0.62:36604 tcp ACK
--&gt; endpoint <span class="m">1</span> flow 0xf6e1704e identity host-&gt;health state established ifindex <span class="m">0</span> orig-ip <span class="m">10</span>.128.0.62: <span class="m">10</span>.128.0.62:36604 -&gt; <span class="m">10</span>.40.2.23:4240 tcp ACK
-&gt;&gt; IPCache entry upserted: <span class="o">{</span><span class="s2">&quot;cidr&quot;</span>:<span class="s2">&quot;10.128.0.62/32&quot;</span>,<span class="s2">&quot;id&quot;</span>:1,<span class="s2">&quot;old-id&quot;</span>:1,<span class="s2">&quot;encrypt-key&quot;</span>:0<span class="o">}</span>
-&gt;&gt; IPCache entry upserted: <span class="o">{</span><span class="s2">&quot;cidr&quot;</span>:<span class="s2">&quot;10.40.2.1/32&quot;</span>,<span class="s2">&quot;id&quot;</span>:1,<span class="s2">&quot;old-id&quot;</span>:1,<span class="s2">&quot;encrypt-key&quot;</span>:0<span class="o">}</span>
-&gt;&gt; IPCache entry upserted: <span class="o">{</span><span class="s2">&quot;cidr&quot;</span>:<span class="s2">&quot;10.40.2.1/32&quot;</span>,<span class="s2">&quot;id&quot;</span>:1,<span class="s2">&quot;old-id&quot;</span>:1,<span class="s2">&quot;encrypt-key&quot;</span>:0<span class="o">}</span>
-&gt;&gt; IPCache entry upserted: <span class="o">{</span><span class="s2">&quot;cidr&quot;</span>:<span class="s2">&quot;10.40.2.1/32&quot;</span>,<span class="s2">&quot;id&quot;</span>:1,<span class="s2">&quot;old-id&quot;</span>:1,<span class="s2">&quot;encrypt-key&quot;</span>:0<span class="o">}</span>
-&gt;&gt; IPCache entry upserted: <span class="o">{</span><span class="s2">&quot;cidr&quot;</span>:<span class="s2">&quot;10.40.2.40/32&quot;</span>,<span class="s2">&quot;id&quot;</span>:1,<span class="s2">&quot;old-id&quot;</span>:1,<span class="s2">&quot;encrypt-key&quot;</span>:0<span class="o">}</span>
+<div class="highlight"><pre><span></span><code>❯<span class="w"> </span>kubectl<span class="w"> </span>-n<span class="w"> </span>kube-system<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>cilium-6jbcf<span class="w"> </span>--<span class="w"> </span>bash
+Defaulted<span class="w"> </span>container<span class="w"> </span><span class="s2">&quot;cilium-agent&quot;</span><span class="w"> </span>out<span class="w"> </span>of:<span class="w"> </span>cilium-agent,<span class="w"> </span>wait-for-node-init<span class="w"> </span><span class="o">(</span>init<span class="o">)</span>,<span class="w"> </span>ebpf-mount<span class="w"> </span><span class="o">(</span>init<span class="o">)</span>,<span class="w"> </span>clean-cilium-state<span class="w"> </span><span class="o">(</span>init<span class="o">)</span>
+root@gke-cys-may-9-default-pool-8ddae69c-gnkg:/home/cilium#<span class="w"> </span>cilium<span class="w"> </span>monitor
+Listening<span class="w"> </span><span class="k">for</span><span class="w"> </span>events<span class="w"> </span>on<span class="w"> </span><span class="m">2</span><span class="w"> </span>CPUs<span class="w"> </span>with<span class="w"> </span>64x4096<span class="w"> </span>of<span class="w"> </span>shared<span class="w"> </span>memory
+Press<span class="w"> </span>Ctrl-C<span class="w"> </span>to<span class="w"> </span>quit
+<span class="nv">level</span><span class="o">=</span>info<span class="w"> </span><span class="nv">msg</span><span class="o">=</span><span class="s2">&quot;Initializing dissection cache...&quot;</span><span class="w"> </span><span class="nv">subsys</span><span class="o">=</span>monitor
+-&gt;<span class="w"> </span>endpoint<span class="w"> </span><span class="m">1</span><span class="w"> </span>flow<span class="w"> </span>0x0<span class="w"> </span>identity<span class="w"> </span>remote-node-&gt;health<span class="w"> </span>state<span class="w"> </span>new<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">10</span>.128.15.192:<span class="w"> </span><span class="m">10</span>.128.15.192<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.40.2.23<span class="w"> </span>EchoRequest
+-&gt;<span class="w"> </span>stack<span class="w"> </span>flow<span class="w"> </span>0x0<span class="w"> </span>identity<span class="w"> </span>health-&gt;remote-node<span class="w"> </span>state<span class="w"> </span>reply<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">0</span>.0.0.0:<span class="w"> </span><span class="m">10</span>.40.2.23<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.128.15.192<span class="w"> </span>EchoReply
+-&gt;<span class="w"> </span>endpoint<span class="w"> </span><span class="m">1</span><span class="w"> </span>flow<span class="w"> </span>0x0<span class="w"> </span>identity<span class="w"> </span>remote-node-&gt;health<span class="w"> </span>state<span class="w"> </span>established<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">10</span>.128.15.192:<span class="w"> </span><span class="m">10</span>.128.15.192:58714<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.40.2.23:4240<span class="w"> </span>tcp<span class="w"> </span>ACK
+-&gt;<span class="w"> </span>stack<span class="w"> </span>flow<span class="w"> </span>0x1e62a16c<span class="w"> </span>identity<span class="w"> </span>health-&gt;remote-node<span class="w"> </span>state<span class="w"> </span>reply<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">0</span>.0.0.0:<span class="w"> </span><span class="m">10</span>.40.2.23:4240<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.128.15.192:58714<span class="w"> </span>tcp<span class="w"> </span>ACK
+-&gt;<span class="w"> </span>stack<span class="w"> </span>flow<span class="w"> </span>0xd663c7fb<span class="w"> </span>identity<span class="w"> </span>health-&gt;remote-node<span class="w"> </span>state<span class="w"> </span>reply<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">0</span>.0.0.0:<span class="w"> </span><span class="m">10</span>.40.2.23:4240<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.128.0.63:34796<span class="w"> </span>tcp<span class="w"> </span>ACK
+-&gt;<span class="w"> </span>endpoint<span class="w"> </span><span class="m">1</span><span class="w"> </span>flow<span class="w"> </span>0x0<span class="w"> </span>identity<span class="w"> </span>remote-node-&gt;health<span class="w"> </span>state<span class="w"> </span>established<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">10</span>.128.0.63:<span class="w"> </span><span class="m">10</span>.128.0.63:34796<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.40.2.23:4240<span class="w"> </span>tcp<span class="w"> </span>ACK
+-&gt;<span class="w"> </span>stack<span class="w"> </span>flow<span class="w"> </span>0x44777c79<span class="w"> </span>identity<span class="w"> </span>health-&gt;host<span class="w"> </span>state<span class="w"> </span>reply<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">0</span>.0.0.0:<span class="w"> </span><span class="m">10</span>.40.2.23:4240<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.128.0.62:36604<span class="w"> </span>tcp<span class="w"> </span>ACK
+-&gt;<span class="w"> </span>endpoint<span class="w"> </span><span class="m">1</span><span class="w"> </span>flow<span class="w"> </span>0xf6e1704e<span class="w"> </span>identity<span class="w"> </span>host-&gt;health<span class="w"> </span>state<span class="w"> </span>established<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">10</span>.128.0.62:<span class="w"> </span><span class="m">10</span>.128.0.62:36604<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.40.2.23:4240<span class="w"> </span>tcp<span class="w"> </span>ACK
+-&gt;<span class="w"> </span>stack<span class="w"> </span>flow<span class="w"> </span>0x1e62a16c<span class="w"> </span>identity<span class="w"> </span>health-&gt;remote-node<span class="w"> </span>state<span class="w"> </span>reply<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">0</span>.0.0.0:<span class="w"> </span><span class="m">10</span>.40.2.23:4240<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.128.15.192:58714<span class="w"> </span>tcp<span class="w"> </span>ACK
+-&gt;<span class="w"> </span>endpoint<span class="w"> </span><span class="m">1</span><span class="w"> </span>flow<span class="w"> </span>0x0<span class="w"> </span>identity<span class="w"> </span>remote-node-&gt;health<span class="w"> </span>state<span class="w"> </span>established<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">10</span>.128.15.192:<span class="w"> </span><span class="m">10</span>.128.15.192:58714<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.40.2.23:4240<span class="w"> </span>tcp<span class="w"> </span>ACK
+-&gt;<span class="w"> </span>endpoint<span class="w"> </span><span class="m">1</span><span class="w"> </span>flow<span class="w"> </span>0x0<span class="w"> </span>identity<span class="w"> </span>remote-node-&gt;health<span class="w"> </span>state<span class="w"> </span>established<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">10</span>.128.0.63:<span class="w"> </span><span class="m">10</span>.128.0.63:34796<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.40.2.23:4240<span class="w"> </span>tcp<span class="w"> </span>ACK
+-&gt;<span class="w"> </span>stack<span class="w"> </span>flow<span class="w"> </span>0xd663c7fb<span class="w"> </span>identity<span class="w"> </span>health-&gt;remote-node<span class="w"> </span>state<span class="w"> </span>reply<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">0</span>.0.0.0:<span class="w"> </span><span class="m">10</span>.40.2.23:4240<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.128.0.63:34796<span class="w"> </span>tcp<span class="w"> </span>ACK
+-&gt;<span class="w"> </span>endpoint<span class="w"> </span><span class="m">1</span><span class="w"> </span>flow<span class="w"> </span>0xf6e1704e<span class="w"> </span>identity<span class="w"> </span>host-&gt;health<span class="w"> </span>state<span class="w"> </span>established<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">10</span>.128.0.62:<span class="w"> </span><span class="m">10</span>.128.0.62:36604<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.40.2.23:4240<span class="w"> </span>tcp<span class="w"> </span>ACK
+-&gt;<span class="w"> </span>stack<span class="w"> </span>flow<span class="w"> </span>0x44777c79<span class="w"> </span>identity<span class="w"> </span>health-&gt;host<span class="w"> </span>state<span class="w"> </span>reply<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">0</span>.0.0.0:<span class="w"> </span><span class="m">10</span>.40.2.23:4240<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.128.0.62:36604<span class="w"> </span>tcp<span class="w"> </span>ACK
+-&gt;<span class="w"> </span>endpoint<span class="w"> </span><span class="m">1</span><span class="w"> </span>flow<span class="w"> </span>0x0<span class="w"> </span>identity<span class="w"> </span>remote-node-&gt;health<span class="w"> </span>state<span class="w"> </span>established<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">10</span>.128.15.192:<span class="w"> </span><span class="m">10</span>.128.15.192:58714<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.40.2.23:4240<span class="w"> </span>tcp<span class="w"> </span>ACK
+-&gt;<span class="w"> </span>stack<span class="w"> </span>flow<span class="w"> </span>0x1e62a16c<span class="w"> </span>identity<span class="w"> </span>health-&gt;remote-node<span class="w"> </span>state<span class="w"> </span>reply<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">0</span>.0.0.0:<span class="w"> </span><span class="m">10</span>.40.2.23:4240<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.128.15.192:58714<span class="w"> </span>tcp<span class="w"> </span>ACK
+-&gt;<span class="w"> </span>stack<span class="w"> </span>flow<span class="w"> </span>0xd663c7fb<span class="w"> </span>identity<span class="w"> </span>health-&gt;remote-node<span class="w"> </span>state<span class="w"> </span>reply<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">0</span>.0.0.0:<span class="w"> </span><span class="m">10</span>.40.2.23:4240<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.128.0.63:34796<span class="w"> </span>tcp<span class="w"> </span>ACK
+-&gt;<span class="w"> </span>endpoint<span class="w"> </span><span class="m">1</span><span class="w"> </span>flow<span class="w"> </span>0x0<span class="w"> </span>identity<span class="w"> </span>remote-node-&gt;health<span class="w"> </span>state<span class="w"> </span>established<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">10</span>.128.0.63:<span class="w"> </span><span class="m">10</span>.128.0.63:34796<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.40.2.23:4240<span class="w"> </span>tcp<span class="w"> </span>ACK
+-&gt;<span class="w"> </span>stack<span class="w"> </span>flow<span class="w"> </span>0x44777c79<span class="w"> </span>identity<span class="w"> </span>health-&gt;host<span class="w"> </span>state<span class="w"> </span>reply<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">0</span>.0.0.0:<span class="w"> </span><span class="m">10</span>.40.2.23:4240<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.128.0.62:36604<span class="w"> </span>tcp<span class="w"> </span>ACK
+-&gt;<span class="w"> </span>endpoint<span class="w"> </span><span class="m">1</span><span class="w"> </span>flow<span class="w"> </span>0xf6e1704e<span class="w"> </span>identity<span class="w"> </span>host-&gt;health<span class="w"> </span>state<span class="w"> </span>established<span class="w"> </span>ifindex<span class="w"> </span><span class="m">0</span><span class="w"> </span>orig-ip<span class="w"> </span><span class="m">10</span>.128.0.62:<span class="w"> </span><span class="m">10</span>.128.0.62:36604<span class="w"> </span>-&gt;<span class="w"> </span><span class="m">10</span>.40.2.23:4240<span class="w"> </span>tcp<span class="w"> </span>ACK
+&gt;&gt;<span class="w"> </span>IPCache<span class="w"> </span>entry<span class="w"> </span>upserted:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;cidr&quot;</span>:<span class="s2">&quot;10.128.0.62/32&quot;</span>,<span class="s2">&quot;id&quot;</span>:1,<span class="s2">&quot;old-id&quot;</span>:1,<span class="s2">&quot;encrypt-key&quot;</span>:0<span class="o">}</span>
+&gt;&gt;<span class="w"> </span>IPCache<span class="w"> </span>entry<span class="w"> </span>upserted:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;cidr&quot;</span>:<span class="s2">&quot;10.40.2.1/32&quot;</span>,<span class="s2">&quot;id&quot;</span>:1,<span class="s2">&quot;old-id&quot;</span>:1,<span class="s2">&quot;encrypt-key&quot;</span>:0<span class="o">}</span>
+&gt;&gt;<span class="w"> </span>IPCache<span class="w"> </span>entry<span class="w"> </span>upserted:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;cidr&quot;</span>:<span class="s2">&quot;10.40.2.1/32&quot;</span>,<span class="s2">&quot;id&quot;</span>:1,<span class="s2">&quot;old-id&quot;</span>:1,<span class="s2">&quot;encrypt-key&quot;</span>:0<span class="o">}</span>
+&gt;&gt;<span class="w"> </span>IPCache<span class="w"> </span>entry<span class="w"> </span>upserted:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;cidr&quot;</span>:<span class="s2">&quot;10.40.2.1/32&quot;</span>,<span class="s2">&quot;id&quot;</span>:1,<span class="s2">&quot;old-id&quot;</span>:1,<span class="s2">&quot;encrypt-key&quot;</span>:0<span class="o">}</span>
+&gt;&gt;<span class="w"> </span>IPCache<span class="w"> </span>entry<span class="w"> </span>upserted:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;cidr&quot;</span>:<span class="s2">&quot;10.40.2.40/32&quot;</span>,<span class="s2">&quot;id&quot;</span>:1,<span class="s2">&quot;old-id&quot;</span>:1,<span class="s2">&quot;encrypt-key&quot;</span>:0<span class="o">}</span>
 </code></pre></div>
 <h1 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h1>
 <p>In this document, we tested and proven several KubeArmor and cilium rules in our OnlineBookStore (mysql) implementation. In this section, we introduced rules such as <code>readOnly: true</code> and <code>ownerOnly: true</code> to allow certain functionality while blocking unauthorized access and processing for KubeArmor policies. Cilium is a white-list model. As a result, we restrict access to our programme to specific ports and access points. We can safeguard workloads and operate workloads smoothly in our environment with these two accuknox open-source solutions. \</p>

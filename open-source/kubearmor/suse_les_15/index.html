@@ -150,46 +150,6 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
       <div class="md-header__source">
         
@@ -3741,6 +3701,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_11_4_1">
@@ -3833,6 +3795,20 @@
     <li class="md-nav__item">
       <a href="../../../getting-started/jira-integration/" class="md-nav__link">
         Jira
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting-started/rsyslog-integration/" class="md-nav__link">
+        RSyslog
       </a>
     </li>
   
@@ -4128,64 +4104,64 @@
 <p>This user journey guides you to install and verify the compatibility of Kuberarmor on SUSE Linux Enterprise Server 15 with 5.3 Kernel Version by applying policies on VM workloads.</p>
 <h2 id="step-1-install-kubearmor-on-vm"><strong>Step 1: Install Kubearmor on VM</strong><a class="headerlink" href="#step-1-install-kubearmor-on-vm" title="Permanent link">&para;</a></h2>
 <p><strong>Install pre-requisites:</strong></p>
-<div class="highlight"><pre><span></span><code>sudo zypper ref
-sudo zypper <span class="k">in</span> bcc-tools bcc-examples
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>zypper<span class="w"> </span>ref
+sudo<span class="w"> </span>zypper<span class="w"> </span><span class="k">in</span><span class="w"> </span>bcc-tools<span class="w"> </span>bcc-examples
 </code></pre></div>
 <p><img alt="Alt" src="../../suse_les_15/images/9.png" /></p>
-<div class="highlight"><pre><span></span><code><span class="nv">fullkver</span><span class="o">=</span><span class="k">$(</span>zypper se -s kernel-default-devel <span class="p">|</span> awk <span class="s1">&#39;{split($0,a,&quot;|&quot;); print a[4]}&#39;</span> <span class="p">|</span> grep <span class="k">$(</span>uname -r <span class="p">|</span> awk <span class="s1">&#39;{gsub(&quot;-default&quot;, &quot;&quot;);print}&#39;</span><span class="k">)</span> <span class="p">|</span> sed -e <span class="s1">&#39;s/^[ \t]*//&#39;</span> <span class="p">|</span> tail -n <span class="m">1</span><span class="k">)</span>
+<div class="highlight"><pre><span></span><code><span class="nv">fullkver</span><span class="o">=</span><span class="k">$(</span>zypper<span class="w"> </span>se<span class="w"> </span>-s<span class="w"> </span>kernel-default-devel<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{split($0,a,&quot;|&quot;); print a[4]}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="k">$(</span>uname<span class="w"> </span>-r<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{gsub(&quot;-default&quot;, &quot;&quot;);print}&#39;</span><span class="k">)</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span>-e<span class="w"> </span><span class="s1">&#39;s/^[ \t]*//&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-n<span class="w"> </span><span class="m">1</span><span class="k">)</span>
 </code></pre></div>
 <p><img alt="Alt" src="../../suse_les_15/images/10.png" /></p>
-<div class="highlight"><pre><span></span><code>zypper -n --config /var/opt/carbonblack/response/zypp.conf install -f -y kernel-default-devel<span class="o">=</span><span class="s2">&quot;</span><span class="nv">$fullkver</span><span class="s2">&quot;</span>
+<div class="highlight"><pre><span></span><code>zypper<span class="w"> </span>-n<span class="w"> </span>--config<span class="w"> </span>/var/opt/carbonblack/response/zypp.conf<span class="w"> </span>install<span class="w"> </span>-f<span class="w"> </span>-y<span class="w"> </span>kernel-default-devel<span class="o">=</span><span class="s2">&quot;</span><span class="nv">$fullkver</span><span class="s2">&quot;</span>
 </code></pre></div>
 <p><img alt="Alt" src="../../suse_les_15/images/11.png" /></p>
-<div class="highlight"><pre><span></span><code>zypper <span class="k">in</span> apparmor-utils
+<div class="highlight"><pre><span></span><code>zypper<span class="w"> </span><span class="k">in</span><span class="w"> </span>apparmor-utils
 </code></pre></div>
 <p><img alt="Alt" src="../../suse_les_15/images/12.png" /></p>
-<div class="highlight"><pre><span></span><code>zypper <span class="k">in</span> apparmor-profiles
+<div class="highlight"><pre><span></span><code>zypper<span class="w"> </span><span class="k">in</span><span class="w"> </span>apparmor-profiles
 </code></pre></div>
 <p><img alt="Alt" src="../../suse_les_15/images/13.png" /></p>
-<div class="highlight"><pre><span></span><code>systemctl restart apparmor.service
+<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>restart<span class="w"> </span>apparmor.service
 </code></pre></div>
 <p><a href="https://github.com/kubearmor/KubeArmor/releases">Download the Latest release of KubeArmor</a></p>
-<div class="highlight"><pre><span></span><code>wget https://github.com/kubearmor/KubeArmor/releases/download/v0.3.1/kubearmor_0.3.1_linux-amd64.rpm
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://github.com/kubearmor/KubeArmor/releases/download/v0.3.1/kubearmor_0.3.1_linux-amd64.rpm
 </code></pre></div>
 <p><img alt="Alt" src="../../suse_les_15/images/17.png" /></p>
-<div class="highlight"><pre><span></span><code>zypper install kubearmor_0.3.1_linux-amd64.rpm
+<div class="highlight"><pre><span></span><code>zypper<span class="w"> </span>install<span class="w"> </span>kubearmor_0.3.1_linux-amd64.rpm
 </code></pre></div>
 <p><img alt="Alt" src="../../suse_les_15/images/18.png" /></p>
 <p><strong>Start &amp; Check the status of Kubearmor:</strong></p>
-<div class="highlight"><pre><span></span><code>sudo systemctl start kubearmor
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>kubearmor
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo systemctl <span class="nb">enable</span> kubearmor
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>kubearmor
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo systemctl status kubearmor
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>kubearmor
 </code></pre></div>
 <p><img alt="Alt" src="../../suse_les_15/images/19.png" /></p>
 <h2 id="step-2-apply-and-verify-kubearmor-system-policy"><strong>Step 2: Apply and Verify Kubearmor system policy</strong><a class="headerlink" href="#step-2-apply-and-verify-kubearmor-system-policy" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>cat khp-example-vmname.yaml
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>khp-example-vmname.yaml
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorHostPolicy</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">khp-02</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span><span class="w"></span>
-<span class="w">  </span><span class="nt">file</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/proc/cpuinfo</span><span class="w"></span>
-<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">Block</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorHostPolicy</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">khp-02</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="w">  </span><span class="nt">file</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/proc/cpuinfo</span>
+<span class="w">  </span><span class="nt">action</span><span class="p">:</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">Block</span>
 </code></pre></div>
 <p><strong>Run this command to apply the policy:</strong></p>
-<div class="highlight"><pre><span></span><code>karmor vm  policy add khp-example-vmname.yaml
+<div class="highlight"><pre><span></span><code>karmor<span class="w"> </span>vm<span class="w">  </span>policy<span class="w"> </span>add<span class="w"> </span>khp-example-vmname.yaml
 </code></pre></div>
 <h2 id="step-3-policy-violation"><strong>Step 3: Policy Violation</strong><a class="headerlink" href="#step-3-policy-violation" title="Permanent link">&para;</a></h2>
 <p>With the above mentioned policy enforced in the VM, if a user tries to access /proc/cpuinfo file, user will see <strong>permission denied</strong> error and <strong>karmor log</strong> will show the alert log for blocking the file access as shown below.</p>
-<div class="highlight"><pre><span></span><code>cat /proc/cpuinfo
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/proc/cpuinfo
 </code></pre></div>
 <p><img alt="Alt" src="../../suse_les_15/images/20.png" /></p>
 <p><strong>Verifying policy Violation logs:</strong></p>
-<div class="highlight"><pre><span></span><code>karmor log
+<div class="highlight"><pre><span></span><code>karmor<span class="w"> </span>log
 </code></pre></div>
 <p><img alt="Alt" src="../../suse_les_15/images/21.png" /></p>
                 

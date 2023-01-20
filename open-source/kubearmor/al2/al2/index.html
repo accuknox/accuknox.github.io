@@ -150,46 +150,6 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
       <div class="md-header__source">
         
@@ -3768,6 +3728,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_11_4_1">
@@ -3860,6 +3822,20 @@
     <li class="md-nav__item">
       <a href="../../../../getting-started/jira-integration/" class="md-nav__link">
         Jira
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../getting-started/rsyslog-integration/" class="md-nav__link">
+        RSyslog
       </a>
     </li>
   
@@ -4183,96 +4159,96 @@
 <p><strong>Note:</strong> As of now KubeArmor for Amazon Linux 2 will only Support for Audit mode. In the upcoming updates it will also support Enforcements, such as Allow and Block.</p>
 <h2 id="step-1-install-kubearmor-and-karmor-cli-on-vm"><strong>Step 1: Install KubeArmor and Karmor CLI on VM</strong><a class="headerlink" href="#step-1-install-kubearmor-and-karmor-cli-on-vm" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/kubearmor/KubeArmor/releases">Download the Latest release of KubeArmor</a></p>
-<div class="highlight"><pre><span></span><code>wget https://github.com/kubearmor/KubeArmor/releases/download/v0.3.1/kubearmor_0.3.1_linux-amd64.rpm
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://github.com/kubearmor/KubeArmor/releases/download/v0.3.1/kubearmor_0.3.1_linux-amd64.rpm
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>yum install kubearmor_0.3.1_linux-amd64.rpm
+<div class="highlight"><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>kubearmor_0.3.1_linux-amd64.rpm
 </code></pre></div>
 <p><strong>Start and Check the status of KubeArmor:</strong></p>
-<div class="highlight"><pre><span></span><code>systemctl start kubearmor
+<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>start<span class="w"> </span>kubearmor
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>systemctl <span class="nb">enable</span> kubearmor
+<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>kubearmor
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>systemctl status kubearmor
+<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>status<span class="w"> </span>kubearmor
 </code></pre></div>
 <p><img alt="Alt" src="../images/1.png" /></p>
 <p><strong>Install Karmor CLI:</strong></p>
-<div class="highlight"><pre><span></span><code>curl -sfL https://raw.githubusercontent.com/kubearmor/kubearmor-client/main/install.sh <span class="p">|</span> sudo sh -s -- -b /usr/bin
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-sfL<span class="w"> </span>https://raw.githubusercontent.com/kubearmor/kubearmor-client/main/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>sh<span class="w"> </span>-s<span class="w"> </span>--<span class="w"> </span>-b<span class="w"> </span>/usr/bin
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>karmor version
+<div class="highlight"><pre><span></span><code>karmor<span class="w"> </span>version
 </code></pre></div>
 <p><img alt="Alt" src="../images/2.png" /></p>
 <h2 id="step-2-apply-and-violating-kubearmor-system-policy"><strong>Step 2: Apply and Violating KubeArmor System Policy</strong><a class="headerlink" href="#step-2-apply-and-violating-kubearmor-system-policy" title="Permanent link">&para;</a></h2>
 <h3 id="1-process-level"><strong>1. Process Level</strong><a class="headerlink" href="#1-process-level" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>cat propolicy.yaml
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>propolicy.yaml
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorHostPolicy</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubearmor-pro-policy</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">process</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/bin/whoami</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/bin/id</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/bin/cp</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/bin/rm</span><span class="w"></span>
-<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Audit</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorHostPolicy</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubearmor-pro-policy</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">process</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/bin/whoami</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/bin/id</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/bin/cp</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/bin/rm</span>
+<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Audit</span>
 </code></pre></div>
 <p><strong>Run this command to apply the policy:</strong></p>
-<div class="highlight"><pre><span></span><code>karmor vm policy add propolicy.yaml
+<div class="highlight"><pre><span></span><code>karmor<span class="w"> </span>vm<span class="w"> </span>policy<span class="w"> </span>add<span class="w"> </span>propolicy.yaml
 </code></pre></div>
 <p><img alt="Alt" src="../images/3.png" /></p>
 <p><strong>Violating the policy:</strong></p>
-<div class="highlight"><pre><span></span><code>cp test1.txt  test2.txt
+<div class="highlight"><pre><span></span><code>cp<span class="w"> </span>test1.txt<span class="w">  </span>test2.txt
 </code></pre></div>
 <p><strong>Verifying policy Violation logs:</strong></p>
-<div class="highlight"><pre><span></span><code>karmor log
+<div class="highlight"><pre><span></span><code>karmor<span class="w"> </span>log
 </code></pre></div>
 <p><img alt="Alt" src="../images/4.png" /></p>
 <h3 id="2-file-level"><strong>2. File Level</strong><a class="headerlink" href="#2-file-level" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>cat filepolicy.yaml
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>filepolicy.yaml
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorHostPolicy</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubearmor-file-policy</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">file</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorHostPolicy</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubearmor-file-policy</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">file</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/fstab</span><span class="w">  </span>
-<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Audit</span><span class="w"></span>
+<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Audit</span>
 </code></pre></div>
 <p><strong>Run this command to apply the policy:</strong></p>
-<div class="highlight"><pre><span></span><code>karmor vm policy add filepolicy.yaml
+<div class="highlight"><pre><span></span><code>karmor<span class="w"> </span>vm<span class="w"> </span>policy<span class="w"> </span>add<span class="w"> </span>filepolicy.yaml
 </code></pre></div>
 <p><img alt="Alt" src="../images/5.png" /></p>
 <p><strong>Violating the policy:</strong></p>
-<div class="highlight"><pre><span></span><code>cat /etc/fstab
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/etc/fstab
 </code></pre></div>
 <p><strong>Verifying policy Violation logs:</strong></p>
-<div class="highlight"><pre><span></span><code>karmor log
+<div class="highlight"><pre><span></span><code>karmor<span class="w"> </span>log
 </code></pre></div>
 <p><img alt="Alt" src="../images/6.png" /></p>
 <h3 id="3-directory-level"><strong>3. Directory Level</strong><a class="headerlink" href="#3-directory-level" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>cat dirpolicy.yaml
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>dirpolicy.yaml
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorPolicy</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubearmor-dir-policy</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">file</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchDirectories</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/log/tomcat</span><span class="w"></span>
-<span class="w">      </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Audit</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorPolicy</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubearmor-dir-policy</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">file</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchDirectories</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/log/tomcat</span>
+<span class="w">      </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Audit</span>
 </code></pre></div>
 <p><strong>Run this command to apply the policy:</strong></p>
-<div class="highlight"><pre><span></span><code>karmor vm policy add dirpolicy.yaml
+<div class="highlight"><pre><span></span><code>karmor<span class="w"> </span>vm<span class="w"> </span>policy<span class="w"> </span>add<span class="w"> </span>dirpolicy.yaml
 </code></pre></div>
 <p><img alt="Alt" src="../images/7.png" /></p>
 <p><strong>Violating the policy:</strong></p>
-<div class="highlight"><pre><span></span><code>cat /var/log/tomcat/catalina.out
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/var/log/tomcat/catalina.out
 </code></pre></div>
 <p><strong>Verifying policy Violation logs:</strong></p>
 <div class="highlight"><pre><span></span><code>karmor log

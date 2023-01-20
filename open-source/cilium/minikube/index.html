@@ -150,46 +150,6 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
       <div class="md-header__source">
         
@@ -3762,6 +3722,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_11_4_1">
@@ -3854,6 +3816,20 @@
     <li class="md-nav__item">
       <a href="../../../getting-started/jira-integration/" class="md-nav__link">
         Jira
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting-started/rsyslog-integration/" class="md-nav__link">
+        RSyslog
       </a>
     </li>
   
@@ -4169,20 +4145,20 @@
                 <h2 id="overview"><strong>Overview</strong><a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>This user journey guides you to install and verify the compatibility of Cilium on Minikube by applying policies on Kubernetes workloads.</p>
 <h2 id="step-1-clone-the-repository"><strong>Step 1:  Clone the Repository</strong><a class="headerlink" href="#step-1-clone-the-repository" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>git clone https://github.com/kubearmor/KubeArmor.git
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/kubearmor/KubeArmor.git
 </code></pre></div>
 <p><img alt="Alt" src="../../minikube/images/1.png" /></p>
 <h2 id="step-2-install-virtualbox"><strong>Step 2: Install VirtualBox</strong><a class="headerlink" href="#step-2-install-virtualbox" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> KubeArmor/contribution/minikube
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>KubeArmor/contribution/minikube
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>./install_virtualbox.sh
 </code></pre></div>
 <p><img alt="Alt" src="../../minikube/images/2.png" /></p>
 <p><strong>Note:</strong> Once VirtualBox installed, reboot the system.</p>
-<div class="highlight"><pre><span></span><code>sudo reboot
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>reboot
 </code></pre></div>
 <h2 id="step-3-install-minikube"><strong>Step 3: Install Minikube</strong><a class="headerlink" href="#step-3-install-minikube" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> KubeArmor/contribution/minikube
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>KubeArmor/contribution/minikube
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>./install_minikube.sh
 </code></pre></div>
@@ -4193,161 +4169,161 @@
 <p><img alt="Alt" src="../../minikube/images/5.png" /></p>
 <h2 id="step-4-cilium-installation"><strong>Step 4: Cilium Installation</strong><a class="headerlink" href="#step-4-cilium-installation" title="Permanent link">&para;</a></h2>
 <p><strong>Install Cilium CLI:</strong></p>
-<div class="highlight"><pre><span></span><code>curl -L --remote-name-all https://github.com/cilium/cilium-cli/releases/latest/download/cilium-
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-L<span class="w"> </span>--remote-name-all<span class="w"> </span>https://github.com/cilium/cilium-cli/releases/latest/download/cilium-
 linux-amd64.tar.gz<span class="o">{</span>,.sha256sum<span class="o">}</span>
 </code></pre></div>
 <p><img alt="Alt" src="../../minikube/images/15.png" /></p>
-<div class="highlight"><pre><span></span><code>sha256sum --check cilium-linux-amd64.tar.gz.sha256sum
+<div class="highlight"><pre><span></span><code>sha256sum<span class="w"> </span>--check<span class="w"> </span>cilium-linux-amd64.tar.gz.sha256sum
 </code></pre></div>
 <p><img alt="Alt" src="../../minikube/images/16.png" /></p>
-<div class="highlight"><pre><span></span><code>sudo tar xzvfC cilium-linux-amd64.tar.gz /usr/local/bin
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>tar<span class="w"> </span>xzvfC<span class="w"> </span>cilium-linux-amd64.tar.gz<span class="w"> </span>/usr/local/bin
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>rm cilium-linux-amd64.tar.gz<span class="o">{</span>,.sha256sum<span class="o">}</span>
+<div class="highlight"><pre><span></span><code>rm<span class="w"> </span>cilium-linux-amd64.tar.gz<span class="o">{</span>,.sha256sum<span class="o">}</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>cilium install
+<div class="highlight"><pre><span></span><code>cilium<span class="w"> </span>install
 </code></pre></div>
 <p><img alt="Alt" src="../../minikube/images/17.png" /></p>
-<div class="highlight"><pre><span></span><code>kubectl get pods -n kube-system <span class="p">|</span> grep cilium
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>kube-system<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>cilium
 </code></pre></div>
 <p><img alt="Alt" src="../../minikube/images/18.png" /></p>
-<div class="highlight"><pre><span></span><code>cilium status --wait
+<div class="highlight"><pre><span></span><code>cilium<span class="w"> </span>status<span class="w"> </span>--wait
 </code></pre></div>
 <p><img alt="Alt" src="../../minikube/images/19.png" /></p>
 <p><strong>Cilium Hubble Enable:</strong> </p>
-<div class="highlight"><pre><span></span><code>cilium hubble <span class="nb">enable</span>
+<div class="highlight"><pre><span></span><code>cilium<span class="w"> </span>hubble<span class="w"> </span><span class="nb">enable</span>
 </code></pre></div>
 <p><img alt="Alt" src="../../minikube/images/20.png" /></p>
 <p><strong>Cilium Hubble Verify:</strong></p>
-<div class="highlight"><pre><span></span><code>kubectl get pods -n kube-system <span class="p">|</span> grep hubble
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>kube-system<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>hubble
 </code></pre></div>
 <p><img alt="Alt" src="../../minikube/images/21.png" /></p>
 <p><strong>Install Hubble CLI Client:</strong></p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">HUBBLE_VERSION</span><span class="o">=</span><span class="k">$(</span>curl -s https://raw.githubusercontent.com/cilium/hubble/master/stable.txt<span class="k">)</span>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">HUBBLE_VERSION</span><span class="o">=</span><span class="k">$(</span>curl<span class="w"> </span>-s<span class="w"> </span>https://raw.githubusercontent.com/cilium/hubble/master/stable.txt<span class="k">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>curl -L --remote-name-all https://github.com/cilium/hubble/releases/download/<span class="nv">$HUBBLE_VERSION</span>/hubble-linux-amd64.tar.gz<span class="o">{</span>,.sha256sum<span class="o">}</span>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-L<span class="w"> </span>--remote-name-all<span class="w"> </span>https://github.com/cilium/hubble/releases/download/<span class="nv">$HUBBLE_VERSION</span>/hubble-linux-amd64.tar.gz<span class="o">{</span>,.sha256sum<span class="o">}</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sha256sum --check hubble-linux-amd64.tar.gz.sha256sum
+<div class="highlight"><pre><span></span><code>sha256sum<span class="w"> </span>--check<span class="w"> </span>hubble-linux-amd64.tar.gz.sha256sum
 </code></pre></div>
 <p><img alt="Alt" src="../../minikube/images/22.png" /></p>
-<div class="highlight"><pre><span></span><code>sudo tar xzvfC hubble-linux-amd64.tar.gz /usr/local/bin
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>tar<span class="w"> </span>xzvfC<span class="w"> </span>hubble-linux-amd64.tar.gz<span class="w"> </span>/usr/local/bin
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>rm hubble-linux-amd64.tar.gz<span class="o">{</span>,.sha256sum<span class="o">}</span>
+<div class="highlight"><pre><span></span><code>rm<span class="w"> </span>hubble-linux-amd64.tar.gz<span class="o">{</span>,.sha256sum<span class="o">}</span>
 </code></pre></div>
 <h2 id="step-5-getting-alertstelemetry-from-cilium"><strong>Step 5: Getting Alerts/Telemetry from Cilium</strong><a class="headerlink" href="#step-5-getting-alertstelemetry-from-cilium" title="Permanent link">&para;</a></h2>
 <p><strong>Enable port-forwarding for Cilium Hubble relay:</strong></p>
-<div class="highlight"><pre><span></span><code>cilium hubble port-forward<span class="p">&amp;</span>
+<div class="highlight"><pre><span></span><code>cilium<span class="w"> </span>hubble<span class="w"> </span>port-forward<span class="p">&amp;</span>
 </code></pre></div>
 <p><img alt="Alt" src="../../minikube/images/23.png" /></p>
 <h2 id="step-6-cilium-policy"><strong>Step 6: Cilium Policy</strong><a class="headerlink" href="#step-6-cilium-policy" title="Permanent link">&para;</a></h2>
 <p><strong>1.</strong> Create a tightfighter &amp; deathstart deployment</p>
-<div class="highlight"><pre><span></span><code>cat tightfighter-deathstart-app.yaml
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>tightfighter-deathstart-app.yaml
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Service</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deathstar</span><span class="w"></span>
-<span class="w"> </span><span class="nt">labels</span><span class="p">:</span><span class="w"></span>
-<span class="w">   </span><span class="nt">app.kubernetes.io/name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deathstar</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterIP</span><span class="w"></span>
-<span class="w"> </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
-<span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">80</span><span class="w"></span>
-<span class="w"> </span><span class="nt">selector</span><span class="p">:</span><span class="w"></span>
-<span class="w">   </span><span class="nt">org</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">empire</span><span class="w"></span>
-<span class="w">   </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deathstar</span><span class="w"></span>
-<span class="nn">---</span><span class="w"></span>
-<span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">apps/v1</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deployment</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deathstar</span><span class="w"></span>
-<span class="w"> </span><span class="nt">labels</span><span class="p">:</span><span class="w"></span>
-<span class="w">   </span><span class="nt">app.kubernetes.io/name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deathstar</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w"> </span><span class="nt">replicas</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span><span class="w"></span>
-<span class="w"> </span><span class="nt">selector</span><span class="p">:</span><span class="w"></span>
-<span class="w">   </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
-<span class="w">     </span><span class="nt">org</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">empire</span><span class="w"></span>
-<span class="w">     </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deathstar</span><span class="w"></span>
-<span class="w"> </span><span class="nt">template</span><span class="p">:</span><span class="w"></span>
-<span class="w">   </span><span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">     </span><span class="nt">labels</span><span class="p">:</span><span class="w"></span>
-<span class="w">       </span><span class="nt">org</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">empire</span><span class="w"></span>
-<span class="w">       </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deathstar</span><span class="w"></span>
-<span class="w">       </span><span class="nt">app.kubernetes.io/name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deathstar</span><span class="w"></span>
-<span class="w">   </span><span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">     </span><span class="nt">containers</span><span class="p">:</span><span class="w"></span>
-<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deathstar</span><span class="w"></span>
-<span class="w">       </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker.io/cilium/starwars</span><span class="w"></span>
-<span class="nn">---</span><span class="w"></span>
-<span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Pod</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tiefighter</span><span class="w"></span>
-<span class="w"> </span><span class="nt">labels</span><span class="p">:</span><span class="w"></span>
-<span class="w">   </span><span class="nt">org</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">empire</span><span class="w"></span>
-<span class="w">   </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tiefighter</span><span class="w"></span>
-<span class="w">   </span><span class="nt">app.kubernetes.io/name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tiefighter</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w"> </span><span class="nt">containers</span><span class="p">:</span><span class="w"></span>
-<span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">spaceship</span><span class="w"></span>
-<span class="w">   </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker.io/tgraf/netperf</span><span class="w"></span>
-<span class="nn">---</span><span class="w"></span>
-<span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Pod</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">xwing</span><span class="w"></span>
-<span class="w"> </span><span class="nt">labels</span><span class="p">:</span><span class="w"></span>
-<span class="w">   </span><span class="nt">app.kubernetes.io/name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">xwing</span><span class="w"></span>
-<span class="w">   </span><span class="nt">org</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">alliance</span><span class="w"></span>
-<span class="w">   </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">xwing</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w"> </span><span class="nt">containers</span><span class="p">:</span><span class="w"></span>
-<span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">spaceship</span><span class="w"></span>
-<span class="w">   </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker.io/tgraf/netperf</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Service</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deathstar</span>
+<span class="w"> </span><span class="nt">labels</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">app.kubernetes.io/name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deathstar</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterIP</span>
+<span class="w"> </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">80</span>
+<span class="w"> </span><span class="nt">selector</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">org</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">empire</span>
+<span class="w">   </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deathstar</span>
+<span class="nn">---</span>
+<span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">apps/v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deployment</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deathstar</span>
+<span class="w"> </span><span class="nt">labels</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">app.kubernetes.io/name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deathstar</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w"> </span><span class="nt">replicas</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="w"> </span><span class="nt">selector</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">     </span><span class="nt">org</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">empire</span>
+<span class="w">     </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deathstar</span>
+<span class="w"> </span><span class="nt">template</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">metadata</span><span class="p">:</span>
+<span class="w">     </span><span class="nt">labels</span><span class="p">:</span>
+<span class="w">       </span><span class="nt">org</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">empire</span>
+<span class="w">       </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deathstar</span>
+<span class="w">       </span><span class="nt">app.kubernetes.io/name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deathstar</span>
+<span class="w">   </span><span class="nt">spec</span><span class="p">:</span>
+<span class="w">     </span><span class="nt">containers</span><span class="p">:</span>
+<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deathstar</span>
+<span class="w">       </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker.io/cilium/starwars</span>
+<span class="nn">---</span>
+<span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Pod</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tiefighter</span>
+<span class="w"> </span><span class="nt">labels</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">org</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">empire</span>
+<span class="w">   </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tiefighter</span>
+<span class="w">   </span><span class="nt">app.kubernetes.io/name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tiefighter</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w"> </span><span class="nt">containers</span><span class="p">:</span>
+<span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">spaceship</span>
+<span class="w">   </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker.io/tgraf/netperf</span>
+<span class="nn">---</span>
+<span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Pod</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">xwing</span>
+<span class="w"> </span><span class="nt">labels</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">app.kubernetes.io/name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">xwing</span>
+<span class="w">   </span><span class="nt">org</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">alliance</span>
+<span class="w">   </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">xwing</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w"> </span><span class="nt">containers</span><span class="p">:</span>
+<span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">spaceship</span>
+<span class="w">   </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker.io/tgraf/netperf</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>kubectl apply -f tightfighter-deathstart-app.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>tightfighter-deathstart-app.yaml
 </code></pre></div>
 <p><img alt="Alt" src="../../minikube/images/24.png" /></p>
-<div class="highlight"><pre><span></span><code>kubectl get pods --show-labels
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>--show-labels
 </code></pre></div>
 <p><img alt="Alt" src="../../minikube/images/25.png" /></p>
 <p><strong>2.</strong> Apply the following policy</p>
-<div class="highlight"><pre><span></span><code>cat sample-cilium-ingress-policy.yaml
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>sample-cilium-ingress-policy.yaml
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;cilium.io/v2&quot;</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CiliumNetworkPolicy</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;rule1-egress&quot;</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w"> </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;L7</span><span class="nv"> </span><span class="s">policy</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">restrict</span><span class="nv"> </span><span class="s">access</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">specific</span><span class="nv"> </span><span class="s">HTTP</span><span class="nv"> </span><span class="s">call&quot;</span><span class="w"></span>
-<span class="w"> </span><span class="nt">endpointSelector</span><span class="p">:</span><span class="w"></span>
-<span class="w">   </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
-<span class="w">     </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tiefighter</span><span class="w"></span>
-<span class="w"> </span><span class="nt">egress</span><span class="p">:</span><span class="w"></span>
-<span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toPorts</span><span class="p">:</span><span class="w"></span>
-<span class="w">   </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
-<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;80&quot;</span><span class="w"></span>
-<span class="w">       </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TCP</span><span class="w"></span>
-<span class="w">     </span><span class="nt">rules</span><span class="p">:</span><span class="w"></span>
-<span class="w">       </span><span class="nt">http</span><span class="p">:</span><span class="w"></span>
-<span class="w">       </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">method</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;POST&quot;</span><span class="w"></span>
-<span class="w">         </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/v1/request-landing&quot;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;cilium.io/v2&quot;</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CiliumNetworkPolicy</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;rule1-egress&quot;</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w"> </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;L7</span><span class="nv"> </span><span class="s">policy</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">restrict</span><span class="nv"> </span><span class="s">access</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">specific</span><span class="nv"> </span><span class="s">HTTP</span><span class="nv"> </span><span class="s">call&quot;</span>
+<span class="w"> </span><span class="nt">endpointSelector</span><span class="p">:</span>
+<span class="w">   </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">     </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tiefighter</span>
+<span class="w"> </span><span class="nt">egress</span><span class="p">:</span>
+<span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toPorts</span><span class="p">:</span>
+<span class="w">   </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;80&quot;</span>
+<span class="w">       </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TCP</span>
+<span class="w">     </span><span class="nt">rules</span><span class="p">:</span>
+<span class="w">       </span><span class="nt">http</span><span class="p">:</span>
+<span class="w">       </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">method</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;POST&quot;</span>
+<span class="w">         </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/v1/request-landing&quot;</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>kubectl apply -f sample-cilium-ingress-policy.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>sample-cilium-ingress-policy.yaml
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>kubectl get CiliumNetworkPolicy
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>CiliumNetworkPolicy
 </code></pre></div>
 <p><img alt="Alt" src="../../minikube/images/26.png" /></p>
 <p><strong>3.</strong> Violating the policy</p>
-<div class="highlight"><pre><span></span><code>kubectl get svc
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>svc
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -n default tiefighter -- curl -s -XPOST <span class="m">10</span>.106.29.11/v1/request-landing
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-n<span class="w"> </span>default<span class="w"> </span>tiefighter<span class="w"> </span>--<span class="w"> </span>curl<span class="w"> </span>-s<span class="w"> </span>-XPOST<span class="w"> </span><span class="m">10</span>.106.29.11/v1/request-landing
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -n default tiefighter -- curl -s -XPOST <span class="m">10</span>.106.29.11/v1/test
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-n<span class="w"> </span>default<span class="w"> </span>tiefighter<span class="w"> </span>--<span class="w"> </span>curl<span class="w"> </span>-s<span class="w"> </span>-XPOST<span class="w"> </span><span class="m">10</span>.106.29.11/v1/test
 </code></pre></div>
 <p><img alt="Alt" src="../../minikube/images/27.png" /></p>
 <p><strong>4.</strong> Verifying the Cilium Violation logs</p>
-<div class="highlight"><pre><span></span><code>hubble observe --pod tiefighter --protocol http 
+<div class="highlight"><pre><span></span><code>hubble<span class="w"> </span>observe<span class="w"> </span>--pod<span class="w"> </span>tiefighter<span class="w"> </span>--protocol<span class="w"> </span>http<span class="w"> </span>
 </code></pre></div>
 <p><img alt="Alt" src="../../minikube/images/28.png" /></p>
                 

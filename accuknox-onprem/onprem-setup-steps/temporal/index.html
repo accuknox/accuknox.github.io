@@ -145,46 +145,6 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
       <div class="md-header__source">
         
@@ -3667,6 +3627,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_11_4_1">
@@ -3759,6 +3721,20 @@
     <li class="md-nav__item">
       <a href="../../../getting-started/jira-integration/" class="md-nav__link">
         Jira
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting-started/rsyslog-integration/" class="md-nav__link">
+        RSyslog
       </a>
     </li>
   
@@ -4000,31 +3976,31 @@
                 <ul>
 <li>Temporal operator deployment steps</li>
 </ul>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-temporal
-git clone https://github.com/temporalio/helm-charts.git
-mv helm-charts temporal-server-chart
-helm dep up temporal-server-chart
-helm upgrade --install accuknox-temporal-server temporal-server-chart  --set server.replicaCount<span class="o">=</span><span class="m">1</span> --set cassandra.config.cluster_size<span class="o">=</span><span class="m">1</span> --set prometheus.enabled<span class="o">=</span><span class="nb">false</span> --set grafana.enabled<span class="o">=</span><span class="nb">false</span> --set elasticsearch.enabled<span class="o">=</span><span class="nb">false</span> --timeout 15m -n accuknox-temporal
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-temporal
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/temporalio/helm-charts.git
+mv<span class="w"> </span>helm-charts<span class="w"> </span>temporal-server-chart
+helm<span class="w"> </span>dep<span class="w"> </span>up<span class="w"> </span>temporal-server-chart
+helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-temporal-server<span class="w"> </span>temporal-server-chart<span class="w">  </span>--set<span class="w"> </span>server.replicaCount<span class="o">=</span><span class="m">1</span><span class="w"> </span>--set<span class="w"> </span>cassandra.config.cluster_size<span class="o">=</span><span class="m">1</span><span class="w"> </span>--set<span class="w"> </span>prometheus.enabled<span class="o">=</span><span class="nb">false</span><span class="w"> </span>--set<span class="w"> </span>grafana.enabled<span class="o">=</span><span class="nb">false</span><span class="w"> </span>--set<span class="w"> </span>elasticsearch.enabled<span class="o">=</span><span class="nb">false</span><span class="w"> </span>--timeout<span class="w"> </span>15m<span class="w"> </span>-n<span class="w"> </span>accuknox-temporal
 </code></pre></div>
 <ul>
 <li>If Prometheus/ Grafana is not required, Use the below command.</li>
 </ul>
-<div class="highlight"><pre><span></span><code>helm install --set server.replicaCount<span class="o">=</span><span class="m">1</span> --set cassandra.config.cluster_size<span class="o">=</span><span class="m">1</span> --set prometheus.enabled<span class="o">=</span><span class="nb">false</span> --set grafana.enabled<span class="o">=</span><span class="nb">false</span> --set elasticsearch.enabled<span class="o">=</span><span class="nb">false</span> temporal . --timeout 15m -n accuknox-temporal
-kubectl get all -n temporal-server
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>install<span class="w"> </span>--set<span class="w"> </span>server.replicaCount<span class="o">=</span><span class="m">1</span><span class="w"> </span>--set<span class="w"> </span>cassandra.config.cluster_size<span class="o">=</span><span class="m">1</span><span class="w"> </span>--set<span class="w"> </span>prometheus.enabled<span class="o">=</span><span class="nb">false</span><span class="w"> </span>--set<span class="w"> </span>grafana.enabled<span class="o">=</span><span class="nb">false</span><span class="w"> </span>--set<span class="w"> </span>elasticsearch.enabled<span class="o">=</span><span class="nb">false</span><span class="w"> </span>temporal<span class="w"> </span>.<span class="w"> </span>--timeout<span class="w"> </span>15m<span class="w"> </span>-n<span class="w"> </span>accuknox-temporal
+kubectl<span class="w"> </span>get<span class="w"> </span>all<span class="w"> </span>-n<span class="w"> </span>temporal-server
 </code></pre></div>
 <p><img alt="Alt" src="../images/temporal-pod.png" /></p>
 <ul>
 <li>Set the namespace to default</li>
 </ul>
-<div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -n accuknox-temporal -it  pod/temporaltest-admintools-&lt;pod-id&gt; -- /bin/bash
-tctl --ns accuknox-temporal n re
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-n<span class="w"> </span>accuknox-temporal<span class="w"> </span>-it<span class="w">  </span>pod/temporaltest-admintools-&lt;pod-id&gt;<span class="w"> </span>--<span class="w"> </span>/bin/bash
+tctl<span class="w"> </span>--ns<span class="w"> </span>accuknox-temporal<span class="w"> </span>n<span class="w"> </span>re
 </code></pre></div>
 <p>For example,
 <img alt="Alt" src="../images/temporal-reg.png" /></p>
 <ul>
 <li>Port-forward the temporal-web (:8088) pod to view the temporal workflows UI.</li>
 </ul>
-<div class="highlight"><pre><span></span><code>kubectl port-forward svc/accuknox-temporal-server-web <span class="m">8088</span>:8088 -n accuknox-temporal
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>port-forward<span class="w"> </span>svc/accuknox-temporal-server-web<span class="w"> </span><span class="m">8088</span>:8088<span class="w"> </span>-n<span class="w"> </span>accuknox-temporal
 </code></pre></div>
                 
               

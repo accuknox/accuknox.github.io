@@ -150,46 +150,6 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
       <div class="md-header__source">
         
@@ -3804,6 +3764,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_11_4_1">
@@ -3896,6 +3858,20 @@
     <li class="md-nav__item">
       <a href="../../../getting-started/jira-integration/" class="md-nav__link">
         Jira
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting-started/rsyslog-integration/" class="md-nav__link">
+        RSyslog
       </a>
     </li>
   
@@ -4381,36 +4357,36 @@
 <ul>
 <li>Go to the Istio release page to download the installation file for your OS, or download and extract the latest release automatically (Linux or macOS)</li>
 </ul>
-<div class="highlight"><pre><span></span><code>curl -L https://istio.io/downloadIstio <span class="p">|</span> <span class="nv">ISTIO_VERSION</span><span class="o">=</span><span class="m">1</span>.10.0 <span class="nv">TARGET_ARCH</span><span class="o">=</span>x86_64 sh -
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-L<span class="w"> </span>https://istio.io/downloadIstio<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nv">ISTIO_VERSION</span><span class="o">=</span><span class="m">1</span>.10.0<span class="w"> </span><span class="nv">TARGET_ARCH</span><span class="o">=</span>x86_64<span class="w"> </span>sh<span class="w"> </span>-
 </code></pre></div>
 <ul>
 <li>Move to the Istio package directory. For example, if the package is istio-1.11.3</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> istio-1.10.0
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>istio-1.10.0
 </code></pre></div>
 <ul>
 <li>Create a namespace istio-system for Istio components</li>
 </ul>
-<div class="highlight"><pre><span></span><code>kubectl create namespace istio-system
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>namespace<span class="w"> </span>istio-system
 </code></pre></div>
 <ul>
 <li>Install the Istio base chart which contains cluster-wide resources used by the Istio control plane</li>
 </ul>
-<div class="highlight"><pre><span></span><code>helm install istio-base manifests/charts/base -n istio-system
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>install<span class="w"> </span>istio-base<span class="w"> </span>manifests/charts/base<span class="w"> </span>-n<span class="w"> </span>istio-system
 </code></pre></div>
 <ul>
 <li>Install the Istio discovery chart which deploys the istiod control plane service</li>
 </ul>
-<div class="highlight"><pre><span></span><code>helm install istiod manifests/charts/istio-control/istio-discovery -n istio-system
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>install<span class="w"> </span>istiod<span class="w"> </span>manifests/charts/istio-control/istio-discovery<span class="w"> </span>-n<span class="w"> </span>istio-system
 </code></pre></div>
 <ul>
 <li>Install the Istio ingress gateway chart which contains the ingress gateway components</li>
 </ul>
-<p><div class="highlight"><pre><span></span><code>helm install istio-ingress manifests/charts/gateways/istio-ingress -n istio-system
+<p><div class="highlight"><pre><span></span><code>helm<span class="w"> </span>install<span class="w"> </span>istio-ingress<span class="w"> </span>manifests/charts/gateways/istio-ingress<span class="w"> </span>-n<span class="w"> </span>istio-system
 </code></pre></div>
 <strong>Verify the Installation</strong></p>
 <p>Ensure all Kubernetes pods in istio-system namespace are deployed and have a STATUS of Running</p>
-<p><div class="highlight"><pre><span></span><code>kubectl get pods -n istio-system
+<p><div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>istio-system
 </code></pre></div>
 <img alt="Alt text" src="../images/onprem-istio-verify.png" /></p>
 <p><strong>Install Cert Manager</strong></p>
@@ -4422,34 +4398,34 @@
 <p>When running on GKE (Google Kubernetes Engine), you might encounter a ‘permission denied’ error when creating some of the required resources.</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code>kubectl create clusterrolebinding cluster-admin-binding --clusterrole<span class="o">=</span>cluster-admin --user<span class="o">=</span><span class="k">$(</span>gcloud config get-value core/account<span class="k">)</span>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>clusterrolebinding<span class="w"> </span>cluster-admin-binding<span class="w"> </span>--clusterrole<span class="o">=</span>cluster-admin<span class="w"> </span>--user<span class="o">=</span><span class="k">$(</span>gcloud<span class="w"> </span>config<span class="w"> </span>get-value<span class="w"> </span>core/account<span class="k">)</span>
 </code></pre></div>
 <ul>
 <li>
 <p>Install Cert Manager
-<div class="highlight"><pre><span></span><code>kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.3.1/cert-manager.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://github.com/jetstack/cert-manager/releases/download/v1.3.1/cert-manager.yaml
 </code></pre></div></p>
 </li>
 <li>
 <p>All pods should have in Running state</p>
 </li>
 </ul>
-<p><div class="highlight"><pre><span></span><code>kubectl get pods -n cert-manager
+<p><div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>cert-manager
 </code></pre></div>
 <img alt="Alt" src="../images/cert-manager-verify.png" /></p>
 <p><strong>Installing Gateway</strong></p>
 <ul>
 <li>Add Accuknox Repositories to install helm packages</li>
 </ul>
-<div class="highlight"><pre><span></span><code>helm repo add accuknox-onprem-prerequisites https://USERNAME:PASSWORD@onprem.accuknox.com/repository/accuknox-onprem-prerequisites
-helm repo update
-helm search repo accuknox-onprem-prerequisites
-helm pull accuknox-onprem-prerequisites/istio-gateway-charts --untar 
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>repo<span class="w"> </span>add<span class="w"> </span>accuknox-onprem-prerequisites<span class="w"> </span>https://USERNAME:PASSWORD@onprem.accuknox.com/repository/accuknox-onprem-prerequisites
+helm<span class="w"> </span>repo<span class="w"> </span>update
+helm<span class="w"> </span>search<span class="w"> </span>repo<span class="w"> </span>accuknox-onprem-prerequisites
+helm<span class="w"> </span>pull<span class="w"> </span>accuknox-onprem-prerequisites/istio-gateway-charts<span class="w"> </span>--untar<span class="w"> </span>
 </code></pre></div>
 <ul>
 <li>Move to directory</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> istio-gateway-charts
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>istio-gateway-charts
 </code></pre></div>
 <ul>
 <li>
@@ -4463,8 +4439,8 @@ helm pull accuknox-onprem-prerequisites/istio-gateway-charts --untar
 </li>
 </ul>
 <p><strong>Find the Gateway IP</strong></p>
-<div class="highlight"><pre><span></span><code><span class="nv">INGRESS_HOST</span><span class="o">=</span><span class="k">$(</span>kubectl -n istio-system get service istio-ingressgateway -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.status.loadBalancer.ingress[0].ip}&#39;</span><span class="k">)</span>
-<span class="nb">echo</span> <span class="si">${</span><span class="nv">INGRESS_HOST</span><span class="si">}</span>
+<div class="highlight"><pre><span></span><code><span class="nv">INGRESS_HOST</span><span class="o">=</span><span class="k">$(</span>kubectl<span class="w"> </span>-n<span class="w"> </span>istio-system<span class="w"> </span>get<span class="w"> </span>service<span class="w"> </span>istio-ingressgateway<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.status.loadBalancer.ingress[0].ip}&#39;</span><span class="k">)</span>
+<span class="nb">echo</span><span class="w"> </span><span class="si">${</span><span class="nv">INGRESS_HOST</span><span class="si">}</span>
 </code></pre></div>
 <p><strong>Create DNS using IP</strong></p>
 <ul>
@@ -4478,49 +4454,49 @@ helm pull accuknox-onprem-prerequisites/istio-gateway-charts --untar
 <p>Issuers, and ClusterIssuers, are Kubernetes resources that represent certificate authorities (CAs) that are able to generate signed certificates by honouring certificate signing requests.</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code>kubectl apply -f issuer.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>issuer.yaml
 <span class="c1"># Should have Status as Ready</span>
-kubectl get ClusterIssuer -n cert-manager
+kubectl<span class="w"> </span>get<span class="w"> </span>ClusterIssuer<span class="w"> </span>-n<span class="w"> </span>cert-manager
 </code></pre></div>
 <ul>
 <li>A Certificate is a namespaced resource that references an Issuer or ClusterIssuer that determines what will be honouring the certificate request.</li>
 </ul>
-<div class="highlight"><pre><span></span><code>kubectl apply -f cert.yaml
-kubectl get Certificate -n istio-system <span class="c1"># Should have Status as Ready</span>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>cert.yaml
+kubectl<span class="w"> </span>get<span class="w"> </span>Certificate<span class="w"> </span>-n<span class="w"> </span>istio-system<span class="w"> </span><span class="c1"># Should have Status as Ready</span>
 </code></pre></div>
 <ul>
 <li>Create Gateway with SSL
-<div class="highlight"><pre><span></span><code>kubectl apply -f gateway-with-ssl.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>gateway-with-ssl.yaml
 </code></pre></div></li>
 </ul>
 <p><strong>Apply Virtual services</strong></p>
 <ul>
 <li>A virtual service defines a set of traffic routing rules to apply when a host is addressed. Each routing rule defines matching criteria for the traffic of a specific protocol. If the traffic is matched, then it is sent to a named destination service (or subset/version of it) defined in the registry.</li>
 </ul>
-<div class="highlight"><pre><span></span><code>kubectl apply -f backend-api/virtual-service.yaml
-kubectl apply -f keycloak/virtual-service.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>backend-api/virtual-service.yaml
+kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>keycloak/virtual-service.yaml
 </code></pre></div>
 <h3 id="22-mysql">2.2 Mysql<a class="headerlink" href="#22-mysql" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>helm pull accuknox-onprem-prerequisites/mysql-chart --untar
-kubectl create namespace accuknox-mysql
-<span class="nb">cd</span> mysql-chart
-kubectl apply -f bundle.yaml -n accuknox-mysql
-kubectl apply -f cr.yaml -n accuknox-mysql
-kubectl apply -f secrets.yaml -n accuknox-mysql
-kubectl apply -f ssl-secrets.yaml -n accuknox-mysql
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>pull<span class="w"> </span>accuknox-onprem-prerequisites/mysql-chart<span class="w"> </span>--untar
+kubectl<span class="w"> </span>create<span class="w"> </span>namespace<span class="w"> </span>accuknox-mysql
+<span class="nb">cd</span><span class="w"> </span>mysql-chart
+kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>bundle.yaml<span class="w"> </span>-n<span class="w"> </span>accuknox-mysql
+kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>cr.yaml<span class="w"> </span>-n<span class="w"> </span>accuknox-mysql
+kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>secrets.yaml<span class="w"> </span>-n<span class="w"> </span>accuknox-mysql
+kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>ssl-secrets.yaml<span class="w"> </span>-n<span class="w"> </span>accuknox-mysql
 </code></pre></div>
-<p><div class="highlight"><pre><span></span><code>kubectl get secret -n accuknox-mysql <span class="p">|</span> grep mysql
+<p><div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>secret<span class="w"> </span>-n<span class="w"> </span>accuknox-mysql<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>mysql
 </code></pre></div>
 <img alt="Alt" src="../images/mysql-secret.png" /></p>
-<p><div class="highlight"><pre><span></span><code>kubectl apply -f backup-s3.yaml -n accuknox-mysql
+<p><div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>backup-s3.yaml<span class="w"> </span>-n<span class="w"> </span>accuknox-mysql
 </code></pre></div>
 <strong>Loading schema</strong>
-<div class="highlight"><pre><span></span><code>helm pull accuknox-onprem-prerequisites/mysql-schema-chart --untar
-helm upgrade --install accuknox-mysql-schema mysql-schema-chart -n accuknox-mysql
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>pull<span class="w"> </span>accuknox-onprem-prerequisites/mysql-schema-chart<span class="w"> </span>--untar
+helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-mysql-schema<span class="w"> </span>mysql-schema-chart<span class="w"> </span>-n<span class="w"> </span>accuknox-mysql
 </code></pre></div>
 <strong>Verify the installation</strong></p>
 <p>Pods should be in Running state</p>
-<p><div class="highlight"><pre><span></span><code>kubectl get pods -n accuknox-mysql
+<p><div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>accuknox-mysql
 </code></pre></div>
 <img alt="Alt" src="../images/mysql-pod.png" /></p>
 <hr />
@@ -4537,13 +4513,13 @@ helm upgrade --install accuknox-mysql-schema mysql-schema-chart -n accuknox-mys
 <ul>
 <li>After following steps the above steps, you will see a similar image as above Run a sanitary test with below commands at the MySQL namespace</li>
 </ul>
-<div class="highlight"><pre><span></span><code>kubectl run -i --rm --tty percona-client --image<span class="o">=</span>percona:8.0 --restart<span class="o">=</span>Never -n accuknox-mysql -- bash -il
-mysql -h accuknox-mysql-haproxy -uroot -proot_password
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>run<span class="w"> </span>-i<span class="w"> </span>--rm<span class="w"> </span>--tty<span class="w"> </span>percona-client<span class="w"> </span>--image<span class="o">=</span>percona:8.0<span class="w"> </span>--restart<span class="o">=</span>Never<span class="w"> </span>-n<span class="w"> </span>accuknox-mysql<span class="w"> </span>--<span class="w"> </span>bash<span class="w"> </span>-il
+mysql<span class="w"> </span>-h<span class="w"> </span>accuknox-mysql-haproxy<span class="w"> </span>-uroot<span class="w"> </span>-proot_password
 </code></pre></div>
 <ul>
 <li>Update the passwords in secret.yaml file and run below command</li>
 </ul>
-<div class="highlight"><pre><span></span><code>kubectl apply -f secrets.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>secrets.yaml
 </code></pre></div>
 <hr />
 <p><strong>Optional [Backup to S3 bucket]</strong></p>
@@ -4555,24 +4531,24 @@ mysql -h accuknox-mysql-haproxy -uroot -proot_password
 <div class="highlight"><pre><span></span><code>accuknox-mysql-haproxy.accuknox-mysql.svc.cluster.local
 </code></pre></div>
 <h3 id="23-kafka">2.3 kafka<a class="headerlink" href="#23-kafka" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>helm pull accuknox-onprem-prerequisites/strimzi-kafka-operator --untar
-helm install accuknox-kafka  strimzi-kafka-operator -n accuknox-kafka
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>pull<span class="w"> </span>accuknox-onprem-prerequisites/strimzi-kafka-operator<span class="w"> </span>--untar
+helm<span class="w"> </span>install<span class="w"> </span>accuknox-kafka<span class="w">  </span>strimzi-kafka-operator<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka
 </code></pre></div>
 <ul>
 <li>
 <p>Check pods should be in the running status
-<div class="highlight"><pre><span></span><code>kubectl get pods -n accuknox-kafka
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka
 </code></pre></div>
 <img alt="Alt" src="../images/kafka-pod.png" /></p>
 </li>
 <li>
 <p>Get Bootstrap server endpoint
-<div class="highlight"><pre><span></span><code>kubectl get kafka accuknox -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.status.listeners[?(@.type==&quot;external&quot;)].bootstrapServers}&#39;</span> -n accuknox-kafka
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>kafka<span class="w"> </span>accuknox<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.status.listeners[?(@.type==&quot;external&quot;)].bootstrapServers}&#39;</span><span class="w"> </span>-n<span class="w"> </span>accuknox-kafka
 </code></pre></div></p>
 </li>
 <li>
 <p>Get CA certificate
-<div class="highlight"><pre><span></span><code>kubectl get secret accuknox-cluster-ca-cert -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.ca\.p12}&#39;</span> -n accuknox-kafka <span class="p">|</span> base64 -d &gt; ca.p12
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>secret<span class="w"> </span>accuknox-cluster-ca-cert<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.ca\.p12}&#39;</span><span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>-d<span class="w"> </span>&gt;<span class="w"> </span>ca.p12
 </code></pre></div></p>
 </li>
 </ul>
@@ -4590,37 +4566,37 @@ helm install accuknox-kafka  strimzi-kafka-operator -n accuknox-kafka
 <ul>
 <li>
 <p>Get CA Password
-<div class="highlight"><pre><span></span><code>kubectl get secret accuknox-cluster-ca-cert -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.ca\.password}&#39;</span> -n accuknox-kafka <span class="p">|</span> base64 -d &gt; ca.password
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>secret<span class="w"> </span>accuknox-cluster-ca-cert<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.ca\.password}&#39;</span><span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>-d<span class="w"> </span>&gt;<span class="w"> </span>ca.password
 </code></pre></div></p>
 </li>
 <li>
 <p>Get User Certificate
-<div class="highlight"><pre><span></span><code>kubectl get secret/node-event-feeder-common -n accuknox-kafka -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.user\.p12}&#39;</span> <span class="p">|</span> base64 -d &gt; user.p12
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>secret/node-event-feeder-common<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.user\.p12}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>-d<span class="w"> </span>&gt;<span class="w"> </span>user.p12
 </code></pre></div></p>
 </li>
 <li>
 <p>Get User Password
-<div class="highlight"><pre><span></span><code>kubectl get secret/node-event-feeder-common -n accuknox-kafka -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.user\.password}&#39;</span> <span class="p">|</span> base64 -d &gt; user.password
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>secret/node-event-feeder-common<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.data.user\.password}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>-d<span class="w"> </span>&gt;<span class="w"> </span>user.password
 </code></pre></div></p>
 </li>
 <li>
 <p>Convert user.p12 to base64 encoded format
-<div class="highlight"><pre><span></span><code>cat user.p12 <span class="p">|</span> base64 &gt; user.p12.base64
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>user.p12<span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>&gt;<span class="w"> </span>user.p12.base64
 </code></pre></div></p>
 </li>
 <li>
 <p>Convert ca.p12 to base64 encoded format
-<div class="highlight"><pre><span></span><code>cat ca.password <span class="p">|</span> base64 &gt; ca.password.base64
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>ca.password<span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>&gt;<span class="w"> </span>ca.password.base64
 </code></pre></div></p>
 </li>
 <li>
 <p>Convert user.password to base64 encoded format
-<div class="highlight"><pre><span></span><code>cat user.password <span class="p">|</span> base64 &gt; user.password.base64
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>user.password<span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>&gt;<span class="w"> </span>user.password.base64
 </code></pre></div></p>
 </li>
 <li>
 <p>Convert p12 to pem format
-<div class="highlight"><pre><span></span><code>openssl pkcs12 -in ca.p12 -out ca.pem
+<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>pkcs12<span class="w"> </span>-in<span class="w"> </span>ca.p12<span class="w"> </span>-out<span class="w"> </span>ca.pem
 </code></pre></div>
 <img alt="Alt" src="../images/openssl.png" /></p>
 </li>
@@ -4629,7 +4605,7 @@ helm install accuknox-kafka  strimzi-kafka-operator -n accuknox-kafka
 </li>
 <li>
 <p>Convert ca.pem to base64 encoded format
-<div class="highlight"><pre><span></span><code>cat ca.pem <span class="p">|</span> base64 &gt; ca.pem.base64
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>ca.pem<span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>&gt;<span class="w"> </span>ca.pem.base64
 </code></pre></div></p>
 </li>
 </ul>
@@ -4660,31 +4636,31 @@ helm install accuknox-kafka  strimzi-kafka-operator -n accuknox-kafka
 <img alt="Alt" src="../images/certificate.png" /></p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code>kubectl get secret/accuknox-clients-ca -o yaml -n accuknox-kafka &gt; accuknox-clients-ca.yaml
-kubectl get secret/accuknox-clients-ca-cert -o yaml -n accuknox-kafka &gt; accuknox-clients-ca-cert.yaml
-kubectl get secret/accuknox-cluster-ca-cert -o yaml -n accuknox-kafka &gt; accuknox-cluster-ca-cert.yaml
-kubectl get secret/accuknox-cluster-ca -o yaml -n accuknox-kafka &gt; accuknox-cluster-ca.yaml
-kubectl get secret/node-event-feeder -o yaml -n accuknox-kafka &gt; node-event-feeder.yaml
-kubectl get secret/node-event-feeder-common -o yaml -n accuknox-kafka &gt; node-event-feeder-common.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>secret/accuknox-clients-ca<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span>&gt;<span class="w"> </span>accuknox-clients-ca.yaml
+kubectl<span class="w"> </span>get<span class="w"> </span>secret/accuknox-clients-ca-cert<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span>&gt;<span class="w"> </span>accuknox-clients-ca-cert.yaml
+kubectl<span class="w"> </span>get<span class="w"> </span>secret/accuknox-cluster-ca-cert<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span>&gt;<span class="w"> </span>accuknox-cluster-ca-cert.yaml
+kubectl<span class="w"> </span>get<span class="w"> </span>secret/accuknox-cluster-ca<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span>&gt;<span class="w"> </span>accuknox-cluster-ca.yaml
+kubectl<span class="w"> </span>get<span class="w"> </span>secret/node-event-feeder<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span>&gt;<span class="w"> </span>node-event-feeder.yaml
+kubectl<span class="w"> </span>get<span class="w"> </span>secret/node-event-feeder-common<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka<span class="w"> </span>&gt;<span class="w"> </span>node-event-feeder-common.yaml
 </code></pre></div>
 <p><strong>Verify Kafka cluster</strong>
-<div class="highlight"><pre><span></span><code>kubectl get kafka -n accuknox-kafka
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>kafka<span class="w"> </span>-n<span class="w"> </span>accuknox-kafka
 </code></pre></div>
 <img alt="Alt" src="../images/list-kafka.png" /></p>
 <h3 id="24-pinot">2.4 Pinot<a class="headerlink" href="#24-pinot" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>helm pull accuknox-onprem-prerequisites/pinot-chart --untar
-kubectl create namespace accuknox-pinot
-helm install accuknox-pinot pinot -n accuknox-pinot
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>pull<span class="w"> </span>accuknox-onprem-prerequisites/pinot-chart<span class="w"> </span>--untar
+kubectl<span class="w"> </span>create<span class="w"> </span>namespace<span class="w"> </span>accuknox-pinot
+helm<span class="w"> </span>install<span class="w"> </span>accuknox-pinot<span class="w"> </span>pinot<span class="w"> </span>-n<span class="w"> </span>accuknox-pinot
 </code></pre></div>
 <p><strong>Pods should be in running status</strong>
-<div class="highlight"><pre><span></span><code>kubectl get pods -n accuknox-pinot
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>accuknox-pinot
 </code></pre></div>
 <img alt="Alt" src="../images/pinot-pod.png" /></p>
 <p><strong>Loading Schema and Tables</strong></p>
 <ul>
 <li>To load schema, It is necessary to open the Pinot dashboard. Run the below command to do port-forward and open <a href="http://localhost:9000/">http://localhost:9000/</a>  in the browser.</li>
 </ul>
-<p><div class="highlight"><pre><span></span><code>kubectl port-forward svc/accuknox-pinot-controller -n accuknox-pinot <span class="m">9000</span>:9000
+<p><div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>port-forward<span class="w"> </span>svc/accuknox-pinot-controller<span class="w"> </span>-n<span class="w"> </span>accuknox-pinot<span class="w"> </span><span class="m">9000</span>:9000
 </code></pre></div>
 <img alt="Alt" src="../images/pinot-1.png" /></p>
 <ul>
@@ -4733,53 +4709,53 @@ helm install accuknox-pinot pinot -n accuknox-pinot
 <ul>
 <li>Temporal operator deployment steps</li>
 </ul>
-<div class="highlight"><pre><span></span><code>kubectl create ns accuknox-temporal
-git clone https://github.com/temporalio/helm-charts.git
-mv helm-charts temporal-server-chart
-helm dep up temporal-server-chart
-helm upgrade --install accuknox-temporal-server temporal-server-chart  --set server.replicaCount<span class="o">=</span><span class="m">1</span> --set cassandra.config.cluster_size<span class="o">=</span><span class="m">1</span> --set prometheus.enabled<span class="o">=</span><span class="nb">false</span> --set grafana.enabled<span class="o">=</span><span class="nb">false</span> --set elasticsearch.enabled<span class="o">=</span><span class="nb">false</span> --timeout 15m -n accuknox-temporal
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>ns<span class="w"> </span>accuknox-temporal
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/temporalio/helm-charts.git
+mv<span class="w"> </span>helm-charts<span class="w"> </span>temporal-server-chart
+helm<span class="w"> </span>dep<span class="w"> </span>up<span class="w"> </span>temporal-server-chart
+helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-temporal-server<span class="w"> </span>temporal-server-chart<span class="w">  </span>--set<span class="w"> </span>server.replicaCount<span class="o">=</span><span class="m">1</span><span class="w"> </span>--set<span class="w"> </span>cassandra.config.cluster_size<span class="o">=</span><span class="m">1</span><span class="w"> </span>--set<span class="w"> </span>prometheus.enabled<span class="o">=</span><span class="nb">false</span><span class="w"> </span>--set<span class="w"> </span>grafana.enabled<span class="o">=</span><span class="nb">false</span><span class="w"> </span>--set<span class="w"> </span>elasticsearch.enabled<span class="o">=</span><span class="nb">false</span><span class="w"> </span>--timeout<span class="w"> </span>15m<span class="w"> </span>-n<span class="w"> </span>accuknox-temporal
 </code></pre></div>
 <ul>
 <li>If Prometheus/ Grafana is not required, Use the below command.</li>
 </ul>
-<div class="highlight"><pre><span></span><code>helm install --set server.replicaCount<span class="o">=</span><span class="m">1</span> --set cassandra.config.cluster_size<span class="o">=</span><span class="m">1</span> --set prometheus.enabled<span class="o">=</span><span class="nb">false</span> --set grafana.enabled<span class="o">=</span><span class="nb">false</span> --set elasticsearch.enabled<span class="o">=</span><span class="nb">false</span> temporal . --timeout 15m -n accuknox-temporal
-kubectl get all -n temporal-server
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>install<span class="w"> </span>--set<span class="w"> </span>server.replicaCount<span class="o">=</span><span class="m">1</span><span class="w"> </span>--set<span class="w"> </span>cassandra.config.cluster_size<span class="o">=</span><span class="m">1</span><span class="w"> </span>--set<span class="w"> </span>prometheus.enabled<span class="o">=</span><span class="nb">false</span><span class="w"> </span>--set<span class="w"> </span>grafana.enabled<span class="o">=</span><span class="nb">false</span><span class="w"> </span>--set<span class="w"> </span>elasticsearch.enabled<span class="o">=</span><span class="nb">false</span><span class="w"> </span>temporal<span class="w"> </span>.<span class="w"> </span>--timeout<span class="w"> </span>15m<span class="w"> </span>-n<span class="w"> </span>accuknox-temporal
+kubectl<span class="w"> </span>get<span class="w"> </span>all<span class="w"> </span>-n<span class="w"> </span>temporal-server
 </code></pre></div>
 <p><img alt="Alt" src="../images/temporal-pod.png" /></p>
 <ul>
 <li>Set the namespace to Accuknox-temporal</li>
 </ul>
-<div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -n accuknox-temporal -it  pod/temporaltest-admintools-&lt;pod-id&gt; -- /bin/bash
-tctl --ns accuknox-temporal n re
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-n<span class="w"> </span>accuknox-temporal<span class="w"> </span>-it<span class="w">  </span>pod/temporaltest-admintools-&lt;pod-id&gt;<span class="w"> </span>--<span class="w"> </span>/bin/bash
+tctl<span class="w"> </span>--ns<span class="w"> </span>accuknox-temporal<span class="w"> </span>n<span class="w"> </span>re
 </code></pre></div>
 <p>For example,
 <img alt="Alt" src="../images/temporal-reg.png" /></p>
 <ul>
 <li>Port-forward the temporal-web (:8088) pod to view the temporal workflows UI.</li>
 </ul>
-<div class="highlight"><pre><span></span><code>kubectl port-forward svc/accuknox-temporal-server-web <span class="m">8088</span>:8088 -n accuknox-temporal
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>port-forward<span class="w"> </span>svc/accuknox-temporal-server-web<span class="w"> </span><span class="m">8088</span>:8088<span class="w"> </span>-n<span class="w"> </span>accuknox-temporal
 </code></pre></div>
 <hr />
 <h2 id="step-3-install-core-components"><strong>Step 3: Install Core Components</strong><a class="headerlink" href="#step-3-install-core-components" title="Permanent link">&para;</a></h2>
 <p>Add Accuknox repository to install Core Components helm package:</p>
-<div class="highlight"><pre><span></span><code>helm repo add accuknox-onprem-services https://USERNAME:PASSWORD@onprem.accuknox.com/repository/accuknox-onprem-services
-helm repo update
-helm search repo accuknox-onprem-services
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>repo<span class="w"> </span>add<span class="w"> </span>accuknox-onprem-services<span class="w"> </span>https://USERNAME:PASSWORD@onprem.accuknox.com/repository/accuknox-onprem-services
+helm<span class="w"> </span>repo<span class="w"> </span>update
+helm<span class="w"> </span>search<span class="w"> </span>repo<span class="w"> </span>accuknox-onprem-services
 </code></pre></div>
 <p>Run the below script to install all the accuknox Core Components.</p>
 <p><a href="../files/services-install.sh" download>Click to Download the Script</a></p>
 <p>All Pods should have the Running status</p>
-<p><div class="highlight"><pre><span></span><code>kubectl get pods -A
+<p><div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-A
 </code></pre></div>
 <img alt="Alt" src="../images/core-components.png" /></p>
 <p><strong>Install Datapipeline API</strong></p>
 <p>Run the below command to install the data pipeline API component</p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install  accuknox-datapipeline-api 
-             accuknox-onprem-services/data-pipeline-api-charts <span class="se">\ </span>
-             --set prometheus.host<span class="o">=</span>&lt;hostname&gt; <span class="se">\</span>
-             --set prometheus.user<span class="o">=</span>&lt;username&gt; <span class="se">\</span>
-             --set prometheus.password<span class="o">=</span>&lt;password&gt; <span class="se">\</span>
-             -n accuknox-datapipeline-api
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w">  </span>accuknox-datapipeline-api<span class="w"> </span>
+<span class="w">             </span>accuknox-onprem-services/data-pipeline-api-charts<span class="w"> </span><span class="se">\ </span>
+<span class="w">             </span>--set<span class="w"> </span>prometheus.host<span class="o">=</span>&lt;hostname&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">             </span>--set<span class="w"> </span>prometheus.user<span class="o">=</span>&lt;username&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">             </span>--set<span class="w"> </span>prometheus.password<span class="o">=</span>&lt;password&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">             </span>-n<span class="w"> </span>accuknox-datapipeline-api
 </code></pre></div>
 <p>prometheus.host - specify prometheus host name</p>
 <p>prometheus.user - specify prometheus username</p>
@@ -4787,42 +4763,42 @@ helm search repo accuknox-onprem-services
 <ul>
 <li>Pods should be in Running status</li>
 </ul>
-<div class="highlight"><pre><span></span><code>kubectl get pods -n accuknox-datapipeline-api
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>accuknox-datapipeline-api
 </code></pre></div>
 <p><img alt="Alt" src="../images/dp-api-pod.png" /></p>
 <p><strong>Install shared-informer-service</strong></p>
 <ul>
 <li>Install Nginx ingress controller</li>
 </ul>
-<div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.1.1/deploy/static/provider/cloud/deploy.yaml
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.1.1/deploy/static/provider/cloud/deploy.yaml
 </code></pre></div>
 <ul>
 <li>Ingress Nginx controller external IP should mapped with DNS A record like sis-api.accuknox.com</li>
 </ul>
-<p><div class="highlight"><pre><span></span><code>kubectl get svc -n ingress-nginx
+<p><div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>svc<span class="w"> </span>-n<span class="w"> </span>ingress-nginx
 </code></pre></div>
 <img alt="Alt" src="../images/ingress.png" /></p>
 <p>Run the below command to install the shared-informer-service component</p>
 <ul>
 <li>For host variable need to map with DNS name</li>
 </ul>
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-shared-informer-service 
-             accuknox-onprem-services/shared-informer-service-chart/
-             -n accuknox-shared-informer-service
-             --set <span class="nv">host</span><span class="o">=</span>&lt;sis-api.accuknox.com&gt;
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-shared-informer-service<span class="w"> </span>
+<span class="w">             </span>accuknox-onprem-services/shared-informer-service-chart/
+<span class="w">             </span>-n<span class="w"> </span>accuknox-shared-informer-service
+<span class="w">             </span>--set<span class="w"> </span><span class="nv">host</span><span class="o">=</span>&lt;sis-api.accuknox.com&gt;
 </code></pre></div>
 <ul>
 <li>Pods should be in Running status</li>
 </ul>
-<p><div class="highlight"><pre><span></span><code>kubectl get pods -n accuknox-shared-informer-service
+<p><div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>accuknox-shared-informer-service
 </code></pre></div>
 <img alt="Alt" src="../images/sis.png" /></p>
-<div class="highlight"><pre><span></span><code>kubectl get ingress -n accuknox-shared-informer-service
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>ingress<span class="w"> </span>-n<span class="w"> </span>accuknox-shared-informer-service
 </code></pre></div>
 <p><img alt="Alt" src="../images/sis-ip.png" /></p>
 <p><strong>Install Knoxautopolicy</strong></p>
 <p>Run the below command to pull the  Knoxautopolicy helm chart</p>
-<div class="highlight"><pre><span></span><code>helm pull accuknox-onprem-services/knox-auto-policy-chart --untar
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>pull<span class="w"> </span>accuknox-onprem-services/knox-auto-policy-chart<span class="w"> </span>--untar
 </code></pre></div>
 <ul>
 <li>
@@ -4841,14 +4817,14 @@ helm search repo accuknox-onprem-services
 <p>For user_password variable need to map with kafka user.password file content</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code>helm install knox-auto-policy-chart <span class="se">\</span>
-             accuknox-onprem-services/knox-auto-policy-chart <span class="se">\</span>
-             --set config.application.cluster.cluster-mgmt-url<span class="o">=</span> &lt;cluster-management-url&gt; <span class="se">\ </span>  
-             --set config.feed-consumer.kafka.keystore.pword<span class="o">=</span>&lt;user_password&gt; <span class="se">\</span>
-             -n accuknox-knoxautopolicy 
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>install<span class="w"> </span>knox-auto-policy-chart<span class="w"> </span><span class="se">\</span>
+<span class="w">             </span>accuknox-onprem-services/knox-auto-policy-chart<span class="w"> </span><span class="se">\</span>
+<span class="w">             </span>--set<span class="w"> </span>config.application.cluster.cluster-mgmt-url<span class="o">=</span><span class="w"> </span>&lt;cluster-management-url&gt;<span class="w"> </span><span class="se">\ </span><span class="w">  </span>
+<span class="w">             </span>--set<span class="w"> </span>config.feed-consumer.kafka.keystore.pword<span class="o">=</span>&lt;user_password&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">             </span>-n<span class="w"> </span>accuknox-knoxautopolicy<span class="w"> </span>
 </code></pre></div>
 <p>Pods should be in Running status</p>
-<p><div class="highlight"><pre><span></span><code>kubectl get pods -n accuknox-knoxautopolicy
+<p><div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>accuknox-knoxautopolicy
 </code></pre></div>
 <img alt="Alt" src="../images/kap-pod.png" /></p>
 <p><strong>Configure Keycloak</strong></p>
@@ -4923,27 +4899,27 @@ helm search repo accuknox-onprem-services
 <ul>
 <li>
 <p>Ingress Nginx controller external IP should mapped with DNS A record like app-onprem.accuknox.com
-<div class="highlight"><pre><span></span><code>kubectl get svc -n ingress-nginx
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>svc<span class="w"> </span>-n<span class="w"> </span>ingress-nginx
 </code></pre></div>
 <img alt="Alt" src="../images/ingress-ui.png" /></p>
 </li>
 <li>
 <p>UI Installation using helm
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-ui accuknox-onprem-services/accuknox-ui --set ingress.hostaname<span class="o">=</span>&lt;ui-hostname&gt;
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-ui<span class="w"> </span>accuknox-onprem-services/accuknox-ui<span class="w"> </span>--set<span class="w"> </span>ingress.hostaname<span class="o">=</span>&lt;ui-hostname&gt;
 </code></pre></div></p>
 </li>
 <li>
 <p>ClusterIssuer should be in Ready state
-<div class="highlight"><pre><span></span><code>kubectl get ClusterIssuer
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>ClusterIssuer
 </code></pre></div>
 <img alt="Alt" src="../images/ci.png" /></p>
 </li>
 <li>
 <p>Everything should be in Running status
-<div class="highlight"><pre><span></span><code>kubectl get pod
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pod
 </code></pre></div>
 <img alt="Alt" src="../images/ui-pod.png" />
-<div class="highlight"><pre><span></span><code>kubectl get ingress
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>ingress
 </code></pre></div>
 <img alt="Alt" src="../images/ingressforui.png" /></p>
 </li>
@@ -4952,17 +4928,17 @@ helm search repo accuknox-onprem-services
 <ul>
 <li>
 <p>For client_id and client_secret has to be taken from keycloak configuration 
-<div class="highlight"><pre><span></span><code>helm upgrade --install accuknox-user-mgmt-service 
-             accuknox-onprem-services/user-management-service-chart
-             --set config.ui.host<span class="o">=</span>&lt;app.accuknox.com&gt; 
-             --set config.client_secret<span class="o">=</span>&lt;client_secret&gt;
-             --set config.client_id<span class="o">=</span>&lt;client_id&gt;
-             -n accuknox-user-mgmt
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>accuknox-user-mgmt-service<span class="w"> </span>
+<span class="w">             </span>accuknox-onprem-services/user-management-service-chart
+<span class="w">             </span>--set<span class="w"> </span>config.ui.host<span class="o">=</span>&lt;app.accuknox.com&gt;<span class="w"> </span>
+<span class="w">             </span>--set<span class="w"> </span>config.client_secret<span class="o">=</span>&lt;client_secret&gt;
+<span class="w">             </span>--set<span class="w"> </span>config.client_id<span class="o">=</span>&lt;client_id&gt;
+<span class="w">             </span>-n<span class="w"> </span>accuknox-user-mgmt
 </code></pre></div></p>
 </li>
 <li>
 <p>Pods should be in Running status
-<div class="highlight"><pre><span></span><code>kubectl get pods -n accuknox-user-mgmt
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>accuknox-user-mgmt
 </code></pre></div>
 <img alt="Alt" src="../images/usm-pod.png" /></p>
 </li>
