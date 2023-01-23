@@ -13,14 +13,14 @@
         <meta name="author" content="Asif Ali">
       
       
-        <link rel="canonical" href="https://accuknox.com/accuknox-onprem/what-is-ak-on-prem/">
+        <link rel="canonical" href="https://accuknox.com/how-to/rsyslog_feeder_integration/">
       
       <link rel="icon" href="../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-7.3.6">
     
     
       
-        <title>What is ak on prem - AccuKnox</title>
+        <title>How to Integrate RSyslog Server with AccuKnox Agent - AccuKnox</title>
       
     
     
@@ -119,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              What is ak on prem
+              How to Integrate RSyslog Server with AccuKnox Agent
             
           </span>
         </div>
@@ -213,7 +213,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../onprem-setup-steps/accuknox-onprem/" class="md-tabs__link">
+      <a href="../../accuknox-onprem/onprem-setup-steps/accuknox-onprem/" class="md-tabs__link">
         Self Managed / On-prem
       </a>
     </li>
@@ -246,13 +246,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../how-to/SplunkApp/accuKnox-splunk-app-installation-configuration/" class="md-tabs__link">
+      <a href="../SplunkApp/accuKnox-splunk-app-installation-configuration/" class="md-tabs__link md-tabs__link--active">
         How To Guides
       </a>
     </li>
@@ -1652,7 +1654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../onprem-setup-steps/accuknox-onprem/" class="md-nav__link">
+      <a href="../../accuknox-onprem/onprem-setup-steps/accuknox-onprem/" class="md-nav__link">
         How to setup a On-prem cluster
       </a>
     </li>
@@ -1698,7 +1700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../monitoring/monitoring/" class="md-nav__link">
+      <a href="../../accuknox-onprem/monitoring/monitoring/" class="md-nav__link">
         Monitoring your cluster using Prometheus and Grafana
       </a>
     </li>
@@ -1751,7 +1753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../logging/logging/" class="md-nav__link">
+      <a href="../../accuknox-onprem/logging/logging/" class="md-nav__link">
         Monitoring your cluster using Loki
       </a>
     </li>
@@ -1804,7 +1806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../elastic/elastic/" class="md-nav__link">
+      <a href="../../accuknox-onprem/elastic/elastic/" class="md-nav__link">
         Monitoring your cluster using ELK
       </a>
     </li>
@@ -1857,7 +1859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../onprem-feeder/" class="md-nav__link">
+      <a href="../../accuknox-onprem/onprem-feeder/" class="md-nav__link">
         Forwarding metrics to On-prem Feeder
       </a>
     </li>
@@ -3849,12 +3851,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -3891,7 +3895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how-to/SplunkApp/accuKnox-splunk-app-installation-configuration/" class="md-nav__link">
+      <a href="../SplunkApp/accuKnox-splunk-app-installation-configuration/" class="md-nav__link">
         How to Install AccuKnox Splunk App and forward the events
       </a>
     </li>
@@ -3903,11 +3907,70 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../how-to/rsyslog_feeder_integration/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          How to Integrate RSyslog Server with AccuKnox Agent
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         How to Integrate RSyslog Server with AccuKnox Agent
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-variables-for-rsyslog-integration" class="md-nav__link">
+    Environment variables for RSyslog Integration
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3919,7 +3982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how-to/protect-mysql-application/" class="md-nav__link">
+      <a href="../protect-mysql-application/" class="md-nav__link">
         How to protect MySQL application with AccuKnox
       </a>
     </li>
@@ -3933,7 +3996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how-to/protect-wordpress-application/" class="md-nav__link">
+      <a href="../protect-wordpress-application/" class="md-nav__link">
         How to protect WordPress application using AccuKnox
       </a>
     </li>
@@ -3947,7 +4010,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how-to/protect-python-microservice/" class="md-nav__link">
+      <a href="../protect-python-microservice/" class="md-nav__link">
         How to protect Python microservices using AccuKnox
       </a>
     </li>
@@ -3961,7 +4024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how-to/ensure-policies-will-not-break-application/" class="md-nav__link">
+      <a href="../ensure-policies-will-not-break-application/" class="md-nav__link">
         How to ensure enforcing policies will not break my application
       </a>
     </li>
@@ -4008,22 +4071,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-run-kubernetes-on-premises" class="md-nav__link">
-    Why Run Kubernetes On-premises
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#challenges-running-kubernetes-on-premises" class="md-nav__link">
-    Challenges Running Kubernetes On-premises
+  <a href="#configuration" class="md-nav__link">
+    Configuration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#best-practices-for-kubernetes-on-premises" class="md-nav__link">
-    Best Practices for Kubernetes On-premises
+  <a href="#environment-variables-for-rsyslog-integration" class="md-nav__link">
+    Environment variables for RSyslog Integration
   </a>
   
 </li>
@@ -4040,84 +4103,88 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/accuknox/accuknox-help/edit/main/docs_sample/accuknox-onprem/what-is-ak-on-prem.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/accuknox/accuknox-help/edit/main/docs_sample/how-to/rsyslog_feeder_integration.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
                   </a>
                 
                 
-                  <h1>What is ak on prem</h1>
+                  <h1>How to Integrate RSyslog Server with AccuKnox Agent</h1>
                 
-                <p><img alt="Alt text" src="../../images/k8s.png" /></p>
-<h3 id="overview"><b>Overview</b><a class="headerlink" href="#overview" title="Permanent link">&para;</a></h3>
-<p>The best Kubernetes architecture for your organization depends on your needs and goals. Kubernetes is often described as a cloud-native technology, and it certainly qualifies as one. However, the cloud-native concept does not exclude the use of on-premises infrastructure in cases where it makes sense. Depending on your organization’s needs regarding compliance, locality and cost for running your workloads, there may be significant advantages to running Kubernetes deployments on-premises.</p>
-<p>Kubernetes has achieved an unprecedented adoption rate, due in part to the fact that it substantially simplifies the deployment and management of microservices. Almost equally important is that it allows users who are unable to utilize the public cloud to operate in a “cloud-like” environment. It does this by decoupling dependencies and abstracting infrastructure away from your application stack, giving you the portability and the scalability that’s associated with cloud-native applications.</p>
-<h3 id="why-run-kubernetes-on-premises"><b>Why Run Kubernetes On-premises</b><a class="headerlink" href="#why-run-kubernetes-on-premises" title="Permanent link">&para;</a></h3>
-<p>Why do organizations choose the path of running Kubernetes in their own data centers, compared to the relative “cake-walk” with public cloud providers? There are typically a few important reasons why an Enterprise may choose to invest in a Kubernetes on-premises strategy:</p>
-<ol>
-<li>
-<p>Compliance &amp; Data Privacy
-Some organizations simply can’t use the public cloud, as they are bound by stringent regulations related to compliance and data privacy issues. For example, the GDPR compliance rules may prevent enterprises from serving customers in the european region using services hosted in certain public clouds.</p>
-</li>
-<li>
-<p>Business Policy Reasons
-Business policy needs, such as having to run your workloads at specific geographical locations, may make it difficult to use public clouds. Some enterprises may not be able to utilize public cloud offerings from a specific cloud provider due to their business policies related to competition.</p>
-</li>
-<li>
-<p>Being Cloud Agnostic to Avoid Lock-in
-Many enterprises may wish to not be tried to a single cloud provider, and hence may want to deploy their applications across multiple clouds, including an on-premises private cloud. This reduces your risk of business continuity impact due to issues with a specific cloud provider. It also gives you /<b>leverage around price negotiation</b> with your cloud providers.</p>
-</li>
-<li>
-<p>Cost
-This is probably <b>the most important reason</b> to run Kubernetes on-premises. Running all of your applications in the public clouds can get pretty expensive at scale. Specifically if your applications <b>rely on ingesting and processing a large amount of data</b>, such as an AI/ML application, it can get extremely expensive to run it in a public cloud. If you have existing data centers on-premises or in a co-location hosted facility, running Kubernetes on-premises can be an effective way to reduce your operational costs. For more information on this topic, see this latest report from a16z: The Cost of Cloud, a Trillion Dollar Paradox Quoted from the report ” It’s becoming evident that while cloud clearly delivers on its promise early on in a company’s journey, the pressure it puts on margins can start to outweigh the benefits, as a company scales and growth slows. Because this shift happens later in a company’s life, it is difficult to reverse as it’s a result of years of development focused on new features, and not infrastructure optimization”</p>
-</li>
-</ol>
-<p>An effective strategy to run Kubernetes on-premises on your own data centers can be used to transform your business and modernize your applications for cloud-native – while improving infrastructure utilization and saving costs at the same time.</p>
-<h3 id="challenges-running-kubernetes-on-premises"><b>Challenges Running Kubernetes On-premises</b><a class="headerlink" href="#challenges-running-kubernetes-on-premises" title="Permanent link">&para;</a></h3>
-<p>There is a downside to running Kubernetes on-premises however, specially if you are going the Do-It-Yourself (DIY) route. Kubernetes is known for its steep learning curve and operational complexity. When using Kubernetes on AWS or Azure – your public cloud provider essentially hides all the complexities from you. Running Kubernetes on-premises means you’re on your own for managing these complexities. Here are specific areas where the complexities are involved:</p>
-<ol>
-<li>
-<p>Etcd – manage highly available etcd cluster. You need to take frequent backups to ensure business continuity in case the cluster goes down and the etcd data is lost.</p>
-</li>
-<li>
-<p>Load balancing – Load balancing may be needed both for your cluster master nodes and your application services running on Kubernetes. Depending on your existing networking setup, you may want to use a load balancer such as F5 or use a software load balancer such as metallb.</p>
-</li>
-<li>
-<p>Availability – Its critical to ensure that your Kubernetes infrastructure is highly available and can withstand data center and infrastructure downtimes. This would mean having multiple master nodes per cluster, and when relevant, having multiple Kubernetes clusters, across different availability zones.</p>
-</li>
-<li>
-<p>Auto-scaling – Auto-scaling for the nodes of your cluster can help save resources because the clusters can automatically expand and contract depending on workload needs. This is difficult to achieve for bare metal Kubernetes clusters, unless you are using a bare metal automation platform such as open source Ironic or Platform9’s Managed Bare Metal.</p>
-</li>
-<li>
-<p>Networking – Networking is very specific to your data center configuration.</p>
-</li>
-<li>
-<p>Persistent storage – Majority of your production workloads running on Kubernetes will require persistent storage – block or file storage. The good news is that most of the popular enterprise storage vendors have CSI plugins and supported integrations with Kubernetes. You will need to work with your storage vendor to identify the right plugin and install any additional needed components before you can integration your existing storage solution with Kubernetes on-premises.</p>
-</li>
-<li>
-<p>Upgrades – You will need to upgrade your clusters roughly every 3 months when a new upstream version of Kubernetes is released. The version upgrade may create issues if there are API incompatibilities introduced with newer version of Kubernetes. A staged upgrading strategy where your development / test clusters are upgraded first before upgrading your production clusters is recommended.</p>
-</li>
-<li>
-<p>Monitoring – You will need to invest in tooling to monitor the health of your Kubernetes clusters in your on-premise Kubernetes environment. If you have existing monitoring and log management tools such as Datadog or Splunk, most of them have specific capabilities around Kubernetes monitoring. Or you may consider investing in an open source monitoring stack designed to help you monitor Kubernetes clusters such as Prometheus and Grafana.</p>
-</li>
-</ol>
-<h3 id="best-practices-for-kubernetes-on-premises"><b>Best Practices for Kubernetes On-premises</b><a class="headerlink" href="#best-practices-for-kubernetes-on-premises" title="Permanent link">&para;</a></h3>
-<p>Below you will find a set of best practices to run Kubernetes on-premises. Depending on your environment configuration, some or all of these may apply to you.</p>
-<p><b>Integrating with Existing Environment</b></p>
-<p>Kubernetes enables users to run clusters on a diverse set of infrastructures on-premises . So you can “repurpose” your environment to integrate with Kubernetes – using virtual machines or creating your own cluster from scratch on bare metal. But you would need to build a deep understanding of the specifics of deploying Kubernetes on your existing environment, including your servers, storage systems, and networking infrastructure, to get a well configured production Kubernetes environment.</p>
-<p>The three most popular ways to deploy Kubernetes on-premises are:</p>
-<ol>
-<li>
-<p>Virtual machines on your existing VMware vSphere environment</p>
-</li>
-<li>
-<p>Linux physical servers running Ubuntu, CentOS or RHEL Linux</p>
-</li>
-<li>
-<p>Virtual machines on other types of IaaS environments on-premises such as OpenStack.</p>
-</li>
-</ol>
-<p>Running Kubernetes on physical servers can give you native hardware performance, which may be critical for certain types of workloads, however it may limit your ability to quickly scale your infrastructure. If getting bare metal performance is important to you, and if you need to run Kubernetes clusters at scale, then consider investing in a bare metal automation platform such as Ironic , Metal3 or a managed bare metal stack such as Platform9 Managed Bare Metal.
-Running Kubernetes on virtual machines in your private cloud on VMware or KVM can give you the elasticity of cloud, as you can dynamically scale your Kubernetes clusters up or down based on workload demand. Clusters created on virtual machines are also easy to setup and tear down, making it easy to create ephemeral test environments for developers.</p>
+                <p><img alt="" src="../images/rsyslog-accuknox.png" /></p>
+<h2 id="overview"><strong>Overview</strong><a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>RSYSLOG is the  <b>r</b>ocket-fast <b>sys</b>tem for <b>log</b> processing.
+It offers high-performance, great security features and a modular design. While it started as a regular syslogd, rsyslog has evolved into a kind of swiss army knife of logging, being able to accept inputs from a wide variety of sources, transform them, and output to the results to diverse destinations.
+In the case of a deployment with a high rate of log generation, or to store on a server to forward it to other sources like Datadog, McAfee SIEM, Azure Sentinel, AlienVault, etc., you can forward syslogs over an Ethernet interface to prevent loss of logs and reduce the load on the management interface, which optimizes management operations.</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<ul>
+<li>A running RSyslog server.</li>
+<li>Host name/IP, Port number, Transport type(TCP or UDP) </li>
+<li>Feeder Service Running on Client's cluster. </li>
+</ul>
+<p><strong><em>Note</em></strong> : To deploy RSyslog server , <a href="https://www.rsyslog.com/doc/v8-stable/">RSyslog Documentation  </a>.</p>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
+<p>To forward the Alerts based on Policy Violation to RSyslog Server set the following environment variables <code>RSYSLOG_FEEDER_ENABLED</code> and <code>RSYSLOG_ALERTS_ENABLED</code> to <code>true</code> and to forward Logs <code>RSYSLOG_LOGS_ENABLED</code> to <code>true</code> in your Feeder Agent manifest.</p>
+<p>Also set the environment variables <code>RSYSLOG_URL</code>, <code>RSYSLOG_TRANSPORT</code>, <code>RSYSLOG_PORT</code> of the RSyslog Server Deployed.
+To start editing the chart: 
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>edit<span class="w"> </span>deployment<span class="w"> </span>feeder-service<span class="w"> </span>-n<span class="w"> </span>accuknox-agents
+</code></pre></div>
+Edit the following Enviornment Variables mentioned below: </p>
+<p><div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RSYSLOG_FEEDER_ENABLED</span>
+<span class="w">  </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;true&quot;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RSYSLOG_ALERTS_ENABLED</span>
+<span class="w">  </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;true&quot;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RSYSLOG_LOGS_ENABLED</span>
+<span class="w">  </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;true&quot;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RSYSLOG_URL</span>
+<span class="w">  </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">34.XX.XX.XXX</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RSYSLOG_PORT</span>
+<span class="w">  </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">514</span><span class="w">  </span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RSYSLOG_TRANSPORT</span>
+<span class="w">  </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tcp</span>
+</code></pre></div>
+ <strong>OR</strong> </br>
+To set the the envionment variables on Run Time to Integrate the Rsyslog with Feeder Service Agent,  One can use a single command. </p>
+<p><div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span><span class="nb">set</span><span class="w"> </span>env<span class="w"> </span>deploy/feeder-service<span class="w"> </span>-n<span class="w"> </span>accuknox-agents<span class="w"> </span><span class="nv">RSYSLOG_ALERTS_ENABLED</span><span class="o">=</span><span class="nb">true</span><span class="w"> </span><span class="nv">RSYSLOG_FEEDER_ENABLED</span><span class="o">=</span><span class="nb">true</span><span class="w"> </span><span class="nv">RSYSLOG_LOGS_ENABLED</span><span class="o">=</span><span class="nb">false</span><span class="w"> </span><span class="nv">RSYSLOG_URL</span><span class="o">=</span>&lt;RSYSLOG_IP&gt;<span class="w"> </span><span class="nv">RSYSLOG_PORT</span><span class="o">=</span>&lt;RSYSLOG_PORT&gt;<span class="w"> </span><span class="nv">RSYSLOG_TRANSPORT</span><span class="o">=</span>&lt;RSYSLOG_TRANSPORT&gt;
+</code></pre></div>
+   Replace <code>&lt;RSYSLOG_IP&gt;</code> , <code>&lt;RSYSLOG_PORT&gt;</code> and <code>&lt;RSYSLOG_TRANSPORT&gt;</code> from your Rsyslog Server.</p>
+<h2 id="environment-variables-for-rsyslog-integration">Environment variables for RSyslog Integration<a class="headerlink" href="#environment-variables-for-rsyslog-integration" title="Permanent link">&para;</a></h2>
+<p>The following is the list of environment variables available for the Feeder-Service-Agent</p>
+<table>
+<thead>
+<tr>
+<th>Env Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>RSYSLOG_FEEDER_ENABLED</code></td>
+<td>Setting this to <code>true</code> forward the Logs and Alerts to RSyslog Server</td>
+</tr>
+<tr>
+<td><code>RSYSLOG_ALERTS_ENABLED</code></td>
+<td>Setting this to <code>true</code> forward the Policy Violated Alerts to RSyslog Server</td>
+</tr>
+<tr>
+<td><code>RSYSLOG_LOGS_ENABLED</code></td>
+<td>Setting this to <code>true</code> forward the Logs to RSyslog Server</td>
+</tr>
+<tr>
+<td><code>RSYSLOG_URL</code></td>
+<td>Enter your RSyslog Server address here, IP address or fully qualified domain name (FQDN) of the RSyslog server. For example: <code>rsyslog.mydomain.com</code> or <code>35.xx.xx.xx</code></td>
+</tr>
+<tr>
+<td><code>RSYSLOG_PORT</code></td>
+<td>The port number to use when sending syslog messages (default is UDP on port 514); you must use the same port number.  e.g., <code>514</code></td>
+</tr>
+<tr>
+<td><code>RSYSLOG_TRANSPORT</code></td>
+<td>Add <code>udp</code>, or <code>tcp</code> as the method of communication with the RSyslog server. <br><strong><em>Note*</em></strong>: <em>The methods here are case sensitive, add as mentioned.</em></td>
+</tr>
+</tbody>
+</table>
+<p>Once the enviornment variables are passed and deployment is updated, the feeder service pod restarts and Logs and Alerts are forwarded to Integrated RSyslog Server from Feeder Service. 
+To view the same check the <code>/var/log</code> folder inside the RSyslog Server. A directory with name <code>feeder-service</code> is created and all the logs are stored inside the same directory as a log file. </p>
                 
               
               
@@ -4138,6 +4205,41 @@ Running Kubernetes on virtual machines in your private cloud on VMware or KVM ca
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../SplunkApp/accuKnox-splunk-app-installation-configuration/" class="md-footer__link md-footer__link--prev" aria-label="Previous: How to Install AccuKnox Splunk App and forward the events" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              How to Install AccuKnox Splunk App and forward the events
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../protect-mysql-application/" class="md-footer__link md-footer__link--next" aria-label="Next: How to protect MySQL application with AccuKnox" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              How to protect MySQL application with AccuKnox
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
